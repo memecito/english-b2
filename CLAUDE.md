@@ -8,7 +8,7 @@ gamificación, arquitectura datos/motor/generador) antes de tocar la
 estructura del juego.
 
 **Estado actual (2026-09-28):** motor funcionando, repo git propio
-(sin remoto), copy con temática informática/espacio/ciencia ficción,
+(GitHub privado: `memecito/english-b2`), copy con temática informática/espacio/ciencia ficción,
 vocabulario migrado (14 palabras) y **6 temas de gramática, 136
 frases**: relative clauses, present perfect vs past simple, verb
 patterns, word formation (Part 3), unreal past, conditionals (con
