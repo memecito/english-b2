@@ -189,8 +189,8 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
       </div>
     </div>
 
-    <p class="hint center">Tienes 3 vidas ❤️. ¡Las rachas de aciertos dan puntos extra!</p>
-    <button class="primary" id="startBtn">¡Jugar! 🚀</button>
+    <p class="hint center">Tienes 3 vidas ❤️. Las rachas de aciertos activan el turbo: puntos extra.</p>
+    <button class="primary" id="startBtn">Despegar 🚀</button>
     <p class="hint center"><label><input type="checkbox" id="optSpeak" checked> Leer las palabras en inglés en voz alta</label>
       &nbsp; <label><input type="checkbox" id="optSound" checked> Sonidos</label></p>
   </section>
@@ -207,7 +207,7 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
       <span class="dir" id="dir"></span>
       <div class="word" id="word"></div>
       <p class="sentence hidden" id="sentence"></p>
-      <div class="mascot" id="mascot">🦊</div>
+      <div class="mascot" id="mascot">🤖</div>
       <form id="form" autocomplete="off">
         <div class="answer-row">
           <input type="text" id="input" aria-label="Tu respuesta" placeholder="Escribe la traducción…"
@@ -318,8 +318,8 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
 const $ = id => document.getElementById(id);
 const KEY = "englishQuestB2.v1"; // clave distinta a la de ingles-ari (englishQuest.v1) a propósito, para no mezclar progresos
 const LEVELS = [
-  [0, "🥚", "Huevito"], [100, "🐣", "Pollito"], [300, "🐥", "Explorador"], [700, "🦊", "Zorrito listo"],
-  [1500, "🦄", "Unicornio"], [3000, "🐉", "Dragón del inglés"], [6000, "👑", "Reina del vocabulario"]
+  [0, "💾", "Hello World"], [100, "🛰️", "Satélite en órbita"], [300, "🧑‍🚀", "Cadete espacial"], [700, "🤖", "Androide"],
+  [1500, "🛸", "Piloto estelar"], [3000, "🌌", "Almirante de la flota"], [6000, "🧠", "IA singular"]
 ];
 const MAX_LIVES = 3;
 // Sistema Leitner: caja 0-4, días hasta la próxima revisión por caja
@@ -485,7 +485,7 @@ function pool() {
 function refreshHome() {
   const t = today(), lvIdx = LEVELS.reduce((a, l, i) => db.total >= l[0] ? i : a, 0), lv = LEVELS[lvIdx], nx = LEVELS[lvIdx + 1];
   $("lvEmoji").textContent = lv[1]; $("lvName").textContent = `Nivel ${lvIdx + 1}: ${lv[2]}`;
-  $("lvNext").textContent = nx ? `${db.total} pts · faltan ${nx[0] - db.total} para ${nx[1]} ${nx[2]}` : `${db.total} pts · ¡nivel máximo!`;
+  $("lvNext").textContent = nx ? `${db.total} pts · faltan ${nx[0] - db.total} para ${nx[1]} ${nx[2]}` : `${db.total} pts · singularidad alcanzada`;
   $("lvBar").style.width = (nx ? (db.total - lv[0]) / (nx[0] - lv[0]) * 100 : 100) + "%";
   $("stToday").textContent = t.points; $("stStreak").textContent = streakDays(); $("stBest").textContent = db.best;
   $("dueCount").textContent = `${dueWords().length} palabras`;
@@ -504,7 +504,7 @@ function refreshHome() {
   if (cfg.category === "grammar") {
     $("poolInfo").textContent = `${n} frases para practicar`;
   } else {
-    $("poolInfo").textContent = cfg.mode === "review" && !n ? "No tienes palabras pendientes de repaso hoy. ¡Vuelve mañana o sigue practicando otras!" : `${n} palabras para practicar`;
+    $("poolInfo").textContent = cfg.mode === "review" && !n ? "Cola de repaso vacía por hoy. Vuelve mañana o practica otras." : `${n} palabras para practicar`;
   }
   $("startBtn").disabled = n < 1;
   $("optSpeak").checked = db.opts.speak; $("optSound").checked = db.opts.sound;
@@ -574,7 +574,7 @@ function nextQuestion() {
   $("feedback").classList.add("hidden"); $("nextBtn").classList.add("hidden"); $("actions").classList.remove("hidden");
   $("streak").textContent = G.streak; $("score").textContent = G.score; renderHearts();
   $("progress").textContent = `Palabra ${G.i} de ${G.queue.length}`;
-  setMascot("🦊");
+  setMascot("🤖");
   if (dir === "en-es" && db.opts.speak) say(q.en[0]);
   $("input").focus();
 }
@@ -592,7 +592,7 @@ function nextGrammarQuestion() {
   $("feedback").classList.add("hidden"); $("nextBtn").classList.add("hidden"); $("actions").classList.remove("hidden");
   $("streak").textContent = G.streak; $("score").textContent = G.score; renderHearts();
   $("progress").textContent = `Frase ${G.i} de ${G.queue.length}`;
-  setMascot("🦊");
+  setMascot("🤖");
   $("input").focus();
 }
 
@@ -639,15 +639,15 @@ function answer(action) { // action: "check" | "skip"
     const pts = Math.max(1, base + Math.min(Math.floor(G.streak / 3) * 2, 10) - (G.hinted ? 5 : 0));
     G.score += pts; leitnerReview(leitKey, true, G.hinted);
     fb.classList.add("ok"); fb.append(`✅ ¡Correcto! +${pts}${G.streak >= 3 ? ` (racha ×${G.streak} 🔥)` : ""}`, sol);
-    setMascot(G.streak >= 3 ? "🤩" : "😄"); sndOk(); floatText(`+${pts}`);
+    setMascot(G.streak >= 3 ? "🚀" : "🛸"); sndOk(); floatText(`+${pts}`);
     if (G.kind === "vocab" && G.cur.dir === "es-en" && db.opts.speak) say(G.cur.w.en[0]);
   } else {
     G.streak = 0; G.wrong++; G.lives--; G.wrongStreak++;
     leitnerReview(leitKey, false, G.hinted);
     const disp = questionDisplay();
     if (!G.missedList.some(m => m.title === disp.title)) G.missedList.push(disp);
-    fb.classList.add("ko"); fb.append(action === "skip" ? "Esta era:" : "❌ Casi… la respuesta era:", sol);
-    setMascot("😿"); sndKo(); $("qCard").classList.remove("shake"); void $("qCard").offsetWidth; $("qCard").classList.add("shake");
+    fb.classList.add("ko"); fb.append(action === "skip" ? "Esta era:" : "❌ Error de compilación. La respuesta era:", sol);
+    setMascot("💥"); sndKo(); $("qCard").classList.remove("shake"); void $("qCard").offsetWidth; $("qCard").classList.add("shake");
     if (G.kind === "vocab" && db.opts.speak) say(G.cur.w.en[0]);
   }
   $("score").textContent = G.score; $("streak").textContent = G.streak; renderHearts();
@@ -698,7 +698,7 @@ function finish(quit) {
   const { d, record } = saveGameResult();
   const cleared = !quit && G.lives > 0; // se acabaron las palabras sin perder las 3 vidas
   $("endEmoji").textContent = cleared ? "🏆" : record ? "🎉" : G.right >= 10 ? "😎" : "💪";
-  $("endTitle").textContent = cleared ? "¡Te las sabes todas!" : record ? "¡Nuevo récord!" : quit ? "Partida terminada" : "¡Buen intento!";
+  $("endTitle").textContent = cleared ? "Misión cumplida" : record ? "Nuevo récord de la galaxia" : quit ? "Misión abortada" : "Game over — reintentando…";
   $("endScore").textContent = `${G.score} pts`;
   $("endInfo").textContent = `${G.right} aciertos · ${G.wrong} fallos · hoy llevas ${d.points} puntos`;
   const list = $("endMissed"); list.textContent = "";
@@ -746,9 +746,9 @@ function renderHistory() {
   // logros
   const keys = Object.keys(db.days), st = streakDays(), bestStreakEver = maxStreak();
   const B = [
-    ["🌱", "Primer día", keys.length >= 1], ["🔥", "3 días seguidos", bestStreakEver >= 3], ["🌈", "7 días seguidos", bestStreakEver >= 7],
+    ["🚀", "Primer lanzamiento", keys.length >= 1], ["🔥", "3 días seguidos", bestStreakEver >= 3], ["🌌", "7 días seguidos", bestStreakEver >= 7],
     ["💯", "100 aciertos", db.correct >= 100], ["🧠", "500 aciertos", db.correct >= 500], ["🏅", "Partida de 100 pts", db.best >= 100],
-    ["🚀", "Partida de 250 pts", db.best >= 250], ["🦄", "1.500 puntos", db.total >= 1500]
+    ["🛸", "Partida de 250 pts", db.best >= 250], ["🪐", "1.500 puntos", db.total >= 1500]
   ];
   const bx = $("badges"); bx.textContent = "";
   B.forEach(([e, t, on]) => { const el = document.createElement("div"); el.className = "badge" + (on ? " on" : "");
@@ -756,7 +756,7 @@ function renderHistory() {
 
   // tabla
   const box = $("tableBox"); box.textContent = "";
-  if (!keys.length) { const p = document.createElement("p"); p.className = "hint"; p.textContent = "Todavía no hay partidas. ¡Juega la primera!"; box.append(p); return; }
+  if (!keys.length) { const p = document.createElement("p"); p.className = "hint"; p.textContent = "Todavía no hay partidas. Primera misión pendiente."; box.append(p); return; }
   const t = document.createElement("table");
   t.innerHTML = "<thead><tr><th>Día</th><th>Partidas</th><th>✔</th><th>✘</th><th>Puntos</th></tr></thead>";
   const tb = document.createElement("tbody");
@@ -793,7 +793,7 @@ function renderStudy() {
   const box = $("topicsBox"); box.textContent = "";
   if (!TOPICS.length) {
     const p = document.createElement("p"); p.className = "hint";
-    p.textContent = "Todavía no hay temas de teoría — ¡muy pronto empezamos con gramática!";
+    p.textContent = "Todavía no hay temas de teoría.";
     box.append(p); return;
   }
   TOPICS.forEach(t => {
