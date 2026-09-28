@@ -1,0 +1,16 @@
+# Formato: ingles|es1,es2,...|categoria (categoría opcional)
+# Origen: ~/claude/English/theory/vocabulary.txt (migrado 2026-09-28)
+raw|crudo,cruda,sin cocinar|comida
+tuck into|comer con ganas,zampar,devorar|comida
+vary|variar,cambiar
+endangered|en peligro de extinción,amenazado|naturaleza
+dam|presa,embalse|naturaleza
+saliva|saliva
+sought-after|muy solicitado,codiciado,cotizado
+onboarding program / onboarding programme|programa de incorporación,programa de acogida,onboarding|trabajo
+on-site support|soporte presencial,soporte in situ,asistencia in situ|trabajo
+bunker|búnker,refugio|historia
+artefact / artifact|artefacto,objeto antiguo,objeto histórico|historia
+contemporary|contemporáneo,actual|historia
+renovation|reforma,renovación,rehabilitación
+repurpose|reutilizar,dar otro uso,reconvertir
