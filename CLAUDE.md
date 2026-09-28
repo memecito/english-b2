@@ -79,9 +79,6 @@ como primer tema).
 - Revisar si el formato Part 4 (respuesta de 2-5 palabras) necesita
   que el motor acepte variantes con más flexibilidad que la lista
   `answers` exacta.
-- Palabra dudosa en `translations.txt`: `sought-after` se interpretó
-  a partir de un `sought` suelto sin definición en los apuntes —
-  confirmar.
 
 ## Reglas heredadas de ingles-ari
 

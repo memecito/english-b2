@@ -6,7 +6,7 @@ vary|variar,cambiar
 endangered|en peligro de extinción,amenazado|naturaleza
 dam|presa,embalse|naturaleza
 saliva|saliva
-sought-after|muy solicitado,codiciado,cotizado
+seek / sought|buscar,solicitar
 onboarding program / onboarding programme|programa de incorporación,programa de acogida,onboarding|trabajo
 on-site support|soporte presencial,soporte in situ,asistencia in situ|trabajo
 bunker|búnker,refugio|historia
