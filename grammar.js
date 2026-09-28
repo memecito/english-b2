@@ -217,5 +217,46 @@ const GRAMMAR = {
       { id: "cd23", text: "She got the job ___ she speaks three languages fluently.", answers: ["because"] },
       { id: "cd24", text: "We'll cancel the launch ___ the weather is bad on Thursday.", answers: ["if"] }
     ]
+  },
+  "passive": {
+    title: "Passive voice + causative",
+    emoji: "🔄",
+    topicId: "passive",
+    items: [
+      // pasiva en distintos tiempos
+      { id: "ps1", text: "English ___ (speak) in all our international meetings.", answers: ["is spoken"] },
+      { id: "ps2", text: "The server ___ (restart) at 3 a.m. last night.", answers: ["was restarted"] },
+      { id: "ps3", text: "The new office ___ (build) at the moment, so we're working from home.", answers: ["is being built"] },
+      { id: "ps4", text: "All the passwords ___ (change) since the security incident.", answers: ["have been changed"] },
+      { id: "ps5", text: "The final report ___ (send) to the client tomorrow.", answers: ["will be sent"] },
+      { id: "ps6", text: "By the time I logged in, the ticket ___ (close).", answers: ["had been closed"] },
+      { id: "ps7", text: "The tests ___ (run) when the power went off.", answers: ["were being run"] },
+      { id: "ps8", text: "The first human ___ (send) into space in 1961.", answers: ["was sent"] },
+      { id: "ps9", text: "The meeting ___ (cancel) because the CEO was ill.", answers: ["was cancelled", "was canceled"] },
+      { id: "ps10", text: "I ___ (give) access to the production cluster yesterday.", answers: ["was given"] },
+      // modales
+      { id: "ps11", text: "This bug should ___ (fix) before the release.", answers: ["be fixed"] },
+      { id: "ps12", text: "The contract must ___ (sign) by Friday.", answers: ["be signed"] },
+      { id: "ps13", text: "The release should ___ (test) more carefully — now we have a bug in production.", answers: ["have been tested"] },
+      // by / intransitivos / -ing / need
+      { id: "ps14", text: "The data centre was designed ___ a team of Danish engineers.", answers: ["by"] },
+      { id: "ps15", text: "The accident ___ (happen) during the night shift.", answers: ["happened"] },
+      { id: "ps16", text: "I hate ___ (interrupt) when I'm explaining something.", answers: ["being interrupted"] },
+      { id: "ps17", text: "This documentation is out of date. It needs ___ (update).", answers: ["to be updated", "updating"] },
+      // reporting passive (se dice que...)
+      { id: "ps18", text: "It ___ (say) that the company is going to be sold.", answers: ["is said"] },
+      { id: "ps19", text: "The CEO is believed ___ (resign) last week.", answers: ["to have resigned"] },
+      { id: "ps20", text: "Mars is thought ___ (have) water under its surface.", answers: ["to have"] },
+      // causativa: have/get something done
+      { id: "cs1", text: "I'm ___ my laptop repaired — it'll be ready on Monday.", answers: ["having", "getting"] },
+      { id: "cs2", text: "We had the office ___ (paint) last month.", answers: ["painted"] },
+      { id: "cs3", text: "I need to get my eyes ___ (test) — I can't read the screen.", answers: ["tested"] },
+      { id: "cs4", text: "She had her phone ___ (steal) at the conference.", answers: ["stolen"] },
+      { id: "cs5", text: "I had my hair ___ (cut) at the hairdresser's yesterday.", answers: ["cut"] },
+      { id: "cs6", text: "We're going to ___ our website redesigned by an agency.", answers: ["have", "get"] },
+      // causativa activa: have someone do / get someone to do
+      { id: "cs7", text: "I'll get IT ___ (reset) my password.", answers: ["to reset"] },
+      { id: "cs8", text: "The manager had the intern ___ (check) the logs.", answers: ["check"] }
+    ]
   }
 };

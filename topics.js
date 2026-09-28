@@ -295,5 +295,69 @@ const TOPICS = [
       <p><i>I didn't know you were ill, so I didn't visit you. (HAD)</i> → If I <b>had known you were</b> ill, I would have visited you.</p>
       <p><i>We only failed because of the bad weather. (BEEN)</i> → If it <b>hadn't been for</b> the bad weather, we wouldn't have failed.</p>
     `
+  },
+  {
+    id: "passive",
+    emoji: "🔄",
+    title: "Passive voice + causative (have/get something done)",
+    html: `
+      <p>In a <b>passive</b> sentence the thing that <i>receives</i> the action becomes the subject: <i>Someone restarted the server</i> → <i><b>The server was restarted.</b></i></p>
+
+      <h3>1. Form: be + past participle — in every tense</h3>
+      <table>
+        <thead><tr><th>Tense</th><th>Passive</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Present simple</td><td>is/are done</td><td>English <b>is spoken</b> in all our meetings.</td></tr>
+          <tr><td>Present continuous</td><td>is/are being done</td><td>The new office <b>is being built</b>.</td></tr>
+          <tr><td>Past simple</td><td>was/were done</td><td>The server <b>was restarted</b> at 3 a.m.</td></tr>
+          <tr><td>Past continuous</td><td>was/were being done</td><td>The tests <b>were being run</b> when the power went off.</td></tr>
+          <tr><td>Present perfect</td><td>has/have been done</td><td>The passwords <b>have been changed</b>.</td></tr>
+          <tr><td>Past perfect</td><td>had been done</td><td>The ticket <b>had been closed</b>.</td></tr>
+          <tr><td>Future / modals</td><td>will / must / should / can <b>be done</b></td><td>The contract <b>must be signed</b> by Friday.</td></tr>
+          <tr><td>Past modals</td><td>should / might / must <b>have been done</b></td><td>It <b>should have been tested</b> more carefully.</td></tr>
+        </tbody>
+      </table>
+      <p>After verbs and prepositions that take -ing: <b>being done</b> — <i>I hate <b>being interrupted</b>.</i> After <i>need</i>: <i>It needs <b>to be updated</b></i> = <i>It needs <b>updating</b></i>.</p>
+
+      <h3>2. When to use it</h3>
+      <ul>
+        <li>The <b>agent</b> (who does it) is unknown, obvious or unimportant: <i>My laptop <b>was stolen</b>.</i></li>
+        <li>The <b>action or result</b> matters more than the person: <i>The bug <b>has been fixed</b>.</i></li>
+        <li><b>Formal / technical register</b>: reports, incident post-mortems, documentation — and Writing Part 2 reports. <i>The service <b>was restored</b> at 04:15.</i></li>
+      </ul>
+      <p>Add <b>by + agent</b> only when it's new or important information: <i>The data centre was designed <b>by</b> a team of Danish engineers.</i></p>
+
+      <h3>3. Verbs with two objects</h3>
+      <p><i>They gave me access.</i> → <i><b>I was given</b> access.</i> (more natural) or <i>Access <b>was given to me</b>.</i></p>
+
+      <h3>4. "It is said that…" / "He is said to…" — reporting passive</h3>
+      <p>With <i>say, believe, think, know, expect, report, consider</i>:</p>
+      <p><i><b>It is said that</b> the company is going to be sold.</i><br>
+         <i>The company <b>is said to be</b> in trouble.</i> (present)<br>
+         <i>The CEO <b>is believed to have resigned</b> last week.</i> (past → <b>to have + participle</b>)</p>
+      <p>This is how English translates Spanish <b>"se dice que / se cree que"</b> — a Part 4 classic.</p>
+
+      <h3>5. Causative: have / get something done</h3>
+      <p>Someone else does a job <b>for you</b> (usually a service you pay for). Structure: <b>have/get + object + past participle</b>.</p>
+      <p><i>I<b>'m having</b> my laptop <b>repaired</b>.</i> · <i>We <b>had</b> the office <b>painted</b>.</i> · <i>I need to <b>get</b> my eyes <b>tested</b>.</i> (<i>get</i> is more informal)</p>
+      <p>Also for <b>bad experiences</b> that happen to you: <i>She <b>had</b> her phone <b>stolen</b> at the conference.</i></p>
+      <p><b>Active causative</b> — you say <i>who</i> does it:<br>
+         <b>have someone do</b> (no <i>to</i>): <i>The manager <b>had the intern check</b> the logs.</i><br>
+         <b>get someone to do</b> (with <i>to</i>): <i>I'll <b>get IT to reset</b> my password.</i></p>
+
+      <h3>6. Spanish speaker traps</h3>
+      <ul>
+        <li><b>"Me corté el pelo"</b> (at the hairdresser's) → <i>I <b>had</b> my hair <b>cut</b></i>. <i>I cut my hair</i> means you did it yourself!</li>
+        <li><b>"Me robaron el portátil"</b> → <i>My laptop was stolen</i> / <i>I had my laptop stolen</i>. ✗ <i>I was stolen</i> (that means someone stole <b>you</b>).</li>
+        <li><b>"Se habla inglés"</b> → <i>English <b>is spoken</b></i>. Spanish <i>se</i> is often an English passive.</li>
+        <li><b>Intransitive verbs have no passive</b>: <i>happen, occur, arrive, die, appear, disappear</i>. ✗ <i>The accident was happened</i> → ✓ <i>The accident <b>happened</b></i>.</li>
+        <li><b>was born</b> is always passive: ✗ <i>I born in 1985</i> → ✓ <i>I <b>was born</b> in 1985</i>.</li>
+      </ul>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>People say that the new CEO is very strict. (SAID)</i> → The new CEO <b>is said to be</b> very strict.</p>
+      <p><i>A mechanic is going to repair my car tomorrow. (HAVE)</i> → I'm going to <b>have my car repaired</b> tomorrow.</p>
+      <p><i>They haven't told us about the changes yet. (BEEN)</i> → We <b>haven't been told about</b> the changes yet.</p>
+    `
   }
 ];

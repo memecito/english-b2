@@ -9,10 +9,10 @@ estructura del juego.
 
 **Estado actual (2026-09-28):** motor funcionando, repo git propio
 (GitHub privado: `memecito/english-b2`), copy con temática informática/espacio/ciencia ficción,
-vocabulario migrado (14 palabras) y **6 temas de gramática, 136
+vocabulario migrado (14 palabras) y **7 temas de gramática, 164
 frases**: relative clauses, present perfect vs past simple, verb
 patterns, word formation (Part 3), unreal past, conditionals (con
-*if* vs *because*). Resto de gramática
+*if* vs *because*), passive + causative. Resto de gramática
 pendiente — el usuario quiere montarla casi del tirón. No es un PDF que extraer
 (a diferencia de `ingles-ari`): la fuente es material propio ya
 existente:
@@ -75,7 +75,7 @@ como primer tema).
 ## Pendiente
 
 - Resto de gramática B2, siguiendo el orden del plan: pasados
-  narrativos (used to / would), pasiva + causativa, modales
+  narrativos (used to / would), modales
   (deducción, past modals), reported speech, linking words
   (although/despite…), comparativos/cuantificadores/artículos.
   Errores diagnosticados aún sin tema propio: concordancia de
