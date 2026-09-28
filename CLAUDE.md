@@ -9,9 +9,10 @@ estructura del juego.
 
 **Estado actual (2026-09-28):** motor funcionando, repo git propio
 (sin remoto), copy con temática informática/espacio/ciencia ficción,
-vocabulario migrado (14 palabras) y **primer tema de gramática:
-relative clauses** (teoría + 26 frases). Resto de gramática pendiente —
-el usuario quiere montarla casi del tirón. No es un PDF que extraer
+vocabulario migrado (14 palabras) y **5 temas de gramática, 112
+frases**: relative clauses, present perfect vs past simple, verb
+patterns, word formation (Part 3), unreal past. Resto de gramática
+pendiente — el usuario quiere montarla casi del tirón. No es un PDF que extraer
 (a diferencia de `ingles-ari`): la fuente es material propio ya
 existente:
 
@@ -56,6 +57,7 @@ como primer tema).
   Hello World → IA singular, mascota 🤖) y **`norm(s, stripArticle)`:
   en gramática no se quita el `to`/`the`/`a` inicial** — en B2 eso es
   justo lo que se evalúa (`to whom` vs `whom`, `to go` vs `going`).
+  Además `norm()` elimina apóstrofos (`hadn't` = `hadnt` = `hadn’t`).
   `ingles-ari` sigue quitándolo (ahí no se ha visto que moleste). Cualquier mejora
   de motor hecha en `ingles-ari` (Leitner, tipos de ejercicio, UI) NO
   se propaga sola aquí — si se quiere, portarla a mano y ver si
@@ -71,11 +73,15 @@ como primer tema).
 
 ## Pendiente
 
-- Resto de gramática B2, siguiendo el orden del plan (present perfect
-  vs past simple, pasados narrativos, condicionales + wish, pasiva +
-  causativa, modales, reported speech, gerund/infinitive con
-  *recommend + -ing* reforzado, comparativos) y un tema de word
-  formation (Part 3).
+- Resto de gramática B2, siguiendo el orden del plan: pasados
+  narrativos (used to / would), condicionales 0-3 + mixed, pasiva +
+  causativa, modales (deducción, past modals), reported speech,
+  linking words (although/despite…), comparativos/cuantificadores/
+  artículos. Errores diagnosticados aún sin tema propio: *if* vs
+  *because*, concordancia de plurales, *as...as*.
+- Vocabulario: el usuario va a generar una lista con otra IA en el
+  formato de `data/translations.txt` — revisarla al importarla
+  (traducciones, duplicados, categorías coherentes).
 - Revisar si el formato Part 4 (respuesta de 2-5 palabras) necesita
   que el motor acepte variantes con más flexibilidad que la lista
   `answers` exacta.

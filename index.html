@@ -334,6 +334,7 @@ const dayKey = (d = new Date()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-
 const ARTICLES = new Set(["el", "la", "los", "las", "un", "una", "unos", "unas", "the", "a", "an", "to"]);
 function norm(s, stripArticle = true) {
   let t = s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/['’]/g, "") // hadn't = hadnt = hadn’t (apóstrofo tipográfico del móvil)
     .replace(/[^a-z0-9@ ]+/g, " ").replace(/\s+/g, " ").trim();
   const parts = t.split(" ");
   if (stripArticle && parts.length > 1 && ARTICLES.has(parts[0])) t = parts.slice(1).join(" ");

@@ -47,5 +47,138 @@ const GRAMMAR = {
       { id: "rel25", text: "We tested three tools, none of ___ worked offline.", answers: ["which"] },
       { id: "rel26", text: "This is the framework on ___ the whole platform is built.", answers: ["which"] }
     ]
+  },
+  "present-perfect": {
+    title: "Present perfect vs past simple",
+    emoji: "⏳",
+    topicId: "present-perfect",
+    items: [
+      // tiempo terminado vs conectado con el presente
+      { id: "pp1", text: "I ___ (work) here since 2020.", answers: ["have worked", "have been working"] },
+      { id: "pp2", text: "We ___ (migrate) the database last weekend.", answers: ["migrated"] },
+      { id: "pp3", text: "She ___ (be) our team lead for three years, and she's great.", answers: ["has been"] },
+      { id: "pp4", text: "I ___ (start) this job two years ago.", answers: ["started"] },
+      { id: "pp5", text: "The server ___ (crash) three times this week — and it's only Wednesday.", answers: ["has crashed"] },
+      { id: "pp6", text: "The server ___ (crash) three times last week.", answers: ["crashed"] },
+      { id: "pp7", text: "Humans first ___ (land) on the Moon in 1969.", answers: ["landed"] },
+      { id: "pp8", text: "Have you ever ___ (use) Terraform in production?", answers: ["used"] },
+      { id: "pp9", text: "This is the first time I ___ (give) a presentation in English.", answers: ["have given"] },
+      { id: "pp10", text: "It's two years since I last ___ (see) her.", answers: ["saw"] },
+      { id: "pp11", text: "I ___ (not see) her for two years.", answers: ["haven't seen", "have not seen"] },
+      { id: "pp12", text: "The release is late because we ___ (not finish) the tests yet.", answers: ["haven't finished", "have not finished"] },
+      { id: "pp13", text: "I'm exhausted — I ___ (debug) this code all morning.", answers: ["have been debugging"] },
+      // for / since / ago
+      { id: "pp14", text: "I've lived in Madrid ___ 2015.", answers: ["since"] },
+      { id: "pp15", text: "I've lived in Madrid ___ eleven years.", answers: ["for"] },
+      { id: "pp16", text: "She left the company three months ___.", answers: ["ago"] },
+      { id: "pp17", text: "How long ___ you known your manager?", answers: ["have"] },
+      // been / gone
+      { id: "pp18", text: "Where's Ana? — She's ___ to the client's office. She'll be back at five.", answers: ["gone"] },
+      { id: "pp19", text: "I've ___ to Houston twice, but I've never seen a rocket launch.", answers: ["been"] },
+      // just / already / yet
+      { id: "pp20", text: "Don't send the invoice — I've ___ sent it.", answers: ["already"] },
+      { id: "pp21", text: "Has the client replied ___?", answers: ["yet"] },
+      { id: "pp22", text: "I've ___ finished the report, literally two minutes ago.", answers: ["just"] }
+    ]
+  },
+  "verb-patterns": {
+    title: "Verb patterns: -ing vs to + infinitive",
+    emoji: "🔀",
+    topicId: "verb-patterns",
+    items: [
+      // recommend + -ing (error fosilizado: varias frases a propósito)
+      { id: "vp1", text: "I'd recommend ___ (use) a password manager.", answers: ["using"] },
+      { id: "vp2", text: "Our consultant recommended ___ (move) the servers to the cloud.", answers: ["moving"] },
+      { id: "vp3", text: "I really recommend ___ (read) the documentation first.", answers: ["reading"] },
+      // verb + -ing
+      { id: "vp4", text: "She suggested ___ (postpone) the meeting until Monday.", answers: ["postponing"] },
+      { id: "vp5", text: "You should avoid ___ (deploy) on Fridays.", answers: ["deploying"] },
+      { id: "vp6", text: "Have you finished ___ (write) the report?", answers: ["writing"] },
+      { id: "vp7", text: "Would you mind ___ (share) your screen?", answers: ["sharing"] },
+      { id: "vp8", text: "We're considering ___ (hire) another DevOps engineer.", answers: ["hiring"] },
+      { id: "vp9", text: "The engineers kept ___ (try) until the rocket engine finally fired.", answers: ["trying"] },
+      // verb + to + infinitive
+      { id: "vp10", text: "We decided ___ (migrate) to Kubernetes.", answers: ["to migrate"] },
+      { id: "vp11", text: "They refused ___ (sign) the contract.", answers: ["to sign"] },
+      { id: "vp12", text: "I can't afford ___ (lose) this client.", answers: ["to lose"] },
+      { id: "vp13", text: "We managed ___ (fix) the bug before the demo.", answers: ["to fix"] },
+      { id: "vp14", text: "The vendor promised ___ (deliver) the patch this week.", answers: ["to deliver"] },
+      // remember / stop
+      { id: "vp15", text: "Remember ___ (lock) your laptop before you leave your desk.", answers: ["to lock"] },
+      { id: "vp16", text: "I remember ___ (install) this version, but now it's gone.", answers: ["installing"] },
+      { id: "vp17", text: "He stopped ___ (smoke) last year and feels much better.", answers: ["smoking"] },
+      { id: "vp18", text: "On the way to the office, I stopped ___ (buy) a coffee.", answers: ["to buy"] },
+      // preposición + -ing (incluido "to" preposición)
+      { id: "vp19", text: "I look forward to ___ (hear) from you.", answers: ["hearing"] },
+      { id: "vp20", text: "I'm used to ___ (work) remotely — I've done it for years.", answers: ["working"] },
+      { id: "vp21", text: "She's thinking about ___ (take) the B2 exam in December.", answers: ["taking"] },
+      { id: "vp22", text: "Never push to production without ___ (test) first.", answers: ["testing"] }
+    ]
+  },
+  "word-formation": {
+    title: "Word formation (Part 3)",
+    emoji: "🧩",
+    topicId: "word-formation",
+    items: [
+      // verbo -> sustantivo (punto débil)
+      { id: "wf1", text: "The ___ of the new CRM took three months. (IMPLEMENT)", answers: ["implementation"] },
+      { id: "wf2", text: "The ___ of the new servers was delayed by customs. (ARRIVE)", answers: ["arrival"] },
+      { id: "wf3", text: "She made the ___ to leave the project. (DECIDE)", answers: ["decision"] },
+      { id: "wf4", text: "The launch was delayed, which was a big ___ for the team. (DISAPPOINT)", answers: ["disappointment"] },
+      { id: "wf5", text: "The ___ of the space station was a huge international effort. (CONSTRUCT)", answers: ["construction"] },
+      { id: "wf6", text: "Write a short ___ of the problem in the ticket. (DESCRIBE)", answers: ["description"] },
+      { id: "wf7", text: "After months of ___, we finally signed the contract. (NEGOTIATE)", answers: ["negotiations", "negotiation"] },
+      { id: "wf8", text: "Over two million ___ came to the space museum last year. (VISIT)", answers: ["visitors"] },
+      // adjetivo -> sustantivo
+      { id: "wf9", text: "Security is everyone's ___. (RESPONSIBLE)", answers: ["responsibility"] },
+      { id: "wf10", text: "His ___ to learn new tools impressed the interviewers. (WILLING)", answers: ["willingness"] },
+      { id: "wf11", text: "Debugging legacy code requires a lot of ___. (PATIENT)", answers: ["patience"] },
+      // -> adjetivo
+      { id: "wf12", text: "The update was completely ___ — nothing changed after installing it. (USE)", answers: ["useless"] },
+      { id: "wf13", text: "Changing the config by hand is ___ — use Terraform instead. (RISK)", answers: ["risky"] },
+      { id: "wf14", text: "The new process is much more ___ than the old one. (EFFECT)", answers: ["effective"] },
+      // -> adverbio
+      { id: "wf15", text: "Please read the instructions ___. (CARE)", answers: ["carefully"] },
+      { id: "wf16", text: "Storing passwords in plain text is ___ dangerous. (EXTREME)", answers: ["extremely"] },
+      { id: "wf17", text: "The dashboard ___ refreshes every five minutes. (AUTOMATIC)", answers: ["automatically"] },
+      { id: "wf18", text: "The rocket travelled ___ fast. (INCREDIBLE)", answers: ["incredibly"] },
+      { id: "wf19", text: "The job interview was ___ relaxed. (SURPRISE)", answers: ["surprisingly"] },
+      { id: "wf20", text: "We back up the database ___. (REGULAR)", answers: ["regularly"] },
+      // prefijos negativos (y dobles cambios)
+      { id: "wf21", text: "It's ___ to access production without the VPN. (POSSIBLE)", answers: ["impossible"] },
+      { id: "wf22", text: "Sharing credentials on Slack is totally ___. (RESPONSIBLE)", answers: ["irresponsible"] },
+      { id: "wf23", text: "Installing pirated software on a work laptop is ___. (LEGAL)", answers: ["illegal"] },
+      { id: "wf24", text: "The website will be ___ during the maintenance window. (AVAILABLE)", answers: ["unavailable"] },
+      { id: "wf25", text: "The server went down ___, in the middle of the demo. (EXPECT)", answers: ["unexpectedly"] }
+    ]
+  },
+  "unreal-past": {
+    title: "Unreal past: wish, if only, would rather",
+    emoji: "🌀",
+    topicId: "unreal-past",
+    items: [
+      // wish + past perfect (arrepentimiento)
+      { id: "up1", text: "I wish I ___ (study) harder for the exam.", answers: ["had studied"] },
+      { id: "up2", text: "If only we ___ (not deploy) on Friday!", answers: ["hadn't deployed", "had not deployed"] },
+      { id: "up3", text: "I wish I ___ (not accept) that job offer — the project was a disaster.", answers: ["hadn't accepted", "had not accepted"] },
+      { id: "up4", text: "I wish you ___ (tell) me about the change yesterday.", answers: ["had told"] },
+      // wish + past simple (presente)
+      { id: "up5", text: "I wish I ___ (speak) better English in meetings.", answers: ["spoke", "could speak"] },
+      { id: "up6", text: "I wish I ___ (be) on the first mission to Mars.", answers: ["were", "was"] },
+      { id: "up7", text: "If only I ___ (have) more time to prepare.", answers: ["had"] },
+      { id: "up8", text: "I wish I ___ (can) come to the launch, but I'm on call.", answers: ["could"] },
+      // wish + would
+      { id: "up9", text: "I wish my colleague ___ (stop) interrupting me.", answers: ["would stop"] },
+      { id: "up10", text: "I wish it ___ (stop) raining.", answers: ["would stop"] },
+      // it's time / would rather / as if
+      { id: "up11", text: "It's time we ___ (update) this legacy system.", answers: ["updated"] },
+      { id: "up12", text: "It's high time the company ___ (invest) in security.", answers: ["invested"] },
+      { id: "up13", text: "I'd rather you ___ (not share) the password on Slack.", answers: ["didn't share", "did not share"] },
+      { id: "up14", text: "I'd rather ___ (work) from home tomorrow.", answers: ["work"] },
+      { id: "up15", text: "He talks as if he ___ (invent) the internet.", answers: ["had invented", "invented"] },
+      { id: "up16", text: "She looked as if she ___ (see) a ghost.", answers: ["had seen"] },
+      // conexión con el 3er condicional
+      { id: "up17", text: "If I ___ (know) about the outage, I would have called you.", answers: ["had known"] }
+    ]
   }
 };
