@@ -9,9 +9,10 @@ estructura del juego.
 
 **Estado actual (2026-09-28):** motor funcionando, repo git propio
 (sin remoto), copy con temática informática/espacio/ciencia ficción,
-vocabulario migrado (14 palabras) y **5 temas de gramática, 112
+vocabulario migrado (14 palabras) y **6 temas de gramática, 136
 frases**: relative clauses, present perfect vs past simple, verb
-patterns, word formation (Part 3), unreal past. Resto de gramática
+patterns, word formation (Part 3), unreal past, conditionals (con
+*if* vs *because*). Resto de gramática
 pendiente — el usuario quiere montarla casi del tirón. No es un PDF que extraer
 (a diferencia de `ingles-ari`): la fuente es material propio ya
 existente:
@@ -74,11 +75,11 @@ como primer tema).
 ## Pendiente
 
 - Resto de gramática B2, siguiendo el orden del plan: pasados
-  narrativos (used to / would), condicionales 0-3 + mixed, pasiva +
-  causativa, modales (deducción, past modals), reported speech,
-  linking words (although/despite…), comparativos/cuantificadores/
-  artículos. Errores diagnosticados aún sin tema propio: *if* vs
-  *because*, concordancia de plurales, *as...as*.
+  narrativos (used to / would), pasiva + causativa, modales
+  (deducción, past modals), reported speech, linking words
+  (although/despite…), comparativos/cuantificadores/artículos.
+  Errores diagnosticados aún sin tema propio: concordancia de
+  plurales, *as...as*.
 - Vocabulario: el usuario va a generar una lista con otra IA en el
   formato de `data/translations.txt` — revisarla al importarla
   (traducciones, duplicados, categorías coherentes).

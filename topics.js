@@ -233,5 +233,67 @@ const TOPICS = [
       <p><i>I regret not studying harder. (WISH)</i> → I <b>wish I had studied</b> harder.</p>
       <p><i>We should really update this system now. (TIME)</i> → It's <b>time we updated</b> this system.</p>
     `
+  },
+  {
+    id: "conditionals",
+    emoji: "🔮",
+    title: "Conditionals (0, 1, 2, 3, mixed) + unless, in case, if vs because",
+    html: `
+      <p>A conditional has two parts: the <b>condition</b> (<i>if</i> clause) and the <b>result</b>. The tense you choose shows <b>how real</b> the situation is — not only when it happens. The <i>if</i> clause can go first (then use a comma) or second (no comma).</p>
+
+      <h3>1. The four basic types</h3>
+      <table>
+        <thead><tr><th>Type</th><th>Meaning</th><th>If clause</th><th>Result</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>Zero</b></td><td>always true, rules, facts</td><td>present simple</td><td>present simple</td><td>If the build <b>fails</b>, the pipeline <b>stops</b>.</td></tr>
+          <tr><td><b>First</b></td><td>real, possible future</td><td>present simple</td><td>will + infinitive</td><td>If the client <b>approves</b> the budget, we<b>'ll start</b> on Monday.</td></tr>
+          <tr><td><b>Second</b></td><td>unreal / unlikely present or future</td><td>past simple</td><td>would + infinitive</td><td>If I <b>had</b> more time, I <b>would learn</b> Rust.</td></tr>
+          <tr><td><b>Third</b></td><td>unreal past (didn't happen)</td><td>past perfect</td><td>would have + participle</td><td>If we <b>had tested</b> it, we <b>wouldn't have lost</b> the data.</td></tr>
+        </tbody>
+      </table>
+      <p>In the result you can use other modals instead of <i>will/would</i>: <i>If you finish early, you <b>can</b> leave.</i> · <i>If I'd known, I <b>could have</b> helped.</i></p>
+
+      <h3>2. Never "will" or "would" in the if clause ⚠️</h3>
+      <p>Spanish uses the subjunctive here (<i>si <b>aprueba</b>, cuando <b>termine</b></i>). English uses a <b>present tense</b> for the future after <i>if, when, as soon as, unless, before, after, until</i>:</p>
+      <p>✗ <i>If the client <b>will approve</b>…</i> → ✓ <i>If the client <b>approves</b>…</i><br>
+         ✗ <i>I'll call you when the deployment <b>will finish</b>.</i> → ✓ <i>…when the deployment <b>finishes</b>.</i><br>
+         ✗ <i>If we <b>would have tested</b> it…</i> → ✓ <i>If we <b>had tested</b> it…</i></p>
+
+      <h3>3. "If I were you" — advice</h3>
+      <p><i>If I <b>were</b> you, I<b>'d ask</b> for a pay rise.</i> <i>Were</i> for every person is the safe exam choice (<i>was</i> is common in speech).</p>
+
+      <h3>4. Mixed conditionals — past and present crossed</h3>
+      <p><b>Past condition → present result</b>: if + past perfect, would + infinitive<br>
+         <i>If I <b>had accepted</b> the job in London, I <b>would be living</b> there now.</i></p>
+      <p><b>Present (permanent) condition → past result</b>: if + past simple, would have + participle<br>
+         <i>If I <b>weren't</b> so bad at maths, I <b>would have studied</b> engineering.</i> (I'm still bad at maths)</p>
+
+      <h3>5. Alternatives to "if"</h3>
+      <table>
+        <thead><tr><th>Word</th><th>Meaning</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>unless</b></td><td>if … not</td><td>We won't finish <b>unless</b> we get more people. (= if we don't get)</td></tr>
+          <tr><td><b>as long as / provided (that) / providing</b></td><td>only if (a condition you insist on)</td><td>You can work from home <b>as long as</b> you attend the Monday meeting.</td></tr>
+          <tr><td><b>in case</b></td><td>as a precaution — <b>not</b> a condition</td><td>Take your charger <b>in case</b> the meeting runs late.</td></tr>
+          <tr><td><b>otherwise</b></td><td>if not (starts a new clause)</td><td>Save your work, <b>otherwise</b> you'll lose it.</td></tr>
+        </tbody>
+      </table>
+      <p><b>in case vs if</b>: <i>I'll take an umbrella <b>in case</b> it rains</i> (I take it anyway, just in case) ≠ <i>I'll take an umbrella <b>if</b> it rains</i> (only if it's raining).</p>
+
+      <h3>6. if vs because ⚠️ your diagnosed error</h3>
+      <p><b>if</b> = condition — we don't know if it's true or it hasn't happened yet.<br>
+         <b>because</b> = reason — it <b>is</b> true, and it explains why.</p>
+      <p><i>I'm learning English <b>because</b> my company needs it.</i> (a fact → reason)<br>
+         <i>I'll join the call <b>if</b> I finish my meeting in time.</i> (not known yet → condition)</p>
+      <p>Test: can you say "and it's true that…"? Then it's <b>because</b>. Spanish "<i>si</i>" and "<i>como</i>" (= since/because: <i>como está abierto a conocer gente…</i>) are easy to mix up here.</p>
+
+      <h3>Link with unreal past</h3>
+      <p><i>wish / if only</i> use the same logic as the 2nd and 3rd conditionals — see the <b>Unreal past</b> topic.</p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>We won't go if it doesn't stop raining. (UNLESS)</i> → We won't go <b>unless it stops</b> raining.</p>
+      <p><i>I didn't know you were ill, so I didn't visit you. (HAD)</i> → If I <b>had known you were</b> ill, I would have visited you.</p>
+      <p><i>We only failed because of the bad weather. (BEEN)</i> → If it <b>hadn't been for</b> the bad weather, we wouldn't have failed.</p>
+    `
   }
 ];

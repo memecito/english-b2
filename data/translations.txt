@@ -14,3 +14,714 @@ artefact / artifact|artefacto,objeto antiguo,objeto histórico|historia
 contemporary|contemporáneo,actual|historia
 renovation|reforma,renovación,rehabilitación
 repurpose|reutilizar,dar otro uso,reconvertir
+apply for a job|solicitar un trabajo,postular a un empleo|trabajo
+meet a deadline|cumplir un plazo,llegar a tiempo|trabajo
+work overtime|hacer horas extras,trabajar horas extras|trabajo
+earn a living|ganarse la vida|trabajo
+climb the career ladder|ascender laboralmente,hacer carrera|trabajo
+take on responsibility|asumir responsabilidades,aceptar responsabilidades|trabajo
+step down|dimitir,renunciar|trabajo
+call in sick|avisar de enfermedad,llamar diciendo que estás enfermo|trabajo
+lay off|despedir,suspender temporalmente|trabajo
+make redundant|despedir por reajuste,despedir|trabajo
+hand in one's notice|presentar la dimisión,dar el preaviso|trabajo
+clock in / clock on|fichar al entrar,marcar la entrada|trabajo
+clock out / clock off|fichar al salir,marcar la salida|trabajo
+work under pressure|trabajar bajo presión|trabajo
+carry out a task|llevar a cabo una tarea,realizar una tarea|trabajo
+deal with clients|tratar con clientes,atender a clientes|trabajo
+fill a vacancy|cubrir una vacante|trabajo
+hold a meeting|celebrar una reunión,tener una reunión|trabajo
+chair a meeting|presidir una reunión,dirigir una reunión|trabajo
+gain experience|adquirir experiencia,ganar experiencia|trabajo
+pay rise / pay raise|aumento de sueldo,subida de sueldo|trabajo
+job security|estabilidad laboral,seguridad en el trabajo|trabajo
+workplace|lugar de trabajo,centro de trabajo|trabajo
+workload|carga de trabajo,volumen de trabajo|trabajo
+flexible working hours|horario flexible,horas de trabajo flexibles|trabajo
+shift work|trabajo por turnos|trabajo
+maternity leave|baja por maternidad|trabajo
+paternity leave|baja por paternidad|trabajo
+sick leave|baja por enfermedad|trabajo
+annual leave|vacaciones anuales,permiso anual|trabajo
+job satisfaction|satisfacción laboral|trabajo
+career prospects|perspectivas profesionales,oportunidades de ascenso|trabajo
+minimum wage|salario mínimo,sueldo mínimo|trabajo
+salary|salario,sueldo|trabajo
+wages|jornal,salario semanal|trabajo
+fringe benefits / perks|beneficios adicionales,ventajas laborales|trabajo
+teleworking / telecommuting|teletrabajo|trabajo
+work-life balance|conciliación laboral,equilibrio laboral y personal|trabajo
+probationary period|periodo de prueba|trabajo
+cover letter / covering letter|carta de presentación|trabajo
+curriculum vitae / resume|currículum,hoja de vida|trabajo
+job advert / job advertisement|oferta de empleo,anuncio de trabajo|trabajo
+human resources|recursos humanos|trabajo
+chief executive officer|director ejecutivo,director general|trabajo
+managing director|director general,director gerente|trabajo
+line manager|jefe directo,superior inmediato|trabajo
+colleague / coworker|compañero de trabajo,colega|trabajo
+trainee / apprentice|aprendiz,en prácticas|trabajo
+intern|becario,pasante|trabajo
+internship|pasantía,prácticas|trabajo
+headhunt|captar talento,fichar|trabajo
+take time off|tomarse un descanso,tomarse días libres|trabajo
+fall behind schedule|retrasarse,quedarse atrás|trabajo
+ahead of schedule|antes de lo previsto,adelantado|trabajo
+behind schedule|con retraso,atrasado|trabajo
+on schedule|a tiempo,según lo previsto|trabajo
+reach an agreement|llegar a un acuerdo,alcanzar un acuerdo|trabajo
+draw up a contract|redactar un contrato,elaborar un contrato|trabajo
+sign a contract|firmar un contrato|trabajo
+terminate a contract|rescindir un contrato,dar por finalizado un contrato|trabajo
+run a business|dirigir un negocio,gestionar una empresa|trabajo
+set up a company|fundar una empresa,crear una empresa|trabajo
+go on strike|hacer huelga,ir a la huelga|trabajo
+trade union / labor union|sindicato|trabajo
+pension scheme|plan de pensiones|trabajo
+retire|jubilarse,retirarse|trabajo
+retirement age|edad de jubilación|trabajo
+heavy workload|pesada carga de trabajo,mucho trabajo|trabajo
+tight deadline|plazo ajustado,fecha límite estricta|trabajo
+miss a deadline|no cumplir un plazo,pasarse del plazo|trabajo
+burnout|agotamiento laboral,desgaste profesional|trabajo
+freelancer|trabajador autónomo,autónomo|trabajo
+self-employed|autónomo,trabajador por cuenta propia|trabajo
+part-time job|trabajo a tiempo parcial,empleo de media jornada|trabajo
+full-time job|trabajo a tiempo completo,empleo a jornada completa|trabajo
+permanent contract|contrato indefinido,contrato fijo|trabajo
+temporary contract|contrato temporal|trabajo
+zero-hours contract|contrato de cero horas|trabajo
+job applicant|candidato,solicitante de empleo|trabajo
+job description|descripción del puesto|trabajo
+job opening / vacancy|vacante,puesto libre|trabajo
+job fair|feria de empleo|trabajo
+job hunt|búsqueda de empleo|trabajo
+be promoted|ser ascendido,obtener un ascenso|trabajo
+get a promotion|conseguir un ascenso,obtener un ascenso|trabajo
+pass over for promotion|pasar por alto para un ascenso,no ascender|trabajo
+dismiss|despedir,cesar|trabajo
+sack / fire|despedir,echar|trabajo
+give notice|dar el preaviso,avisar|trabajo
+hand in one's resignation|presentar la renuncia,dimitir|trabajo
+take over|asumir el control,hacerse cargo|trabajo
+take on staff|contratar personal,emplear personal|trabajo
+recruit|reclutar,contratar|trabajo
+recruitment agency|agencia de colocación,agencia de contratación|trabajo
+interviewee|entrevistado|trabajo
+interviewer|entrevistador|trabajo
+attend an interview|asistir a una entrevista,hacer una entrevista|trabajo
+job offer|oferta de empleo,propuesta de trabajo|trabajo
+turn down an offer|rechazar una oferta|trabajo
+accept an offer|aceptar una oferta|trabajo
+starting salary|sueldo inicial,salario inicial|trabajo
+negotiate a salary|negociar un sueldo,negociar un salario|trabajo
+performance review|evaluación del desempeño,revisión de rendimiento|trabajo
+appraisal|evaluación,valoración|trabajo
+team player|buen compañero,persona que colabora bien|trabajo
+teamwork|trabajo en equipo|trabajo
+leadership skills|dotes de liderazgo,habilidades de liderazgo|trabajo
+problem-solving skills|capacidad de resolver problemas,resolución de problemas|trabajo
+interpersonal skills|habilidades interpersonales|trabajo
+communication skills|habilidades comunicativas|trabajo
+hardworking|trabajador,diligente|trabajo
+reliable|fiable,de confianza|trabajo
+punctual|puntual|trabajo
+conscientious|concienzudo,meticuloso|trabajo
+efficient|eficiente,eficaz|trabajo
+skilled worker|trabajador cualificado|trabajo
+unskilled worker|trabajador no cualificado|trabajo
+blue-collar worker|obrero,trabajador manual|trabajo
+white-collar worker|empleado de oficina,oficinista|trabajo
+office environment|ambiente de oficina|trabajo
+open-plan office|oficina abierta,oficina sin divisiones|trabajo
+cubicle|cubículo|trabajo
+workstation|puesto de trabajo,estación de trabajo|trabajo
+stationery|material de oficina|trabajo
+office supplies|suministros de oficina|trabajo
+business trip|viaje de negocios|trabajo
+expense account|cuenta de gastos|trabajo
+commute|desplazarse al trabajo,viaje diario al trabajo|trabajo
+commuter|persona que se desplaza al trabajo|trabajo
+flexitime|horario flexible|trabajo
+core hours|horas obligatorias,horario central|trabajo
+day shift|turno de día|trabajo
+night shift|turno de noche|trabajo
+graveyard shift|turno de madrugada|trabajo
+split shift|jornada partida|trabajo
+overtime pay|pago de horas extras|trabajo
+bonus|prima,bonificación|trabajo
+commission|comisión|trabajo
+profit sharing|reparto de beneficios,participación en beneficios|trabajo
+health insurance|seguro médico|trabajo
+company car|coche de empresa|trabajo
+travel allowance|dieta de viaje,plus de transporte|trabajo
+relocation package|ayuda de traslado,paquete de reubicación|trabajo
+sick pay|prestación por enfermedad,pago por baja médica|trabajo
+redundancy pay|indemnización por despido|trabajo
+severance pay|indemnización por despido,finiquito|trabajo
+unemployment benefit / the dole|prestación por desempleo,subsidio de desempleo|trabajo
+be unemployed / be out of work|estar en paro,estar desempleado|trabajo
+job market|mercado laboral|trabajo
+labor shortage|escasez de mano de obra|trabajo
+equal opportunities|igualdad de oportunidades|trabajo
+glass ceiling|techo de cristal|trabajo
+gender pay gap|brecha salarial de género|trabajo
+work ethic|ética laboral,ética de trabajo|trabajo
+workstation ergonomics|ergonomía del puesto|trabajo
+occupational hazard|riesgo laboral|trabajo
+health and safety|seguridad e higiene laboral,salud y seguridad|trabajo
+first aider|socorrista laboral,encargado de primeros auxilios|trabajo
+fire drill|simulacro de incendio|trabajo
+assembly point|punto de encuentro,punto de reunión|trabajo
+board of directors|junta directiva,consejo de administración|trabajo
+shareholder|accionista|trabajo
+stakeholder|parte interesada,interesado|trabajo
+headquarters|sede central,oficina principal|trabajo
+branch office|sucursal,filial|trabajo
+subsidiary|filial,subsidiaria|trabajo
+department head|jefe de departamento|trabajo
+supervisor|supervisor,encargado|trabajo
+subordinate|subordinado|trabajo
+clerical work|trabajo administrativo,trabajo de oficina|trabajo
+paperwork|papeleo,trámites|trabajo
+file documents|archivar documentos|trabajo
+keep records|llevar registros,guardar registros|trabajo
+minute-taker|secretario de actas,redactor de actas|trabajo
+take the minutes|levantar acta,tomar acta|trabajo
+agenda|orden del día,agenda de reunión|trabajo
+brainstorm|hacer una lluvia de ideas,aportar ideas|trabajo
+delegate tasks|delegar tareas|trabajo
+assign a task|asignar una tarea|trabajo
+prioritize tasks|priorizar tareas|trabajo
+multitask|hacer varias tareas a la vez,multitarea|trabajo
+meet expectations|cumplir las expectativas|trabajo
+fall short of expectations|no alcanzar las expectativas,quedarse corto|trabajo
+exceed expectations|superar las expectativas|trabajo
+achieve a goal|alcanzar un objetivo,lograr una meta|trabajo
+set a target|establecer un objetivo,fijar una meta|trabajo
+performance target|objetivo de rendimiento|trabajo
+key performance indicator|indicador clave de rendimiento|trabajo
+sales target|objetivo de ventas|trabajo
+client base|cartera de clientes,base de clientes|trabajo
+customer service|atención al cliente,servicio de atención al cliente|trabajo
+client feedback|opiniones de clientes,comentarios de clientes|trabajo
+handle a complaint|gestionar una queja,atender una reclamación|trabajo
+resolve a dispute|resolver una disputa,solucionar un conflicto|trabajo
+mediate|mediar,intervenir|trabajo
+negotiate a deal|negociar un acuerdo,pactar un trato|trabajo
+close a deal|cerrar un trato,cerrar un acuerdo|trabajo
+clinch a deal|rematar un acuerdo,cerrar un trato|trabajo
+sign an agreement|firmar un acuerdo|trabajo
+breach a contract|incumplir un contrato|trabajo
+terms and conditions|términos y condiciones|trabajo
+non-disclosure agreement|acuerdo de confidencialidad|trabajo
+clause|cláusula|trabajo
+fine print|letra pequeña|trabajo
+payroll|nómina,plantilla|trabajo
+payslip|nómina,recibo de sueldo|trabajo
+gross salary|salario bruto,sueldo bruto|trabajo
+net salary|salario neto,sueldo neto|trabajo
+income tax|impuesto sobre la renta,IRPF|trabajo
+tax deduction|deducción fiscal,retención de impuestos|trabajo
+national insurance|seguridad social|trabajo
+pension contribution|aportación a la pensión,cotización de jubilación|trabajo
+annual turnover|facturación anual,volumen de ventas anual|trabajo
+staff turnover|rotación de personal|trabajo
+absenteeism|absentismo laboral|trabajo
+morale|moral del personal,ánimo|trabajo
+incentive|incentivo|trabajo
+raise morale|subir la moral,levantar los ánimos|trabajo
+team-building activity|actividad de integración,dinámica de equipo|trabajo
+away day|jornada de convivencia,día de trabajo fuera|trabajo
+training course|curso de formación,curso de capacitación|trabajo
+on-the-job training|formación en el puesto de trabajo,capacitación práctica|trabajo
+in-house training|formación interna|trabajo
+retrain|reciclarse profesionalmente,volver a capacitarse|trabajo
+upskill|mejorar competencias,adquirir nuevas competencias|trabajo
+professional development|desarrollo profesional|trabajo
+career path|trayectoria profesional,carrera profesional|trabajo
+dead-end job|trabajo sin futuro,empleo sin salidas|trabajo
+vocational training|formación profesional|trabajo
+trade school|escuela técnica,instituto de formación profesional|trabajo
+qualification|titulación,cualificación|trabajo
+certificate|certificado,título|trabajo
+accreditation|acreditación|trabajo
+hands-on experience|experiencia práctica|trabajo
+proven track record|trayectoria demostrada,historial demostrado|trabajo
+letter of recommendation|carta de recomendación|trabajo
+referee / reference|persona de referencia,avalista|trabajo
+background check|verificación de antecedentes,comprobación de historial|trabajo
+vetting process|proceso de selección,revisión de candidatos|trabajo
+shortlist|lista de preseleccionados,preselección|trabajo
+be shortlisted|ser preseleccionado|trabajo
+panel interview|entrevista ante un tribunal,entrevista con panel|trabajo
+phone interview|entrevista telefónica|trabajo
+video interview|entrevista por vídeo|trabajo
+dress code|código de vestimenta|trabajo
+smart-casual|informal pero elegante,casual elegante|trabajo
+business attire|ropa de negocios,traje formal|trabajo
+casual Friday|viernes informal|trabajo
+punctuality|puntualidad|trabajo
+attendance|asistencia|trabajo
+absent without leave|ausente sin permiso|trabajo
+warning letter|carta de amonestación,aviso por escrito|trabajo
+disciplinary action|medida disciplinaria,sanción disciplinaria|trabajo
+gross misconduct|falta muy grave,conducta indebida grave|trabajo
+unfair dismissal|despido improcedente|trabajo
+constructive dismissal|despido indirecto,renuncia forzada|trabajo
+tribunal|tribunal laboral,juzgado de lo social|trabajo
+compensation|indemnización,compensación|trabajo
+settlement|acuerdo extrajudicial,pacto|trabajo
+whistleblower|denunciante de irregularidades,alertador|trabajo
+grievance procedure|procedimiento de reclamación,trámite de quejas|trabajo
+workplace harassment|acoso laboral,acoso en el trabajo|trabajo
+bullying|acoso,maltrato psicológico|trabajo
+equal pay|igualdad salarial|trabajo
+maternity benefits|prestaciones de maternidad|trabajo
+parental leave|permiso parental|trabajo
+compassionate leave|permiso por duelo,permiso por motivos personales|trabajo
+unpaid leave|excedencia sin sueldo,permiso no retribuido|trabajo
+sabbatical|año sabático,periodo sabático|trabajo
+secondment|traslado temporal,adscripción temporal|trabajo
+relocate|reubicarse,trasladarse|trabajo
+transfer to another branch|trasladarse a otra sucursal|trabajo
+commute time|tiempo de desplazamiento|trabajo
+season ticket loan|préstamo para abono de transporte|trabajo
+cycle to work scheme|plan de bicicleta al trabajo|trabajo
+carpooling / ridesharing|compartir coche|trabajo
+parking space|plaza de aparcamiento|trabajo
+staff canteen|comedor de empresa,cantina|trabajo
+water cooler conversation|charla informal de oficina,charla de pasillo|trabajo
+small talk|charla trivial,conversación informal|trabajo
+icebreaker|dinámica para romper el hielo|trabajo
+networking event|evento de contactos,red de contactos|trabajo
+business card|tarjeta de visita|trabajo
+broaden one's network|ampliar la red de contactos|trabajo
+reach out to someone|contactar a alguien,ponerse en contacto|trabajo
+touch base|ponerse al día,hacer contacto breve|trabajo
+follow up on|hacer seguimiento de,dar seguimiento a|trabajo
+circle back|volver sobre un tema,retomar|trabajo
+keep someone in the loop|mantener informado a alguien,poner al corriente|trabajo
+bring someone up to speed|poner al día a alguien|trabajo
+pencil in|anotar provisionalmente,apuntar con lápiz|trabajo
+reschedule a meeting|reprogramar una reunión,cambiar la fecha de una reunión|trabajo
+call off a meeting|cancelar una reunión|trabajo
+put off a meeting|posponer una reunión,aplazar una reunión|trabajo
+bring forward a meeting|adelantar una reunión|trabajo
+attendee|asistente|trabajo
+take part in a discussion|participar en una discusión,intervenir en un debate|trabajo
+voice an opinion|expresar una opinión|trabajo
+reach a consensus|alcanzar un consenso,llegar a un acuerdo|trabajo
+take a vote|hacer una votación,votar|trabajo
+cast a vote|emitir un voto,votar|trabajo
+majority vote|voto por mayoría|trabajo
+unanimous decision|decisión unánime|trabajo
+tie-breaker|desempate,voto de calidad|trabajo
+action point / action item|punto de acción,tarea pendiente|trabajo
+assign responsibility|asignar responsabilidades|trabajo
+follow up with an email|hacer seguimiento por correo|trabajo
+cc someone into an email|poner en copia a alguien|trabajo
+bcc someone into an email|poner en copia oculta a alguien|trabajo
+forward an email|reenviar un correo|trabajo
+attachment|archivo adjunto|trabajo
+attach a file|adjuntar un archivo|trabajo
+subject line|asunto del correo|trabajo
+out of office reply|respuesta automática de ausencia|trabajo
+auto-reply|respuesta automática|trabajo
+inbox zero|bandeja de entrada vacía|trabajo
+unread message|mensaje no leído|trabajo
+flag an email|marcar un correo|trabajo
+proofread a document|corregir un documento,revisar un texto|trabajo
+draft a proposal|redactar un borrador de propuesta|trabajo
+final draft|versión definitiva,borrador final|trabajo
+submit a report|entregar un informe,presentar un informe|trabajo
+compile data|recopilar datos|trabajo
+crunch numbers|calcular datos,analizar cifras|trabajo
+spreadsheet|hoja de cálculo|trabajo
+presentation slides|diapositivas de presentación|trabajo
+give a presentation|hacer una presentación,dar una charla|trabajo
+public speaking|hablar en público,oratoria|trabajo
+visual aids|apoyos visuales,recursos visuales|trabajo
+handout|folleto,hoja informativa|trabajo
+project manager|gestor de proyectos,director de proyectos|trabajo
+project milestone|hito del proyecto|trabajo
+deliverable|entregable,producto final|trabajo
+scope of work|alcance del trabajo|trabajo
+budget constraint|restricción presupuestaria|trabajo
+allocated budget|presupuesto asignado|trabajo
+exceed the budget|exceder el presupuesto,salirse del presupuesto|trabajo
+under budget|por debajo del presupuesto|trabajo
+on budget|ajustado al presupuesto|trabajo
+cost-effective|rentable,económico|trabajo
+lucrative|lucrativo,rentable|trabajo
+profitable|rentable,provechoso|trabajo
+profit margin|margen de beneficio|trabajo
+cut costs|reducir costes,recortar gastos|trabajo
+cost cutting|reducción de costes,recorte de gastos|trabajo
+lay off workers|despedir trabajadores|trabajo
+downsizing|reducción de plantilla|trabajo
+restructure a company|reestructurar una empresa|trabajo
+merge with a company|fusionarse con una empresa|trabajo
+merger and acquisition|fusión y adquisición|trabajo
+takeover bid|oferta de adquisición|trabajo
+hostile takeover|opa hostil,adquisición hostil|trabajo
+joint venture|empresa conjunta|trabajo
+parent company|empresa matriz|trabajo
+monopoly|monopolio|trabajo
+competitor|competidor,competencia|trabajo
+market leader|líder del mercado|trabajo
+market share|cuota de mercado|trabajo
+competitive advantage|ventaja competitiva|trabajo
+niche market|nicho de mercado|trabajo
+launch a product|lanzar un producto|trabajo
+product recall|retirada de producto|trabajo
+quality control|control de calidad|trabajo
+supply chain|cadena de suministro|trabajo
+procurement|adquisiciones,compras|trabajo
+logistics|logística|trabajo
+warehouse|almacén,depósito|trabajo
+inventory management|gestión de inventario|trabajo
+stock check|recuento de existencias,inventario|trabajo
+out of stock|agotado,sin existencias|trabajo
+in stock|en existencias,disponible|trabajo
+wholesale|al por mayor|trabajo
+retail|al por menor,minorista|trabajo
+distributor|distribuidor|trabajo
+supplier|proveedor|trabajo
+vendor|vendedor,proveedor|trabajo
+invoice|factura|trabajo
+bill|factura,cuenta|trabajo
+receipt|recibo,justificante|trabajo
+issue an invoice|emitir una factura|trabajo
+settle an invoice|pagar una factura,liquidar una factura|trabajo
+overdue payment|pago atrasado,pago vencido|trabajo
+credit limit|límite de crédito|trabajo
+cash flow|flujo de caja,flujo de efectivo|trabajo
+balance sheet|balance de situación,balance general|trabajo
+financial year|año fiscal,ejercicio contable|trabajo
+audit|auditoría|trabajo
+auditor|auditor|trabajo
+accountant|contable|trabajo
+bookkeeper|tenedor de libros,auxiliar contable|trabajo
+tax return|declaración de la renta,declaración de impuestos|trabajo
+file taxes|presentar impuestos,hacer la declaración de la renta|trabajo
+tax evasion|evasión fiscal|trabajo
+tax loophole|vacío fiscal,escapatoria fiscal|trabajo
+revenue|ingresos,rentas|trabajo
+expenditure|gasto,desembolso|trabajo
+overhead costs|costes fijos,gastos generales|trabajo
+running costs|costes de mantenimiento,gastos operativos|trabajo
+capital investment|inversión de capital|trabajo
+venture capital|capital riesgo|trabajo
+angel investor|inversor providencial,inversor inicial|trabajo
+crowdfunding|financiación colectiva,micromecenazgo|trabajo
+start-up|empresa emergente,nueva empresa|trabajo
+scale up|expandir el negocio,escalar|trabajo
+expand into a market|expandirse en un mercado|trabajo
+business model|modelo de negocio|trabajo
+pitch a project|presentar un proyecto,vender una idea|trabajo
+elevator pitch|discurso de presentación breve|trabajo
+business proposal|propuesta de negocio,propuesta comercial|trabajo
+feasibility study|estudio de viabilidad|trabajo
+market research|estudio de mercado,investigación de mercado|trabajo
+target audience|público objetivo|trabajo
+focus group|grupo de discusión,grupo focal|trabajo
+customer satisfaction|satisfacción del cliente|trabajo
+brand loyalty|fidelidad a la marca|trabajo
+brand awareness|reconocimiento de marca|trabajo
+marketing campaign|campaña publicitaria,campaña de marketing|trabajo
+press release|comunicado de prensa,nota de prensa|trabajo
+public relations|relaciones públicas|trabajo
+spokesperson|portavoz|trabajo
+crisis management|gestión de crisis|trabajo
+damage control|control de daños|trabajo
+corporate social responsibility|responsabilidad social corporativa|trabajo
+ethical standards|normas éticas|trabajo
+code of conduct|código de conducta|trabajo
+conflict of interest|conflicto de intereses|trabajo
+insider trading|uso de información privilegiada|trabajo
+bribe|soborno,sobornar|trabajo
+bribery|soborno,cohecho|trabajo
+embezzlement|malversación,desfalco|trabajo
+fraud|fraude,estafa|trabajo
+audit trail|pista de auditoría,registro de comprobación|trabajo
+compliance officer|responsable de cumplimiento normativo|trabajo
+regulatory body|organismo regulador|trabajo
+legal framework|marco jurídico,marco legal|trabajo
+labor laws|legislación laboral,derecho laboral|trabajo
+employment tribunal|juzgado de lo social,tribunal de trabajo|trabajo
+workplace safety|seguridad laboral|trabajo
+protective gear|equipo de protección,ropa de protección|trabajo
+safety helmet / hard hat|casco de seguridad|trabajo
+high-visibility jacket|chaleco reflectante|trabajo
+emergency exit|salida de emergencia|trabajo
+fire extinguisher|extintor|trabajo
+first aid kit|botiquín de primeros auxilios|trabajo
+work accident|accidente laboral|trabajo
+industrial action|medidas de presión laboral,huelga|trabajo
+picket line|piquete de huelga|trabajo
+go-slow|huelga de celo,huelga de brazos caídos|trabajo
+work to rule|huelga de celo|trabajo
+collective bargaining|negociación colectiva|trabajo
+union representative / shop steward|delegado sindical|trabajo
+strike ballot|votación de huelga|trabajo
+call off a strike|desconvocar una huelga|trabajo
+arbitration|arbitraje|trabajo
+mediator|mediador|trabajo
+deadlock / impasse|punto muerto,bloqueo|trabajo
+break the deadlock|desbloquear la situación,salir del punto muerto|trabajo
+compromise|llegar a un acuerdo,ceder mutuamente|trabajo
+concession|concesión|trabajo
+win-win situation|situación ventajosa para todos|trabajo
+job security concerns|preocupaciones por estabilidad laboral|trabajo
+job stagnation|estancamiento laboral|trabajo
+climb down|retractarse,ceder en una postura|trabajo
+step up to the challenge|asumir el reto,estar a la altura del desafío|trabajo
+take the initiative|tomar la iniciativa|trabajo
+work independently|trabajar de forma autónoma,trabajar de forma independiente|trabajo
+self-starter|persona con iniciativa,autónomo y proactivo|trabajo
+proactive|proactivo|trabajo
+motivated|motivado|trabajo
+enthusiastic|entusiasta|trabajo
+adaptable|adaptable|trabajo
+flexible|flexible|trabajo
+resourceful|resolutivo,ingenioso|trabajo
+detail-oriented|atento al detalle,meticuloso|trabajo
+goal-oriented|orientado a objetivos|trabajo
+results-driven|orientado a resultados|trabajo
+fast-paced environment|entorno dinámico,ambiente de ritmo rápido|trabajo
+high-pressure environment|entorno de mucha presión|trabajo
+work in a team|trabajar en equipo|trabajo
+collaborate with colleagues|colaborar con compañeros|trabajo
+liaise with departments|coordinarse con departamentos,enlazar departamentos|trabajo
+report to a manager|depender de un jefe,reportar a un superior|trabajo
+oversee a team|supervisar un equipo|trabajo
+manage staff|gestionar personal|trabajo
+mentor|tutorizar,asesorar|trabajo
+mentorship programme|programa de mentoría,programa de tutoría|trabajo
+shadow a colleague|observar a un compañero,aprender observando a un colega|trabajo
+induction programme|programa de bienvenida,inducción laboral|trabajo
+probation period review|revisión del periodo de prueba|trabajo
+pass probation|superar el periodo de prueba|trabajo
+permanent employee|empleado fijo,empleado indefinido|trabajo
+fixed-term contract|contrato de duración determinada|trabajo
+subcontractor|subcontratista|trabajo
+outsource work|externalizar trabajo,subcontratar trabajo|trabajo
+offshoring|deslocalización|trabajo
+in-house production|producción propia,producción interna|trabajo
+remote workforce|personal en remoto,trabajadores a distancia|trabajo
+hybrid work model|modelo de trabajo híbrido|trabajo
+hot-desking|sistema de mesas libres,puestos no asignados|trabajo
+virtual meeting|reunión virtual|trabajo
+video conference|videoconferencia|trabajo
+screen sharing|compartir pantalla|trabajo
+mute microphone|silenciar el micrófono|trabajo
+unmute microphone|activar el micrófono|trabajo
+technical glitch|fallo técnico|trabajo
+connection drop|caída de conexión|trabajo
+work remotely|trabajar en remoto,teletrabajar|trabajo
+digital nomad|nómada digital|trabajo
+co-working space|espacio de cotrabajo,oficina compartida|trabajo
+desk job|trabajo de oficina,empleo sedentario|trabajo
+sedentary lifestyle|estilo de vida sedentario|trabajo
+repetitive strain injury|lesión por esfuerzo repetitivo|trabajo
+eye strain|fatiga ocular|trabajo
+ergonomic chair|silla ergonómica|trabajo
+standing desk|escritorio de pie,mesa elevable|trabajo
+take regular breaks|hacer descansos regulares|trabajo
+lunch break|pausa para comer,hora del almuerzo|trabajo
+coffee break|pausa para el café|trabajo
+tea break|descanso para el té|trabajo
+clock-watcher|empleado pendiente del reloj|trabajo
+workaholic|adicto al trabajo|trabajo
+work ethic values|valores de ética laboral|trabajo
+absentee|ausente|trabajo
+pull one's weight|aportar la parte que corresponde,arrimar el hombro|trabajo
+shirk responsibility|eludir responsabilidades,escaquearse|trabajo
+pass the buck|pasar la patata caliente,echarle la culpa a otro|trabajo
+cut corners|tomar atajos,hacer las cosas a medias|trabajo
+slack off|holgazanear,vaguear|trabajo
+pull an all-nighter|trasnochar trabajando,pasar la noche en blanco|trabajo
+burn the midnight oil|trabajar hasta altas horas de la noche,quemarse las pestañas|trabajo
+go the extra mile|hacer un esfuerzo adicional,esforzarse más de la cuenta|trabajo
+think outside the box|pensar de forma innovadora,tener ideas originales|trabajo
+learn the ropes|aprender el oficio,hacerse con el trabajo|trabajo
+show someone the ropes|enseñar el trabajo a alguien,poner a alguien al corriente|trabajo
+get the hang of|coger el truco,pillar el tranquillo|trabajo
+hit the ground running|empezar con buen pie,arrancar a toda marcha|trabajo
+multitasking ability|capacidad multitarea|trabajo
+time management skills|habilidades de gestión del tiempo|trabajo
+meet a target|cumplir un objetivo|trabajo
+fall behind with work|retrasarse en el trabajo|trabajo
+catch up with work|ponerse al día con el trabajo|trabajo
+snowed under with work|desbordado de trabajo,hasta arriba de trabajo|trabajo
+have one's hands full|estar muy ocupado,tener las manos llenas|trabajo
+swamped with tasks|inundado de tareas,saturado de trabajo|trabajo
+work capacity|capacidad de trabajo|trabajo
+efficiency rate|índice de eficiencia|trabajo
+output|producción,rendimiento|trabajo
+productivity level|nivel de productividad|trabajo
+streamline a process|agilizar un proceso,optimizar un procedimiento|trabajo
+cut down on red tape|reducir trámites burocráticos|trabajo
+red tape|burocracia,papeleo excesivo|trabajo
+bottleneck|cuello de botella|trabajo
+backlog of work|trabajo atrasado,acumulación de tareas|trabajo
+clear a backlog|despejar el trabajo atrasado,poner al día el trabajo pendiente|trabajo
+prioritize workload|priorizar la carga de trabajo|trabajo
+delegate authority|delegar autoridad|trabajo
+empower employees|empoderar a los empleados|trabajo
+staff appraisal|evaluación de los trabajadores|trabajo
+constructive criticism|crítica constructiva|trabajo
+positive feedback|comentarios positivos,valoración positiva|trabajo
+room for improvement|margen de mejora|trabajo
+address a problem|abordar un problema,tratar un problema|trabajo
+tackle an issue|afrontar un asunto,atajar un problema|trabajo
+troubleshoot|resolver fallos,solucionar problemas|trabajo
+find a solution|hallar una solución,encontrar una solución|trabajo
+iron out problems|subsanar errores,limar asperezas|trabajo
+sort out an issue|resolver un problema,solucionar un asunto|trabajo
+escalate an issue|remitir un asunto a un superior,escalar un problema|trabajo
+chain of command|cadena de mando|trabajo
+top management|alta dirección|trabajo
+middle management|mandos intermedios|trabajo
+grassroots level|nivel de base,trabajadores rasos|trabajo
+corporate hierarchy|jerarquía corporativa|trabajo
+corporate culture|cultura corporativa|trabajo
+company values|valores de la empresa|trabajo
+mission statement|declaración de intenciones,misión empresarial|trabajo
+brand identity|identidad de marca|trabajo
+customer retention|retención de clientes,fidelización de clientes|trabajo
+client turnover|pérdida de clientes|trabajo
+gain market share|ganar cuota de mercado|trabajo
+lose market share|perder cuota de mercado|trabajo
+corner the market|acaparar el mercado|trabajo
+monopolize|monopolizar|trabajo
+market saturation|saturación del mercado|trabajo
+emerging market|mercado emergente|trabajo
+domestic market|mercado nacional|trabajo
+global market|mercado global|trabajo
+overseas assignment|destino en el extranjero,misión exterior|trabajo
+expatriate worker|trabajador expatriado|trabajo
+work visa / work permit|visado de trabajo,permiso de trabajo|trabajo
+relocation allowance|ayuda por traslado|trabajo
+cost of living adjustment|ajuste por coste de la vida|trabajo
+hardship pay|plus de penosidad,plus de peligrosidad|trabajo
+hazard pay|plus de peligrosidad|trabajo
+golden handshake|indemnización millonaria,finiquito de oro|trabajo
+golden handcuffs|incentivos de retención,retención dorada|trabajo
+glass ceiling effect|efecto del techo de cristal|trabajo
+positive discrimination|discriminación positiva|trabajo
+affirmative action|acción afirmativa,discriminación positiva|trabajo
+diversity in the workplace|diversidad en el trabajo|trabajo
+inclusive workplace|entorno laboral inclusivo|trabajo
+gender equality|igualdad de género|trabajo
+pay disparity|disparidad salarial|trabajo
+wage freeze|congelación de sueldos,congelación salarial|trabajo
+salary deduction|retención de sueldo,descuento salarial|trabajo
+overpaid|sobreremunerado,demasiado pagado|trabajo
+underpaid|mal pagado,subremunerado|trabajo
+overworked|sobrecargado de trabajo,agotado por el trabajo|trabajo
+understaffed|falto de personal,con poco personal|trabajo
+overstaffed|con exceso de personal|trabajo
+staff shortage|escasez de personal|trabajo
+skeleton staff|personal mínimo,servicios mínimos|trabajo
+fill in for someone|sustituir a alguien,cubrir a alguien|trabajo
+stand in for a colleague|hacer una suplencia a un compañero|trabajo
+cover a shift|cubrir un turno|trabajo
+swap shifts|cambiar turnos,intercambiar turnos|trabajo
+trade-off|compensación,concesión mutua|trabajo
+work pattern|patrón de trabajo,jornada tipo|trabajo
+staggered hours|horarios escalonados|trabajo
+job sharing|compartir un puesto de trabajo|trabajo
+phased retirement|jubilación progresiva,jubilación gradual|trabajo
+early retirement|jubilación anticipada|trabajo
+forced retirement|jubilación forzosa|trabajo
+pensioner|pensionista,jubilado|trabajo
+pension pot|fondo de pensiones|trabajo
+annuity|renta vitalicia,anualidad|trabajo
+lump sum|pago único,suma global|trabajo
+severance agreement|acuerdo de despido,acuerdo de rescisión|trabajo
+wrongful termination|despido nulo,despido ilegal|trabajo
+file a grievance|presentar una queja formal,poner una reclamación|trabajo
+industrial tribunal|tribunal laboral|trabajo
+labor inspectorate|inspección de trabajo|trabajo
+workplace inspection|inspección laboral|trabajo
+safety regulation|normativa de seguridad|trabajo
+protective clothing|ropa protectora|trabajo
+hard hat area|zona de uso obligatorio de casco|trabajo
+emergency drill|simulacro de emergencia|trabajo
+evacuation route|ruta de evacuación|trabajo
+workplace injury|lesión laboral|trabajo
+occupational illness|enfermedad laboral,enfermedad profesional|trabajo
+medical leave certificate|parte de baja médica|trabajo
+return-to-work interview|entrevista de reincorporación laboral|trabajo
+fit for work|apto para el trabajo|trabajo
+unfit for work|no apto para el trabajo|trabajo
+light duties|tareas adaptadas,trabajo ligero|trabajo
+reasonable adjustment|adaptación razonable|trabajo
+disability allowance|subsidio por discapacidad|trabajo
+equal opportunity employer|empresa que ofrece igualdad de oportunidades|trabajo
+recruitment drive|campaña de contratación|trabajo
+headhunting firm|empresa de cazatalentos|trabajo
+talent acquisition|captación de talento|trabajo
+job seeker|demandante de empleo,buscador de trabajo|trabajo
+unemployed person|desempleado,persona parada|trabajo
+prospective employee|futuro empleado,candidato al puesto|trabajo
+speculative application|autocandidatura|trabajo
+cold call an employer|llamar a puerta fría a un empleador|trabajo
+entry-level job|puesto de nivel inicial,trabajo sin experiencia|trabajo
+internship program|programa de prácticas|trabajo
+graduate trainee|titulado en prácticas,aprendiz universitario|trabajo
+fast-track scheme|vía rápida de ascenso,programa de aceleración|trabajo
+career advancement|avance profesional,progresión laboral|trabajo
+professional recognition|reconocimiento profesional|trabajo
+lateral move|cambio lateral de puesto,movimiento horizontal|trabajo
+demotion|degradación,descenso de categoría|trabajo
+be demoted|ser degradado,descender de categoría|trabajo
+step down from a position|dejar un cargo,abandonar un puesto|trabajo
+relinquish control|ceder el control,renunciar al control|trabajo
+hand over duties|traspasar obligaciones,hacer el traspaso de funciones|trabajo
+handover notes|notas de traspaso,documentación de traspaso|trabajo
+succession planning|planificación de la sucesión|trabajo
+corporate ladder|escalafón empresarial,jerarquía laboral|trabajo
+hit a glass ceiling|topar con el techo de cristal|trabajo
+career plateau|estancamiento profesional|trabajo
+broaden one's horizons|ampliar horizontes|trabajo
+acquire new skills|adquirir nuevas habilidades|trabajo
+hone one's skills|perfeccionar habilidades|trabajo
+skill set|conjunto de habilidades|trabajo
+transferable skills|habilidades transferibles|trabajo
+core competencies|competencias básicas,habilidades clave|trabajo
+aptitude test|test de aptitud|trabajo
+psychometric test|prueba psicométrica|trabajo
+assessment centre|centro de evaluación de candidatos|trabajo
+role-play exercise|ejercicio de rol,simulación de situaciones|trabajo
+group discussion|debate en grupo,dinámica grupal|trabajo
+stand out from the crowd|destacar entre la multitud,sobresalir|trabajo
+impress the interviewer|impresionar al entrevistador|trabajo
+make a good impression|causar una buena impresión|trabajo
+body language|lenguaje corporal|trabajo
+eye contact|contacto visual|trabajo
+firm handshake|apretón de manos firme|trabajo
+self-confidence|seguridad en uno mismo,autoconfianza|trabajo
+arrogant|arrogante|trabajo
+modest|modesto|trabajo
+overqualified|sobrecualificado|trabajo
+underqualified|poco cualificado,sin cualificación suficiente|trabajo
+salary expectation|expectativas salariales|trabajo
+salary bracket|rango salarial,franja salarial|trabajo
+remuneration package|paquete retributivo,remuneración total|trabajo
+performance-related pay|salario ligado al rendimiento|trabajo
+annual bonus|bonus anual,prima anual|trabajo
+stock options|opciones sobre acciones|trabajo
+profit-related pay|retribución en función de beneficios|trabajo
+perks of the job|ventajas del puesto,beneficios del empleo|trabajo
+company pension|pensión de empresa|trabajo
+private healthcare|asistencia médica privada|trabajo
+gym membership|abono al gimnasio|trabajo
+childcare voucher|cheque guardería|trabajo
+subsidized meals|comidas subvencionadas|trabajo
+free parking|aparcamiento gratuito|trabajo
+flexible spending account|cuenta de gastos flexibles|trabajo
+workplace nursery|guardería de empresa|trabajo

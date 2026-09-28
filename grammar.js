@@ -180,5 +180,42 @@ const GRAMMAR = {
       // conexión con el 3er condicional
       { id: "up17", text: "If I ___ (know) about the outage, I would have called you.", answers: ["had known"] }
     ]
+  },
+  "conditionals": {
+    title: "Conditionals + unless, in case, if vs because",
+    emoji: "🔮",
+    topicId: "conditionals",
+    items: [
+      // zero / first (nunca will en la cláusula if)
+      { id: "cd1", text: "If the build ___ (fail), the pipeline stops automatically.", answers: ["fails"] },
+      { id: "cd2", text: "If the client ___ (approve) the budget tomorrow, we'll start on Monday.", answers: ["approves"] },
+      { id: "cd3", text: "If we don't fix this bug, the users ___ (complain).", answers: ["will complain"] },
+      { id: "cd4", text: "I'll call you as soon as the deployment ___ (finish).", answers: ["finishes"] },
+      { id: "cd5", text: "If the rocket ___ (launch) on time tomorrow, it will reach the station on Friday.", answers: ["launches"] },
+      // second
+      { id: "cd6", text: "If I ___ (have) more time, I would learn Rust.", answers: ["had"] },
+      { id: "cd7", text: "If I were you, I ___ (ask) for a pay rise.", answers: ["would ask"] },
+      { id: "cd8", text: "If humans ___ (live) on Mars, they would need artificial gravity.", answers: ["lived"] },
+      { id: "cd9", text: "If I ___ (be) the CTO, I'd ban deployments on Fridays.", answers: ["were", "was"] },
+      { id: "cd10", text: "What ___ you do if you lost your job tomorrow?", answers: ["would"] },
+      // third
+      { id: "cd11", text: "If we ___ (test) the update, we wouldn't have lost the data.", answers: ["had tested"] },
+      { id: "cd12", text: "If you had told me about the outage, I ___ (come) in earlier.", answers: ["would have come"] },
+      { id: "cd13", text: "The mission ___ (not fail) if the engineers had checked the units.", answers: ["wouldn't have failed", "would not have failed"] },
+      // mixed
+      { id: "cd14", text: "If I had accepted that job in London, I ___ (live) there now.", answers: ["would be living", "would live"] },
+      { id: "cd15", text: "If she ___ (study) harder last year, she would have her B2 certificate now.", answers: ["had studied"] },
+      { id: "cd16", text: "If I ___ (not be) so bad at maths, I would have studied engineering.", answers: ["weren't", "were not", "wasn't", "was not"] },
+      // unless / as long as / provided / in case
+      { id: "cd17", text: "We won't meet the deadline ___ we get more people on the team.", answers: ["unless"] },
+      { id: "cd18", text: "You can work from home as ___ as you attend the Monday meeting.", answers: ["long"] },
+      { id: "cd19", text: "Take your laptop charger in ___ the meeting runs late.", answers: ["case"] },
+      { id: "cd20", text: "You can use the test server, ___ that you don't change the config.", answers: ["provided", "providing"] },
+      // if vs because (error diagnosticado)
+      { id: "cd21", text: "I'm learning English ___ my company needs it for international clients.", answers: ["because"] },
+      { id: "cd22", text: "I'll join the call ___ I finish my other meeting in time.", answers: ["if"] },
+      { id: "cd23", text: "She got the job ___ she speaks three languages fluently.", answers: ["because"] },
+      { id: "cd24", text: "We'll cancel the launch ___ the weather is bad on Thursday.", answers: ["if"] }
+    ]
   }
 };
