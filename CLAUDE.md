@@ -9,7 +9,7 @@ estructura del juego.
 
 **Estado actual (2026-09-28):** motor funcionando, repo git propio
 (GitHub privado: `memecito/english-b2`), copy con temática informática/espacio/ciencia ficción,
-vocabulario migrado (14 palabras) y **7 temas de gramática, 164
+vocabulario migrado (14 palabras) y **7 temas de gramática, 172
 frases**: relative clauses, present perfect vs past simple, verb
 patterns, word formation (Part 3), unreal past, conditionals (con
 *if* vs *because*), passive + causative. Resto de gramática

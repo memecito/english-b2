@@ -5,6 +5,10 @@
 // del entrenamiento para el examen); las trampas de hispanohablante se
 // señalan explícitamente. Ejemplos en contexto de trabajo/tecnología para
 // que sirvan también para las clases de inglés de la empresa.
+// relative-clauses: secciones 1-4 alineadas con la terminología de la clase
+// de inglés del trabajo (ref.learnlight.com/grammarguide: relative pronouns
+// and relative clauses introduction / relative pronouns and relative adverbs /
+// defining and non-defining relative clauses) — parafraseado, ejemplos propios.
 // Mismo formato que ingles-ari: cada tema {id, emoji, title, html}.
 const TOPICS = [
   {
@@ -12,50 +16,65 @@ const TOPICS = [
     emoji: "🔗",
     title: "Relative clauses",
     html: `
-      <p>A <b>relative clause</b> adds information about a noun without starting a new sentence. It begins with a <b>relative pronoun</b> (who, which, that, whose…) that points back to the noun.</p>
-      <p><i>The engineer <b>who fixed the outage</b> works in Madrid.</i></p>
+      <p class="hint">📎 <b>Work class (Learnlight, "Working with relative clauses")</b> covers sections 1–4. Sections 5–8 are the extra points that B2 First expects.</p>
+      <p>A <b>relative clause</b> joins two ideas in one sentence. The sentence then has a <b>main clause</b> + a <b>relative clause</b>, linked by a relative pronoun or adverb that points back to a noun:</p>
+      <p><i>I have a colleague. She has a PhD in physics.</i> → <i>I have a colleague <b>who has a PhD in physics</b>.</i></p>
+      <p>⚠️ Once you join them, <b>don't repeat the subject</b>: ✗ <i>I have a colleague who <b>she</b> has a PhD…</i> — <i>who</i> is already the subject.</p>
       <p><b>Why it matters for B2 First:</b> relative pronouns are a classic gap in <b>Part 2 (open cloze)</b>, <i>whose</i> and <i>which</i> appear in <b>Part 4 (key word transformation)</b>, and non-defining clauses are one of the easiest ways to show a B2 range in <b>Writing</b>.</p>
 
-      <h3>1. The relative pronouns</h3>
+      <h3>1. Relative pronouns and relative adverbs</h3>
       <table>
-        <thead><tr><th>Pronoun</th><th>Refers to</th><th>Example</th></tr></thead>
+        <thead><tr><th>Relative pronoun</th><th>Refers to</th><th>Example</th></tr></thead>
         <tbody>
           <tr><td>who</td><td>people</td><td>The colleague <b>who</b> trained me has left.</td></tr>
           <tr><td>which</td><td>things, animals, ideas</td><td>The server <b>which</b> crashed is old.</td></tr>
           <tr><td>that</td><td>people or things — <b>defining clauses only</b></td><td>The tool <b>that</b> we use is free.</td></tr>
           <tr><td>whose</td><td>possession (people or things)</td><td>The client <b>whose</b> project failed…</td></tr>
-          <tr><td>where</td><td>places</td><td>The office <b>where</b> I work…</td></tr>
-          <tr><td>when</td><td>times</td><td>The day <b>when</b> we went live…</td></tr>
-          <tr><td>why</td><td>reasons (after <i>the reason</i>)</td><td>The reason <b>why</b> it failed…</td></tr>
           <tr><td>whom</td><td>people, as <b>object</b> — formal</td><td>The manager <b>to whom</b> I reported…</td></tr>
         </tbody>
       </table>
+      <table>
+        <thead><tr><th>Relative adverb</th><th>Refers to</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>where</td><td>places</td><td>This is the room <b>where</b> we have the stand-up.</td></tr>
+          <tr><td>when</td><td>times</td><td>I remember the day <b>when</b> we went live.</td></tr>
+          <tr><td>why</td><td>reasons (after <i>the reason</i>)</td><td>That's the reason <b>why</b> we lost the client.</td></tr>
+        </tbody>
+      </table>
+      <p>Careful: in <i>I have no idea <b>why</b> we lost the client</i> there's no noun before <i>why</i> — that's an <b>indirect question</b>, not a relative clause. A relative clause always describes a noun that comes before it (<i>the reason why…</i>).</p>
 
-      <h3>2. Defining vs non-defining — the key distinction</h3>
-      <p><b>Defining</b>: tells you <i>which one</i>. Without it the sentence is incomplete. <b>No commas.</b> <i>That</i> is allowed.</p>
-      <p><i>The laptop <b>that/which</b> I bought last week has stopped working.</i> (which laptop? — this one)</p>
-      <p><b>Non-defining</b>: extra information about something already identified. <b>Commas</b> on both sides. <b>Never <i>that</i></b>, and the pronoun can never be left out.</p>
-      <p><i>Our CTO<b>, who</b> joined in 2019<b>,</b> is giving the talk.</i> (there's only one CTO — the clause just adds info)</p>
+      <h3>2. Defining relative clauses — identify or define</h3>
+      <p>They tell you <b>which one</b> or <b>what something is</b>. Without them the sentence is incomplete. <b>No commas.</b> <i>That</i> can replace who/which.</p>
+      <p><b>Definitions</b> — very useful at work to explain jargon:<br>
+         <i>A load balancer is a device <b>that</b> distributes traffic between servers.</i><br>
+         <i>A stakeholder is a person <b>who</b> has an interest in a project.</i></p>
+      <p><b>Identifying</b>: <i>My manager is the woman <b>who</b> is sitting by the window.</i> (which woman? — that one)</p>
+
+      <h3>3. Can I leave out the pronoun? — look at what comes next</h3>
+      <p><b>Followed by a verb</b> → it's the <b>subject</b> of the clause → you <b>can't</b> omit it.<br>
+         <i>The ticket <b>that</b> <u>is</u> open on my screen…</i> (✗ <i>The ticket is open on my screen…</i> — different meaning)</p>
+      <p><b>Followed by a noun or pronoun</b> → it's the <b>object</b> → in a <b>defining</b> clause you <b>can</b> omit it.<br>
+         <i>The laptop (<s>that</s>) <u>IT</u> ordered for me has finally arrived.</i> · <i>She's the consultant (<s>who</s>) <u>I</u> told you about.</i></p>
+
+      <h3>4. Non-defining relative clauses — extra information</h3>
+      <p>They add information about something <b>already identified</b>. <b>Commas</b> on both sides, <b>never <i>that</i></b>, and the pronoun <b>can never be omitted</b>.</p>
+      <p><i>Ms García<b>, who</b> I met at the kick-off<b>,</b> is head of Procurement.</i></p>
+      <p><b>Test:</b> remove the clause. If the sentence still makes complete sense (<i>Ms García is head of Procurement</i>), it's non-defining → commas.</p>
       <p>✗ <i>Our CTO, that joined in 2019, …</i> → ✓ <i>Our CTO, who joined in 2019, …</i></p>
 
-      <h3>3. Leaving out the pronoun</h3>
-      <p>In a <b>defining</b> clause you can omit who/which/that when it is the <b>object</b> of the verb (there's another subject after it):</p>
-      <p><i>The report (<s>that</s>) you sent me was very clear.</i> — "you" is the subject, so the pronoun can go.</p>
-      <p>You <b>cannot</b> omit it when it's the <b>subject</b>: <i>The report <b>that</b> arrived yesterday…</i> (✗ <i>The report arrived yesterday was…</i>)</p>
-
-      <h3>4. "which" for the whole previous idea ⚠️ your recurring error</h3>
+      <h3>5. "which" for the whole previous idea ⚠️ your recurring error</h3>
       <p><i>Which</i> after a comma can refer to the <b>whole previous clause</b>, not just a noun. Spanish uses <i>lo que</i> here.</p>
       <p><i>The meeting ran two hours over<b>, which</b> meant I missed my train.</i> (= <i>lo cual / lo que</i>)</p>
       <p>✗ <i>…ran two hours over, <b>they</b> made me miss my train.</i> (comma splice — two sentences glued with a comma)<br>
          ✗ <i>…ran two hours over, <b>what</b> meant…</i><br>
          ✗ <i>…ran two hours over, <b>that</b> meant…</i></p>
 
-      <h3>5. "what" = "the thing(s) that"</h3>
+      <h3>6. "what" = "the thing(s) that"</h3>
       <p><i>What</i> is not used after a noun — it already contains the noun.</p>
       <p><i><b>What</b> I need is a clear deadline.</i> = <i>The thing that I need…</i></p>
       <p>✗ <i>The thing what I need…</i> · ✗ <i>Everything what you said…</i> → ✓ <i>Everything <b>that</b> you said…</i></p>
 
-      <h3>6. Prepositions</h3>
+      <h3>7. Prepositions</h3>
       <p><b>Informal/neutral</b> (spoken, emails to colleagues): preposition at the end.<br>
          <i>The team I work <b>with</b> is great.</i> · <i>That's the client I told you <b>about</b>.</i></p>
       <p><b>Formal</b> (reports, essays): preposition before <i>whom/which</i>. Never before <i>who</i> or <i>that</i>.<br>
@@ -63,9 +82,9 @@ const TOPICS = [
       <p>After quantifiers: <i>some of whom, most of which, none of which, all of whom</i>.<br>
          <i>We tested three tools, <b>none of which</b> worked offline.</i></p>
 
-      <h3>7. Spanish speaker traps</h3>
+      <h3>8. Spanish speaker traps</h3>
       <ul>
-        <li><b>No extra pronoun</b> inside the clause: ✗ <i>The laptop which I bought <b>it</b>…</i> (Spanish "el portátil que <b>lo</b> compré" in colloquial speech). The relative pronoun already is the object.</li>
+        <li><b>No extra pronoun</b> inside the clause — neither subject nor object: ✗ <i>a friend who <b>he</b> works in Purchasing</i>, ✗ <i>the laptop which I bought <b>it</b></i> (colloquial Spanish "el portátil que <b>lo</b> compré"). The relative pronoun already does that job.</li>
         <li><b>"que" is not always "that"</b>: after a comma it must be <i>who/which</i>.</li>
         <li><b>"cuyo/cuya" = whose</b>, and it does <b>not</b> agree with anything: <i>the company <b>whose</b> offices…</i> (never "whose's" or "who's").</li>
         <li><b>who's ≠ whose</b>: <i>who's</i> = who is / who has.</li>

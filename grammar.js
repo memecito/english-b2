@@ -45,7 +45,16 @@ const GRAMMAR = {
       { id: "rel23", text: "The person to ___ you should send the report is Ms Patel.", answers: ["whom"] },
       { id: "rel24", text: "There were twelve candidates, most of ___ had cloud experience.", answers: ["whom"] },
       { id: "rel25", text: "We tested three tools, none of ___ worked offline.", answers: ["which"] },
-      { id: "rel26", text: "This is the framework on ___ the whole platform is built.", answers: ["which"] }
+      { id: "rel26", text: "This is the framework on ___ the whole platform is built.", answers: ["which"] },
+      // alineado con la clase del trabajo: definiciones, relative adverbs, identificar, non-defining
+      { id: "rel27", text: "A load balancer is a device ___ distributes traffic between servers.", answers: ["that", "which"] },
+      { id: "rel28", text: "A stakeholder is a person ___ has an interest in a project.", answers: ["who", "that"] },
+      { id: "rel29", text: "I clearly remember the day ___ our startup got its first client.", answers: ["when", "that"] },
+      { id: "rel30", text: "This is the room ___ the daily stand-up takes place.", answers: ["where"] },
+      { id: "rel31", text: "My manager is the woman ___ is sitting next to the window.", answers: ["who", "that"] },
+      { id: "rel32", text: "Ms García, ___ I met at the kick-off, is head of Procurement.", answers: ["who", "whom"] },
+      { id: "rel33", text: "The cloud budget, ___ is quite limited, will be reviewed in January.", answers: ["which"] },
+      { id: "rel34", text: "Do you know the startup ___ founder used to work at NASA?", answers: ["whose"] }
     ]
   },
   "present-perfect": {
