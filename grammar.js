@@ -121,7 +121,19 @@ const GRAMMAR = {
       { id: "vp19", text: "I look forward to ___ (hear) from you.", answers: ["hearing"] },
       { id: "vp20", text: "I'm used to ___ (work) remotely — I've done it for years.", answers: ["working"] },
       { id: "vp21", text: "She's thinking about ___ (take) the B2 exam in December.", answers: ["taking"] },
-      { id: "vp22", text: "Never push to production without ___ (test) first.", answers: ["testing"] }
+      { id: "vp22", text: "Never push to production without ___ (test) first.", answers: ["testing"] },
+      // ampliación Learnlight: forget / regret / try, verbo + objeto + to, get used to
+      { id: "vp23", text: "I'll never forget ___ (see) my first rocket launch live.", answers: ["seeing"] },
+      { id: "vp24", text: "I forgot ___ (send) the invoice — I'll do it right now.", answers: ["to send"] },
+      { id: "vp25", text: "We regret ___ (inform) you that the event has been cancelled.", answers: ["to inform"] },
+      { id: "vp26", text: "I regret ___ (not / learn) English when I was younger.", answers: ["not learning"] },
+      { id: "vp27", text: "Try ___ (restart) the router — that usually fixes it.", answers: ["restarting"] },
+      { id: "vp28", text: "I tried ___ (open) the file, but it was corrupted.", answers: ["to open"] },
+      { id: "vp29", text: "Our manager encouraged us ___ (take) the B2 exam this year.", answers: ["to take"] },
+      { id: "vp30", text: "IT warned us ___ (not / click) on suspicious links.", answers: ["not to click"] },
+      { id: "vp31", text: "The consultant persuaded the CEO ___ (invest) more in security.", answers: ["to invest"] },
+      { id: "vp32", text: "It took me months to get used to ___ (wake) up at 6 a.m.", answers: ["waking"] },
+      { id: "vp33", text: "I prefer ___ (work) on hard problems in the morning.", answers: ["working", "to work"] }
     ]
   },
   "word-formation": {
@@ -224,7 +236,11 @@ const GRAMMAR = {
       { id: "cd21", text: "I'm learning English ___ my company needs it for international clients.", answers: ["because"] },
       { id: "cd22", text: "I'll join the call ___ I finish my other meeting in time.", answers: ["if"] },
       { id: "cd23", text: "She got the job ___ she speaks three languages fluently.", answers: ["because"] },
-      { id: "cd24", text: "We'll cancel the launch ___ the weather is bad on Thursday.", answers: ["if"] }
+      { id: "cd24", text: "We'll cancel the launch ___ the weather is bad on Thursday.", answers: ["if"] },
+      // ampliación Learnlight: on condition that, so long as, whether
+      { id: "cd25", text: "You can use the client data on ___ that it stays anonymous.", answers: ["condition"] },
+      { id: "cd26", text: "So ___ as the tests pass, we can deploy tonight.", answers: ["long"] },
+      { id: "cd27", text: "Please let me know ___ or not you can attend the workshop.", answers: ["whether"] }
     ]
   },
   "passive": {
@@ -256,6 +272,7 @@ const GRAMMAR = {
       { id: "ps18", text: "It ___ (say) that the company is going to be sold.", answers: ["is said"] },
       { id: "ps19", text: "The CEO is believed ___ (resign) last week.", answers: ["to have resigned"] },
       { id: "ps20", text: "Mars is thought ___ (have) water under its surface.", answers: ["to have"] },
+      { id: "ps21", text: "It ___ (claim) that the research was biased, but nobody has proved it.", answers: ["is claimed", "has been claimed"] },
       // causativa: have/get something done
       { id: "cs1", text: "I'm ___ my laptop repaired — it'll be ready on Monday.", answers: ["having", "getting"] },
       { id: "cs2", text: "We had the office ___ (paint) last month.", answers: ["painted"] },
@@ -266,6 +283,69 @@ const GRAMMAR = {
       // causativa activa: have someone do / get someone to do
       { id: "cs7", text: "I'll get IT ___ (reset) my password.", answers: ["to reset"] },
       { id: "cs8", text: "The manager had the intern ___ (check) the logs.", answers: ["check"] }
+    ]
+  },
+  "modals": {
+    title: "Modals: obligation, permission, ability, advice",
+    emoji: "🧭",
+    topicId: "modals",
+    items: [
+      // obligación / mustn't vs don't have to
+      { id: "mo1", text: "You ___ wear a suit — the dress code here is casual.", answers: ["don't have to", "do not have to", "don't need to", "do not need to", "needn't", "need not"] },
+      { id: "mo2", text: "You ___ share your password with anyone. It's against company policy.", answers: ["mustn't", "must not", "can't", "cannot"] },
+      { id: "mo3", text: "In my last job, I ___ (have to) work every other weekend.", answers: ["had to"] },
+      { id: "mo4", text: "Do I ___ to sign this form now, or can I do it tomorrow?", answers: ["have", "need"] },
+      { id: "mo5", text: "Astronauts ___ exercise for about two hours a day on the space station.", answers: ["have to", "must", "need to"] },
+      { id: "mo6", text: "You ___ (not / bring) your laptop — we had spare ones in the room.", answers: ["needn't have brought", "need not have brought", "didn't need to bring", "did not need to bring"] },
+      // permiso / prohibición
+      { id: "mo7", text: "Employees ___ allowed to work from home on Fridays.", answers: ["are"] },
+      { id: "mo8", text: "___ I use your charger? — Of course, go ahead.", answers: ["can", "could", "may"] },
+      { id: "mo9", text: "Visitors ___ not use the lifts during a fire alarm.", answers: ["may", "must"] },
+      { id: "mo10", text: "She was ___ to leave early yesterday because she had a doctor's appointment.", answers: ["allowed"] },
+      // habilidad
+      { id: "mo11", text: "I'm afraid I ___ attend the meeting tomorrow — I'm on a training course.", answers: ["won't be able to", "will not be able to"] },
+      { id: "mo12", text: "By next year, I hope I ___ speak English fluently in meetings.", answers: ["will be able to"] },
+      { id: "mo13", text: "When I was a teenager, I ___ code for hours without getting tired.", answers: ["could"] },
+      { id: "mo14", text: "The server crashed, but we ___ to restore it from the backup.", answers: ["managed", "were able"] },
+      { id: "mo15", text: "I ___ (explain) it to him, but I didn't have time.", answers: ["could have explained"] },
+      // consejo / crítica
+      { id: "mo16", text: "You'd ___ save your work now — the system will restart in two minutes.", answers: ["better"] },
+      { id: "mo17", text: "You ___ to inform HR about any changes to your schedule.", answers: ["ought"] },
+      { id: "mo18", text: "We ___ (test) the update before deploying it. Now production is broken.", answers: ["should have tested"] },
+      { id: "mo19", text: "I ___ (send) that angry email. My manager was really upset.", answers: ["shouldn't have sent", "should not have sent"] },
+      // ofrecimientos / sugerencias / peticiones
+      { id: "mo20", text: "Would you mind ___ (check) these figures for me?", answers: ["checking"] },
+      { id: "mo21", text: "___ I help you with those boxes? — Yes, that's really kind of you.", answers: ["shall", "can"] },
+      { id: "mo22", text: "___ we discuss it over lunch? — Sounds great.", answers: ["shall"] },
+      { id: "mo23", text: "Do you mind if I open the window? — Not at ___. Go ahead.", answers: ["all"] }
+    ]
+  },
+  "modals-deduction": {
+    title: "Modals of deduction: must, might, can't (have)",
+    emoji: "🕵️",
+    topicId: "modals-deduction",
+    items: [
+      // presente
+      { id: "md1", text: "Her calendar says \"Client call 10–11\" and it's 10:30. She ___ be on the call.", answers: ["must"] },
+      { id: "md2", text: "He ___ be the new CTO — he looks about nineteen!", answers: ["can't", "cannot", "couldn't"] },
+      { id: "md3", text: "Take an umbrella. It ___ rain later, but the forecast isn't sure.", answers: ["might", "may", "could"] },
+      { id: "md4", text: "It's Tuesday at ten and the alarm is ringing. They ___ be testing it again — they always do it at this time.", answers: ["must"] },
+      { id: "md5", text: "We ___ have more bugs than we thought — let's run the full test suite to check.", answers: ["might", "may", "could"] },
+      { id: "md6", text: "The client ___ be happy about the delay — they wanted it last week.", answers: ["can't", "cannot"] },
+      // pasado
+      { id: "md7", text: "The office is dark. Everyone ___ have gone home.", answers: ["must"] },
+      { id: "md8", text: "She ___ have read my email — I only sent it a minute ago and she's on a plane.", answers: ["can't", "couldn't", "cannot"] },
+      { id: "md9", text: "I can't find my badge. I ___ have left it at home, or maybe in the car.", answers: ["might", "may", "could"] },
+      { id: "md10", text: "Paul's never late. He ___ have missed the train — it's the only explanation.", answers: ["must"] },
+      { id: "md11", text: "The deployment ___ have failed — the logs show no errors at all.", answers: ["can't", "couldn't", "cannot"] },
+      { id: "md12", text: "They're not online. They ___ not have seen the message yet.", answers: ["might", "may"] },
+      { id: "md13", text: "The signal arrived an hour ago. The rover ___ (land) on Mars by now.", answers: ["must have landed"] },
+      { id: "md14", text: "I'm not sure where Marta is. She ___ (go) to lunch.", answers: ["might have gone", "may have gone", "could have gone"] },
+      { id: "md15", text: "You ___ (be) exhausted after last night's shift!", answers: ["must have been"] },
+      { id: "md16", text: "He ___ (not / write) this code — he doesn't know Python at all.", answers: ["can't have written", "couldn't have written", "cannot have written"] },
+      // predicción
+      { id: "md17", text: "Look at those dark clouds. It's ___ to rain.", answers: ["going"] },
+      { id: "md18", text: "Don't worry about the demo — it ___ go fine. You've practised a lot.", answers: ["will", "should"] }
     ]
   }
 };

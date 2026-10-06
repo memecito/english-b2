@@ -168,12 +168,25 @@ const TOPICS = [
          <b>remember doing</b> = have a memory of it (the action came before): <i>I remember <b>installing</b> it.</i></p>
       <p><b>stop doing</b> = quit: <i>He stopped <b>smoking</b>.</i><br>
          <b>stop to do</b> = pause in order to do something else: <i>I stopped <b>to buy</b> a coffee.</i></p>
+      <p><b>forget doing</b> = forget a past memory (mostly <i>I'll never forget…</i>): <i>I'll never forget <b>seeing</b> the launch.</i><br>
+         <b>forget to do</b> = not do something you had to do: <i>I forgot <b>to send</b> the invoice.</i></p>
+      <p><b>regret doing</b> = be sorry about something you did: <i>I regret <b>not learning</b> English earlier.</i><br>
+         <b>regret to do</b> = formal bad news (<i>regret to inform / to say</i>): <i>We regret <b>to inform</b> you that…</i></p>
+      <p><b>try doing</b> = experiment, to see if it works: <i>Try <b>restarting</b> the router.</i><br>
+         <b>try to do</b> = make an effort (often difficult or failed): <i>I tried <b>to open</b> the file, but it was corrupted.</i></p>
+      <p><b>Same meaning with both</b>: <i>begin, start, continue, love, hate, prefer, intend</i> — <i>I prefer <b>working</b> / <b>to work</b> in the morning.</i></p>
+
+      <h3>3b. Verb + object + to-infinitive</h3>
+      <p><i>advise, allow, ask, encourage, expect, force, invite, persuade, remind, teach, tell, want, warn</i> + <b>someone + to do</b>:</p>
+      <p><i>Our manager encouraged <b>us to take</b> the exam.</i> · <i>IT warned <b>us not to click</b> suspicious links.</i> (negative: <b>not to</b>)</p>
+      <p>⚠️ Spanish says <i>quiero <b>que</b> vengas</i>; English has no <i>that</i> clause here: ✗ <i>I want that you come</i> → ✓ <i>I want <b>you to come</b></i>.</p>
 
       <h3>4. After a preposition → always -ing</h3>
       <p><i>interested <b>in learning</b>, thinking <b>about taking</b>, good <b>at explaining</b>, <b>before leaving</b>, <b>without testing</b></i></p>
       <p><b>Trap: sometimes "to" is a preposition</b>, not part of an infinitive — then -ing follows:<br>
          <i>I look forward <b>to hearing</b> from you.</i> (✗ <i>to hear</i>) · <i>I'm used <b>to working</b> remotely.</i> (= I'm accustomed to it)</p>
       <p>Compare <i>I <b>used to work</b> in an office</i> (past habit, no longer true) with <i>I'm <b>used to working</b> remotely</i> (it's normal for me now).</p>
+      <p><b>get used to + -ing / noun</b> = the <b>process</b> of becoming accustomed: <i>I'm <b>getting used to waking</b> up at 6.</i> · <i>It took me months to <b>get used to</b> the open-plan office.</i></p>
 
       <h3>Useful in Part 4 transformations</h3>
       <p><i>"Why don't we postpone the meeting?" she said. (SUGGESTED)</i> → She <b>suggested postponing</b> the meeting.</p>
@@ -292,7 +305,9 @@ const TOPICS = [
         <thead><tr><th>Word</th><th>Meaning</th><th>Example</th></tr></thead>
         <tbody>
           <tr><td><b>unless</b></td><td>if … not</td><td>We won't finish <b>unless</b> we get more people. (= if we don't get)</td></tr>
-          <tr><td><b>as long as / provided (that) / providing</b></td><td>only if (a condition you insist on)</td><td>You can work from home <b>as long as</b> you attend the Monday meeting.</td></tr>
+          <tr><td><b>as long as / so long as / provided (that) / providing</b></td><td>only if (a condition you insist on)</td><td>You can work from home <b>as long as</b> you attend the Monday meeting.</td></tr>
+          <tr><td><b>on condition that</b></td><td>only if — more formal (contracts, agreements)</td><td>You can use the data <b>on condition that</b> it stays anonymous.</td></tr>
+          <tr><td><b>whether (or not)</b></td><td>one of two possibilities; also in indirect yes/no questions</td><td>Let me know <b>whether</b> you can come <b>or not</b>.</td></tr>
           <tr><td><b>in case</b></td><td>as a precaution — <b>not</b> a condition</td><td>Take your charger <b>in case</b> the meeting runs late.</td></tr>
           <tr><td><b>otherwise</b></td><td>if not (starts a new clause)</td><td>Save your work, <b>otherwise</b> you'll lose it.</td></tr>
         </tbody>
@@ -350,7 +365,7 @@ const TOPICS = [
       <p><i>They gave me access.</i> → <i><b>I was given</b> access.</i> (more natural) or <i>Access <b>was given to me</b>.</i></p>
 
       <h3>4. "It is said that…" / "He is said to…" — reporting passive</h3>
-      <p>With <i>say, believe, think, know, expect, report, consider</i>:</p>
+      <p>With <i>say, believe, think, know, expect, report, claim, consider</i> — it lets the writer <b>distance themselves</b> from the opinion (typical of news and reports):</p>
       <p><i><b>It is said that</b> the company is going to be sold.</i><br>
          <i>The company <b>is said to be</b> in trouble.</i> (present)<br>
          <i>The CEO <b>is believed to have resigned</b> last week.</i> (past → <b>to have + participle</b>)</p>
@@ -377,6 +392,116 @@ const TOPICS = [
       <p><i>People say that the new CEO is very strict. (SAID)</i> → The new CEO <b>is said to be</b> very strict.</p>
       <p><i>A mechanic is going to repair my car tomorrow. (HAVE)</i> → I'm going to <b>have my car repaired</b> tomorrow.</p>
       <p><i>They haven't told us about the changes yet. (BEEN)</i> → We <b>haven't been told about</b> the changes yet.</p>
+    `
+  },
+  {
+    id: "modals",
+    emoji: "🧭",
+    title: "Modals: obligation, permission, ability, advice, requests",
+    html: `
+      <p class="hint">📎 Matches the work class (Learnlight): modals for obligation, prohibition, permission, ability, advice, offers and requests, past modals.</p>
+      <p><b>Modal verbs</b> (can, could, may, must, should, will, would, shall, might) are followed by the <b>bare infinitive</b> — no <i>to</i>, no <i>-s</i>, no <i>do</i> in questions.</p>
+      <p>✗ <i>You must <b>to</b> sign</i> · ✗ <i>She can<b>s</b></i> · ✗ <i><b>Do</b> I must…?</i> → ✓ <i>You must sign · She can · Must I…?</i></p>
+      <p><i>Have to, need to, be able to, be allowed to</i> are <b>not</b> true modals: they change form (<i>has to, had to, will be able to</i>) and use <i>do</i> in questions (<i>Do I have to…?</i>). That's why they're used for the tenses that modals don't have.</p>
+
+      <h3>1. Obligation and necessity</h3>
+      <p><b>must</b> — the speaker feels it's necessary, or written rules: <i>We must hire more staff.</i> · <i>Visitors must sign in.</i><br>
+         <b>have to</b> — obligation from outside (rules, circumstances): <i>I have to submit the report by Friday — it's a department rule.</i><br>
+         <b>need to</b> — it's necessary: <i>I need to renew my certificate.</i></p>
+      <p>Past: <b>had to</b> (never "musted"): <i>I had to work weekends in my last job.</i> · Future: <b>will have to</b>.</p>
+
+      <h3>2. mustn't ≠ don't have to ⚠️ Spanish speaker trap</h3>
+      <table>
+        <thead><tr><th>Form</th><th>Meaning</th><th>Spanish</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>mustn't / can't</b></td><td>it's prohibited</td><td>no debes / no puedes</td><td>You <b>mustn't</b> share your password.</td></tr>
+          <tr><td><b>don't have to / don't need to / needn't</b></td><td>it isn't necessary (you can if you want)</td><td>no tienes que / no hace falta</td><td>You <b>don't have to</b> wear a suit.</td></tr>
+        </tbody>
+      </table>
+      <p><b>needn't have done</b> = you did it, but it wasn't necessary: <i>You <b>needn't have brought</b> your laptop — we had spare ones.</i></p>
+
+      <h3>3. Permission and prohibition</h3>
+      <p><b>can</b> (neutral) · <b>could</b> (more polite, to ask) · <b>may</b> (formal) · <b>be allowed to</b> (rules; works in every tense).</p>
+      <p><i><b>Could</b> I ask you a question?</i> · <i>Staff <b>may not</b> use the lifts during a fire alarm.</i> · <i>Employees <b>are allowed to</b> work from home on Fridays.</i></p>
+      <p>Past: <b>could</b> for general permission (<i>In my last job I <b>could</b> wear jeans</i>), but <b>was allowed to</b> for one specific occasion: <i>She <b>was allowed to</b> leave early yesterday.</i></p>
+
+      <h3>4. Ability</h3>
+      <p>Present: <b>can</b> / <b>be able to</b> (more formal). Future: <b>will be able to</b> — ✗ <i>will can</i>.<br>
+         Past general ability: <b>could</b> — <i>I <b>could</b> code when I was twelve.</i><br>
+         Past success on one occasion: <b>was able to / managed to</b> — <i>The server crashed, but we <b>managed to</b> restore it.</i> (negative <i>couldn't</i> is fine in both cases)<br>
+         Ability not used: <b>could have + participle</b> — <i>I <b>could have explained</b> it, but I didn't have time.</i></p>
+
+      <h3>5. Advice and criticism</h3>
+      <p><b>could</b> = a suggestion, one option: <i>You <b>could</b> ask Ana.</i><br>
+         <b>should / ought to</b> = the right thing to do: <i>You <b>ought to</b> inform HR.</i> (<i>ought to</i> mostly in positive sentences)<br>
+         <b>had better ('d better)</b> = strong advice + a warning of a bad result: <i>You<b>'d better</b> save your work — the system is restarting.</i> · <i>We<b>'d better not</b> tell John.</i></p>
+      <p><b>should have / shouldn't have + participle</b> = regret or criticism about the past:<br>
+         <i>We <b>should have tested</b> the update.</i> (we didn't) · <i>I <b>shouldn't have sent</b> that email.</i> (I did)</p>
+
+      <h3>6. Offers, suggestions and requests — work phrases</h3>
+      <p><b>Offers</b>: <i><b>Shall</b> I / <b>Can</b> I help you?</i> · <b>Suggestions</b>: <i><b>Shall</b> we discuss it over lunch?</i> = <i><b>Let's</b> discuss it…</i> (less formal)</p>
+      <p><b>Requests</b>, from less to more polite: <i>Can you…? → Could you…? / Would you…? → Would you mind + <b>-ing</b>?</i></p>
+      <p>⚠️ <b>Would you mind…? / Do you mind if…?</b> — the answer <b>"Not at all"</b> or <b>"No, go ahead"</b> means <b>yes, I'm happy to</b> (literally "I don't mind"). Saying "Yes" means you <i>do</i> mind!</p>
+      <p>Polite refusal: <i>I'd rather not, if you don't mind.</i> · <i>Actually, I'd prefer not to.</i></p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>It isn't necessary to bring your laptop. (HAVE)</i> → You <b>don't have to bring</b> your laptop.</p>
+      <p><i>It was a mistake to change the date. (SHOULD)</i> → We <b>shouldn't have changed</b> the date.</p>
+      <p><i>I strongly advise you to leave now. (BETTER)</i> → You <b>had better leave</b> now.</p>
+      <p><i>Is it OK if I open the window? (MIND)</i> → <b>Do you mind if I open</b> the window?</p>
+    `
+  },
+  {
+    id: "modals-deduction",
+    emoji: "🕵️",
+    title: "Modals of deduction: must, might, can't (have)",
+    html: `
+      <p class="hint">📎 Matches the work class (Learnlight): modals for deduction and supposition (present and past), modals for prediction.</p>
+      <p>We use modals to say <b>how sure we are</b> about something we don't know for certain, based on evidence.</p>
+
+      <h3>1. The certainty scale</h3>
+      <table>
+        <thead><tr><th>How sure?</th><th>Present</th><th>Past</th></tr></thead>
+        <tbody>
+          <tr><td>~99% <b>yes</b></td><td><b>must</b> be / must be doing</td><td><b>must have</b> + participle</td></tr>
+          <tr><td>possible</td><td><b>might / may / could</b> be</td><td><b>might / may / could have</b> + participle</td></tr>
+          <tr><td>possible <b>not</b></td><td><b>might not / may not</b> be</td><td><b>might not / may not have</b> + participle</td></tr>
+          <tr><td>~99% <b>no</b></td><td><b>can't / couldn't</b> be</td><td><b>can't / couldn't have</b> + participle</td></tr>
+        </tbody>
+      </table>
+      <p><i>Her calendar says "Client call 10–11" and it's 10:30. She <b>must be</b> on the call.</i><br>
+         <i>He <b>can't be</b> the new CTO — he looks about nineteen!</i><br>
+         <i>The office is dark. Everyone <b>must have gone</b> home.</i><br>
+         <i>I can't find my badge. I <b>might have left</b> it in the car.</i></p>
+
+      <h3>2. The two big traps</h3>
+      <ul>
+        <li><b>The opposite of <i>must</i> (deduction) is <i>can't</i>, not <i>mustn't</i>.</b> ✗ <i>He mustn't be at home</i> → ✓ <i>He <b>can't</b> be at home.</i> (<i>mustn't</i> = prohibition)</li>
+        <li><b>couldn't</b> = 99% no. For "maybe not" use <b>might not / may not</b>: <i>They <b>might not have seen</b> the message.</i> (✗ <i>could not have</i> with this meaning)</li>
+      </ul>
+
+      <h3>3. Spanish speaker trap: conjecture with future and conditional</h3>
+      <p>Spanish often guesses with the <b>future</b> or <b>conditional</b> tense. English uses a modal:</p>
+      <ul>
+        <li><i>"Estará en una reunión"</i> → <i>She <b>must be / might be</b> in a meeting.</i> (✗ <i>She will be in a meeting</i>)</li>
+        <li><i>"Habrá perdido el tren"</i> → <i>He <b>must have / might have missed</b> the train.</i></li>
+        <li><i>"Serían las cinco"</i> → <i>It <b>must have been</b> about five.</i></li>
+        <li><i>"Debe de estar en casa"</i> (deduction) → <i>He <b>must be</b> at home.</i> · <i>"No puede ser él"</i> → <i>It <b>can't be</b> him.</i></li>
+      </ul>
+
+      <h3>4. Deduction vs criticism — same shape, different meaning</h3>
+      <p><i>He <b>must have</b> forgotten.</i> = I'm almost sure he forgot (deduction).<br>
+         <i>He <b>should have</b> remembered.</i> = it was his duty, and he didn't (criticism) — see the <b>Modals</b> topic.</p>
+
+      <h3>5. Predictions about the future</h3>
+      <p><b>will / won't</b> = almost certain: <i>Don't worry, the demo <b>will</b> go fine.</i><br>
+         <b>may / might / could</b> = possible: <i>It <b>might</b> rain later.</i><br>
+         <b>going to</b> = there's evidence now: <i>Look at those clouds — it's <b>going to</b> rain.</i></p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>I'm sure he forgot about the meeting. (MUST)</i> → He <b>must have forgotten</b> about the meeting.</p>
+      <p><i>It's impossible that she read my email — she's on a plane. (CAN'T)</i> → She <b>can't have read</b> my email.</p>
+      <p><i>Perhaps they missed the train. (MIGHT)</i> → They <b>might have missed</b> the train.</p>
     `
   }
 ];

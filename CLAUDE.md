@@ -7,12 +7,13 @@ B2 First**. Mismo motor, contenido propio y separado — ver
 gamificación, arquitectura datos/motor/generador) antes de tocar la
 estructura del juego.
 
-**Estado actual (2026-09-28):** motor funcionando, repo git propio
+**Estado actual (2026-10-06):** motor funcionando, repo git propio
 (GitHub privado: `memecito/english-b2`), copy con temática informática/espacio/ciencia ficción,
-vocabulario migrado (14 palabras) y **7 temas de gramática, 172
+vocabulario migrado (14 palabras) y **9 temas de gramática, 228
 frases**: relative clauses, present perfect vs past simple, verb
 patterns, word formation (Part 3), unreal past, conditionals (con
-*if* vs *because*), passive + causative. Resto de gramática
+*if* vs *because*), passive + causative, modals (obligación, permiso,
+habilidad, consejo, peticiones), modals of deduction. Resto de gramática
 pendiente — el usuario quiere montarla casi del tirón. No es un PDF que extraer
 (a diferencia de `ingles-ari`): la fuente es material propio ya
 existente:
@@ -45,6 +46,13 @@ un mismo ítem sirve para las dos formaciones. Cuando la clase del
 trabajo vea un tema, adelantarlo aquí (así se eligió relative clauses
 como primer tema).
 
+- La clase del trabajo usa la grammar guide de Learnlight:
+  `docs/notas-learnlight.md` clasifica sus 126 lecciones (ya cubiertas
+  / candidatas a tema nuevo / descartadas A1-A2) y anota sus puntos
+  discutibles. Consultarlo antes de volver a descargar la web; al usar
+  su contenido, parafrasear y poner ejemplos propios (copyright). Los
+  temas alineados con la clase llevan una nota "📎 Work class" al
+  principio de la teoría.
 - Teoría (`topics.js`) **en inglés**, con las trampas de
   hispanohablante marcadas — misma regla que `~/claude/English`. La UI
   del juego sigue en español.
@@ -74,12 +82,14 @@ como primer tema).
 
 ## Pendiente
 
-- Resto de gramática B2, siguiendo el orden del plan: pasados
-  narrativos (used to / would), modales
-  (deducción, past modals), reported speech, linking words
-  (although/despite…), comparativos/cuantificadores/artículos.
-  Errores diagnosticados aún sin tema propio: concordancia de
-  plurales, *as...as*.
+- Resto de gramática B2 (orden acordado 2026-10-06, ver
+  `docs/notas-learnlight.md` §2): sustantivos/cuantificadores/
+  artículos (con la concordancia de plurales diagnosticada), reported
+  speech + say/tell + indirect questions, pasados narrativos (used to /
+  would), futuros (future perfect/continuous), comparación y adjetivos
+  (con *as...as* diagnosticado), preguntas (subject/object, tags),
+  phrasal verbs (gramática) y preposiciones; linking words
+  (although/despite…) del plan.
 - Vocabulario: el usuario va a generar una lista con otra IA en el
   formato de `data/translations.txt` — revisarla al importarla
   (traducciones, duplicados, categorías coherentes).
