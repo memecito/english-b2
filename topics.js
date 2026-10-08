@@ -503,5 +503,65 @@ const TOPICS = [
       <p><i>It's impossible that she read my email — she's on a plane. (CAN'T)</i> → She <b>can't have read</b> my email.</p>
       <p><i>Perhaps they missed the train. (MIGHT)</i> → They <b>might have missed</b> the train.</p>
     `
+  },
+  {
+    id: "comparison",
+    emoji: "⚖️",
+    title: "Comparison: comparatives, superlatives, as…as",
+    html: `
+      <p class="hint">📎 Academy class (2026-10-07): comparisons. Also in the work class (Learnlight: comparatives, superlatives, comparative/superlative adverbs).</p>
+
+      <h3>1. Forming comparatives and superlatives</h3>
+      <table>
+        <thead><tr><th>Adjective</th><th>Rule</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td>1 syllable</td><td>-er / the -est</td><td>fast → fast<b>er</b> → the fast<b>est</b></td></tr>
+          <tr><td>… ending in -e</td><td>+ r / + st</td><td>late → late<b>r</b> → the late<b>st</b></td></tr>
+          <tr><td>… consonant + vowel + consonant</td><td>double the consonant</td><td>big → bi<b>gg</b>er, hot → ho<b>tt</b>est</td></tr>
+          <tr><td>2 syllables ending in -y</td><td>y → i + -er / -est</td><td>easy → eas<b>ier</b> → the eas<b>iest</b>, busy → busier</td></tr>
+          <tr><td>other 2+ syllables</td><td>more / the most</td><td>useful → <b>more</b> useful → the <b>most</b> useful</td></tr>
+          <tr><td>irregular</td><td>—</td><td>good → <b>better</b> → <b>best</b> · bad → <b>worse</b> → <b>worst</b> · far → <b>further/farther</b> → <b>furthest</b> · little → <b>less</b> → <b>least</b> · much/many → <b>more</b> → <b>most</b></td></tr>
+        </tbody>
+      </table>
+      <p>✗ <i>more easier</i>, ✗ <i>more better</i>, ✗ <i>the most fast</i> — never use both forms at once.</p>
+      <p><b>Adverbs</b> work the same way: <i>work <b>harder</b>, arrive <b>earlier</b>, speak <b>more slowly</b>, do it <b>better</b></i> (✗ <i>more fast</i>).</p>
+
+      <h3>2. than + …</h3>
+      <p><i>She's older <b>than me</b>.</i> (informal, normal in speech) = <i>She's older <b>than I am</b>.</i> (more formal) — ✗ <i>than I</i> on its own sounds odd.</p>
+
+      <h3>3. How big is the difference? — modifiers</h3>
+      <p><b>Big</b>: <i><b>much / far / a lot / considerably</b> more complicated</i> · <b>Small</b>: <i><b>slightly / a bit / a little</b> faster</i> · <b>Surprise</b>: <i><b>even</b> worse</i></p>
+      <p>✗ <i><b>very</b> bigger</i> → ✓ <i><b>much</b> bigger</i>. With superlatives: <i><b>by far</b> the best</i>.</p>
+
+      <h3>4. as … as ⚠️ your diagnosed error</h3>
+      <p>For <b>equal</b> amounts or degrees, English uses <b>as + adjective/adverb + as</b> — never <i>than</i>:</p>
+      <p><i>I hope you enjoy it <b>as much as</b> I did.</i> (✗ <i>than I did</i> — Spanish <i>tanto como</i>)<br>
+         <i>The new office isn't <b>as / so</b> big <b>as</b> the old one.</i> (= it's smaller)<br>
+         <i>This server is <b>twice as</b> fast <b>as</b> the old one.</i> · <i>We got <b>as many</b> complaints <b>as</b> last month.</i></p>
+      <p><b>the same as</b> (✗ <i>the same than</i>, ✗ <i>the same that</i>): <i>My laptop is <b>the same as</b> yours.</i></p>
+
+      <h3>5. Double comparatives</h3>
+      <p><b>the + comparative…, the + comparative</b> — one change causes another:<br>
+         <i><b>The more</b> you practise, <b>the easier</b> it gets.</i> · <i><b>The sooner</b> we start, <b>the earlier</b> we'll finish.</i></p>
+      <p><b>comparative + and + comparative</b> — continuous change:<br>
+         <i>Cloud costs are getting <b>higher and higher</b>.</i> · <i>English is <b>more and more</b> important in my job.</i></p>
+
+      <h3>6. Superlatives — the details</h3>
+      <ul>
+        <li><b>the</b> is needed: <i>It's <b>the</b> fastest option.</i></li>
+        <li><b>in</b> + place or group (<i>the best engineer <b>in</b> the team</i>), <b>of</b> + a period or number (<i>the best day <b>of</b> my life, the cheapest <b>of</b> the three</i>).</li>
+        <li><b>+ present perfect + ever</b>: <i>It's the best talk I<b>'ve ever seen</b>.</i></li>
+        <li><b>one of the + superlative + PLURAL noun</b> ⚠️ (your plural agreement error): <i>one of the best <b>developers</b></i> (✗ <i>developer</i>).</li>
+      </ul>
+
+      <h3>7. less / fewer</h3>
+      <p><b>less</b> + uncountable (<i>less time, less money</i>) · <b>fewer</b> + plural countable (<i>fewer bugs, fewer meetings</i>). In speech <i>less bugs</i> is common, but in the exam use <b>fewer</b>.</p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>The old office was bigger than this one. (AS)</i> → This office <b>isn't as big as</b> the old one.</p>
+      <p><i>I've never seen such a good talk. (EVER)</i> → It's the <b>best talk I've ever</b> seen.</p>
+      <p><i>If you practise more, it becomes easier. (THE)</i> → <b>The more you practise, the</b> easier it becomes.</p>
+      <p><i>Prices keep going up. (MORE)</i> → Prices are getting <b>more and more</b> expensive.</p>
+    `
   }
 ];

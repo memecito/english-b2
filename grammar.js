@@ -347,5 +347,49 @@ const GRAMMAR = {
       { id: "md17", text: "Look at those dark clouds. It's ___ to rain.", answers: ["going"] },
       { id: "md18", text: "Don't worry about the demo — it ___ go fine. You've practised a lot.", answers: ["will", "should"] }
     ]
+  },
+  "comparison": {
+    title: "Comparison: comparatives, superlatives, as…as",
+    emoji: "⚖️",
+    topicId: "comparison",
+    items: [
+      // formación
+      { id: "cp1", text: "The new laptop is much ___ (fast) than the old one.", answers: ["faster"] },
+      { id: "cp2", text: "This year's budget is ___ (big) than last year's.", answers: ["bigger"] },
+      { id: "cp3", text: "For me, debugging is ___ (easy) than writing documentation.", answers: ["easier"] },
+      { id: "cp4", text: "The new dashboard is ___ (useful) than the old one.", answers: ["more useful"] },
+      { id: "cp5", text: "Our support team is ___ (good) than it was two years ago.", answers: ["better"] },
+      { id: "cp6", text: "The traffic was even ___ (bad) today than yesterday.", answers: ["worse"] },
+      { id: "cp7", text: "This is the ___ (expensive) cloud provider we've ever used.", answers: ["most expensive"] },
+      { id: "cp8", text: "Jupiter is the ___ (large) planet in the solar system.", answers: ["largest"] },
+      { id: "cp9", text: "That was the ___ (bad) presentation I've ever given.", answers: ["worst"] },
+      { id: "cp10", text: "Could you speak a bit more ___ (slow), please?", answers: ["slowly"] },
+      { id: "cp11", text: "She works ___ (hard) than anyone else in the team.", answers: ["harder"] },
+      { id: "cp12", text: "The probe travelled ___ (far) than any previous mission.", answers: ["further", "farther"] },
+      { id: "cp13", text: "My colleague is two years older than ___ (I).", answers: ["me", "I am"] },
+      // modificadores
+      { id: "cp14", text: "She's by ___ the best engineer in the team.", answers: ["far"] },
+      { id: "cp15", text: "The new version is only a ___ faster — the difference is tiny.", answers: ["bit", "little"] },
+      { id: "cp16", text: "The migration was ___ more complicated than we expected — it took twice as long.", answers: ["much", "far", "even", "considerably", "way"] },
+      // as...as (error diagnosticado)
+      { id: "cp17", text: "I hope you enjoy the conference as much ___ I did.", answers: ["as"] },
+      { id: "cp18", text: "The new office isn't ___ big as the old one.", answers: ["as", "so"] },
+      { id: "cp19", text: "This server is twice ___ fast as the old one.", answers: ["as"] },
+      { id: "cp20", text: "My laptop is the same ___ yours.", answers: ["as"] },
+      { id: "cp21", text: "I don't earn ___ much as my manager.", answers: ["as", "so"] },
+      { id: "cp22", text: "We received ___ many complaints as last month — no improvement at all.", answers: ["as"] },
+      // dobles comparativos
+      { id: "cp23", text: "The ___ you practise, the easier it gets.", answers: ["more"] },
+      { id: "cp24", text: "The sooner we start, the ___ (early) we'll finish.", answers: ["earlier"] },
+      { id: "cp25", text: "Cloud costs are getting higher and ___.", answers: ["higher"] },
+      { id: "cp26", text: "English is becoming more and ___ important in my job.", answers: ["more"] },
+      // superlativos: ever, one of + plural, in/of
+      { id: "cp27", text: "It's the best talk I've ___ seen.", answers: ["ever"] },
+      { id: "cp28", text: "She's one of the most talented ___ (developer) in the company.", answers: ["developers"] },
+      { id: "cp29", text: "He's the most experienced engineer ___ the department.", answers: ["in"] },
+      // less / fewer
+      { id: "cp30", text: "We had ___ bugs this sprint than last sprint.", answers: ["fewer"] },
+      { id: "cp31", text: "I spend ___ time in meetings now, thank goodness.", answers: ["less"] }
+    ]
   }
 };
