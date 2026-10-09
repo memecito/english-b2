@@ -1,0 +1,27 @@
+# --- Material de terceros con derechos de autor ---------------------------
+# Listas de vocabulario de Oxford (PDF) y notas de clase. Son fuente de trabajo
+# local: el juego no las usa (tools/build_words.py lee data/translations.txt) y
+# no se pueden redistribuir en un repo público.
+*.pdf
+docs/
+
+# --- Notas de trabajo locales ---------------------------------------------
+# Contexto para Claude Code con datos personales. Se queda en disco.
+CLAUDE.md
+
+# --- Copias, artefactos y secretos ----------------------------------------
+*.zip
+*.bak
+*~
+*.swp
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+
+# --- Sistema operativo / editores -----------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
