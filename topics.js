@@ -776,5 +776,84 @@ const TOPICS = [
       <p><i>There weren't many people at the demo. (FEW)</i> → <b>Few people came</b> to / <b>Very few people were</b> at the demo.</p>
       <p><i>The room is too small for all of us. (ENOUGH)</i> → The room <b>isn't big enough for</b> all of us.</p>
     `
+  },
+  {
+    id: "reported-speech",
+    emoji: "🗣️",
+    title: "Reported speech, say/tell, reporting verbs & indirect questions",
+    html: `
+      <p class="hint">Learnlight (work class): reported speech, verbs of communication say and tell, reporting verbs, indirect questions. Plan week 8. Includes your diagnosed <b>recommend + -ing</b> error. Very frequent in Part 4.</p>
+
+      <h3>1. say vs tell ⚠️</h3>
+      <table>
+        <thead><tr><th>Verb</th><th>Pattern</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td><b>say</b></td><td>say (that)… · say sth <b>to</b> sb</td><td><i>He <b>said</b> (that) he'd be late.</i> · <i>She <b>said to me</b> that…</i> (✗ <i>said me</i>)</td></tr>
+          <tr><td><b>tell</b></td><td><b>tell + person</b> (that)… · tell sb <b>to do</b></td><td><i>She <b>told me</b> (that) the server was down.</i> (✗ <i>told that</i>, ✗ <i>told to me</i>)</td></tr>
+        </tbody>
+      </table>
+      <p>Fixed expressions: <b>tell</b> the truth / a lie / a story / a joke / the difference · <b>say</b> hello / goodbye / sorry / yes / no / something.</p>
+
+      <h3>2. Tense changes (backshift)</h3>
+      <p>When the reporting verb is in the past (<i>said, told, asked</i>), the original tense usually moves <b>one step back</b>:</p>
+      <table>
+        <thead><tr><th>Direct speech</th><th>Reported speech</th></tr></thead>
+        <tbody>
+          <tr><td>present simple: <i>"I <b>work</b> in Madrid."</i></td><td>past simple: <i>She said she <b>worked</b> in Madrid.</i></td></tr>
+          <tr><td>present continuous: <i>"I<b>'m fixing</b> it."</i></td><td>past continuous: <i>He said he <b>was fixing</b> it.</i></td></tr>
+          <tr><td>present perfect: <i>"I<b>'ve finished</b>."</i></td><td>past perfect: <i>She said she <b>had finished</b>.</i></td></tr>
+          <tr><td>past simple: <i>"I <b>saw</b> it."</i></td><td>past perfect: <i>She said she <b>had seen</b> it.</i> (or <i>saw</i>, in speech)</td></tr>
+          <tr><td><b>will</b> / <b>can</b> / <b>may</b></td><td><b>would</b> / <b>could</b> / <b>might</b></td></tr>
+          <tr><td><b>must</b> (obligation)</td><td><b>had to</b> (or <i>must</i>)</td></tr>
+        </tbody>
+      </table>
+      <p><b>No change</b>: <i>would, could, should, might, had done</i> · when the reporting verb is present (<i>She <b>says</b> she <b>works</b>…</i>) · optionally when it's <b>still true</b> (<i>She said she <b>works</b> in Madrid</i> — she still does).</p>
+
+      <h3>3. Other changes: people, time, place</h3>
+      <p>Pronouns change to fit the new speaker: <i>"<b>I</b>'ll send <b>you</b> it" → He said <b>he</b>'d send <b>me</b> it.</i></p>
+      <table>
+        <thead><tr><th>Direct</th><th>Reported</th></tr></thead>
+        <tbody>
+          <tr><td>now · today · tonight</td><td>then · that day · that night</td></tr>
+          <tr><td>yesterday · last week</td><td>the day <b>before</b> / the previous day · the week before / the previous week</td></tr>
+          <tr><td>tomorrow · next week</td><td>the <b>next</b> day / the <b>following</b> day · the following week</td></tr>
+          <tr><td>two years <b>ago</b></td><td>two years <b>before</b></td></tr>
+          <tr><td>here · this</td><td>there · that</td></tr>
+        </tbody>
+      </table>
+
+      <h3>4. Reported questions — statement word order ⚠️</h3>
+      <ul>
+        <li><b>yes/no questions → if / whether</b>: <i>"Are you coming?" → She asked me <b>if/whether I was</b> coming.</i></li>
+        <li><b>wh- questions → wh- word + subject + verb</b>, no <i>do/does/did</i>, no question mark: <i>"Where do you work?" → He asked me <b>where I worked</b>.</i> (✗ <i>where did I work</i>, ✗ <i>where worked I</i>)</li>
+      </ul>
+      <p>Spanish keeps the same order in both (<i>¿Dónde trabajas? / Me preguntó dónde trabajaba</i>), so this is a typical calque.</p>
+
+      <h3>5. Indirect questions — the polite way to ask</h3>
+      <p>Same word order rule, but no backshift (you are asking now): <i>Could you tell me <b>where the meeting room is</b>?</i> (✗ <i>where is the meeting room</i>) · <i>Do you know <b>if the client has signed</b>?</i> · <i>I was wondering <b>whether you could</b> help me.</i> Very useful at work: it sounds much more polite than a direct question.</p>
+
+      <h3>6. Reported orders and requests</h3>
+      <p><b>tell / ask + person + (not) to + infinitive</b>: <i>"Restart the server." → My boss <b>told me to restart</b> it.</i> · <i>"Please don't touch production." → She <b>asked us not to touch</b> production.</i> (✗ <i>told me that I restart</i>, ✗ <i>told us don't touch</i>)</p>
+
+      <h3>7. Reporting verbs — learn the pattern with the verb</h3>
+      <table>
+        <thead><tr><th>Pattern</th><th>Verbs</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>+ to-infinitive</td><td>agree, offer, promise, refuse, threaten, decide</td><td><i>She <b>offered to help</b> me.</i> · <i>He <b>refused to work</b> at the weekend.</i></td></tr>
+          <tr><td>+ person + to-infinitive</td><td>advise, ask, encourage, invite, persuade, remind, tell, warn</td><td><i>He <b>reminded me to back up</b> the data.</i></td></tr>
+          <tr><td>+ -ing</td><td>admit, deny, suggest, <b>recommend</b> ⚠️, mention</td><td><i>He <b>denied deleting</b> it.</i> · <i>I'd <b>recommend reading</b> the docs.</i> (✗ <i>recommend to read</i>)</td></tr>
+          <tr><td>+ preposition + -ing</td><td>apologise <b>for</b>, insist <b>on</b> · accuse sb <b>of</b>, blame sb <b>for</b>, congratulate sb <b>on</b>, thank sb <b>for</b></td><td><i>She <b>apologised for being</b> late.</i> · <i>They <b>accused him of leaking</b> the password.</i></td></tr>
+          <tr><td>+ that + clause</td><td>explain, complain, admit, suggest, recommend, insist</td><td><i>She <b>recommended that we update</b> the libraries.</i></td></tr>
+        </tbody>
+      </table>
+      <p>⚠️ <b>suggest / recommend</b> never take <i>person + to</i>: ✗ <i>He suggested me to use</i> → ✓ <i>He suggested <b>using</b></i> / <i>He suggested <b>that I use</b> (or <b>should use</b>)</i>.</p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>"I didn't break the build," said Tom. (DENIED)</i> → Tom <b>denied breaking</b> the build.</p>
+      <p><i>"Why don't we use Terraform?" she said. (SUGGESTED)</i> → She <b>suggested using</b> Terraform.</p>
+      <p><i>"You leaked the password!" they said to him. (ACCUSED)</i> → They <b>accused him of leaking</b> the password.</p>
+      <p><i>"Don't forget to sign the contract," he said to me. (REMINDED)</i> → He <b>reminded me to sign</b> the contract.</p>
+      <p><i>"Where is the server room?" she asked. (WHERE)</i> → She asked <b>where the server room was</b>.</p>
+    `
   }
 ];

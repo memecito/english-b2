@@ -534,5 +534,54 @@ const GRAMMAR = {
       { id: "na29", text: "I'll call you ___ week, when I'm back from the conference.", answers: ["next"] },
       { id: "na30", text: "___ who work remotely often feel isolated. (people, en general)", answers: ["people"] }
     ]
+  },
+  "reported-speech": {
+    title: "Reported speech, say/tell, reporting verbs & indirect questions",
+    emoji: "🗣️",
+    topicId: "reported-speech",
+    items: [
+      // say / tell
+      { id: "rs1", text: "She ___ me that the server was down. (say / tell)", answers: ["told"] },
+      { id: "rs2", text: "He ___ that he would be late for the stand-up. (say / tell)", answers: ["said"] },
+      { id: "rs3", text: "Please ___ me the truth — did you push to main? (say / tell)", answers: ["tell"] },
+      { id: "rs4", text: "She said ___ me that the release was ready.", answers: ["to"] },
+      // backshift
+      { id: "rs5", text: "'I work in Madrid.' → She said she ___ in Madrid.", answers: ["worked", "works"] },
+      { id: "rs6", text: "'I'm fixing the bug.' → He said he ___ fixing the bug.", answers: ["was"] },
+      { id: "rs7", text: "'I've finished the report.' → She said she ___ finished the report.", answers: ["had"] },
+      { id: "rs8", text: "'We'll deploy on Friday.' → They said they ___ deploy on Friday.", answers: ["would"] },
+      { id: "rs9", text: "'I can't access the VPN.' → He said he ___ access the VPN.", answers: ["couldn't"] },
+      { id: "rs10", text: "'I may be late.' → She said she ___ be late.", answers: ["might"] },
+      // tiempo y lugar
+      { id: "rs11", text: "'I saw your email yesterday.' → She said she had seen my email the day ___.", answers: ["before"] },
+      { id: "rs12", text: "'I'll call you tomorrow.' → He said he would call me the ___ day.", answers: ["next", "following"] },
+      { id: "rs13", text: "'We launched it two years ago.' → They said they had launched it two years ___.", answers: ["before", "earlier"] },
+      // preguntas indirectas y reported questions
+      { id: "rs14", text: "'Are you coming to the meeting?' → She asked me ___ I was coming to the meeting.", answers: ["if", "whether"] },
+      { id: "rs15", text: "'Where do you work?' → He asked me where I ___. (work)", answers: ["worked"] },
+      { id: "rs16", text: "'What time does the demo start?' → She asked what time the demo ___. (start)", answers: ["started"] },
+      { id: "rs17", text: "Could you tell me where the meeting room ___? (be)", answers: ["is"] },
+      { id: "rs18", text: "Do you know ___ the client has signed the contract?", answers: ["if", "whether"] },
+      { id: "rs19", text: "Can you tell me how long the migration ___ take?", answers: ["will", "would"] },
+      // órdenes y peticiones
+      { id: "rs20", text: "'Restart the server.' → My boss told me ___ restart the server.", answers: ["to"] },
+      { id: "rs21", text: "'Don't touch production.' → She told us ___ to touch production.", answers: ["not"] },
+      { id: "rs22", text: "'Could you send me the logs?' → He asked me ___ send him the logs.", answers: ["to"] },
+      // reporting verbs
+      { id: "rs23", text: "'I'll help you with the migration.' → She ___ to help me with the migration.", answers: ["offered", "promised"] },
+      { id: "rs24", text: "'No, I won't work this weekend.' → He ___ to work this weekend.", answers: ["refused"] },
+      { id: "rs25", text: "'I didn't delete the database!' → He denied ___ the database. (delete)", answers: ["deleting"] },
+      { id: "rs26", text: "'Yes, I broke the build.' → She admitted ___ the build. (break)", answers: ["breaking"] },
+      { id: "rs27", text: "'Why don't we use Terraform?' → He suggested ___ Terraform. (use)", answers: ["using"] },
+      { id: "rs28", text: "I'd recommend ___ the documentation first. (read)", answers: ["reading"] },
+      { id: "rs29", text: "She recommended ___ we update the libraries.", answers: ["that"] },
+      { id: "rs30", text: "'Remember to back up the data.' → He reminded me ___ back up the data.", answers: ["to"] },
+      { id: "rs31", text: "'You should take a break.' → The doctor advised me ___ take a break.", answers: ["to"] },
+      { id: "rs32", text: "'Sorry I'm late.' → She apologised ___ being late.", answers: ["for"] },
+      { id: "rs33", text: "'You leaked the password!' → They accused him ___ leaking the password.", answers: ["of"] },
+      { id: "rs34", text: "'Congratulations on your promotion!' → They congratulated her ___ her promotion.", answers: ["on"] },
+      { id: "rs35", text: "'I'll pay — no arguments!' → He insisted ___ paying.", answers: ["on"] },
+      { id: "rs36", text: "'If you're late again, I'll report you.' → She ___ to report him. (amenazar)", answers: ["threatened"] }
+    ]
   }
 };
