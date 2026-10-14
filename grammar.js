@@ -391,5 +391,74 @@ const GRAMMAR = {
       { id: "cp30", text: "We had ___ bugs this sprint than last sprint.", answers: ["fewer"] },
       { id: "cp31", text: "I spend ___ time in meetings now, thank goodness.", answers: ["less"] }
     ]
+  },
+  "so-such": {
+    title: "Linkers: so, so that, so…that, such (a)…that",
+    emoji: "🎯",
+    topicId: "so-such",
+    items: [
+      // so = resultado / because = causa
+      { id: "ss1", text: "The server was down, ___ we worked offline all morning.", answers: ["so"] },
+      { id: "ss2", text: "We worked offline all morning ___ the server was down.", answers: ["because", "as", "since"] },
+      // so that = finalidad
+      { id: "ss3", text: "I left the office early so ___ I could catch the last train.", answers: ["that"] },
+      { id: "ss4", text: "Send me the logs so that I ___ check what went wrong.", answers: ["can", "could"] },
+      { id: "ss5", text: "I wrote the password policy down so that I ___ forget it.", answers: ["wouldn't", "won't"] },
+      // so + adjetivo / adverbio
+      { id: "ss6", text: "The deployment was ___ slow that we cancelled it.", answers: ["so"] },
+      { id: "ss7", text: "She types ___ fast that nobody can keep up with her.", answers: ["so"] },
+      { id: "ss8", text: "The meeting was so long ___ half the team fell asleep.", answers: ["that"] },
+      // so + much / many / few / little
+      { id: "ss9", text: "There were so ___ bugs that we postponed the release.", answers: ["many"] },
+      { id: "ss10", text: "We had so ___ time that we skipped the tests.", answers: ["little"] },
+      { id: "ss11", text: "I've got so ___ work this week that I can't take a day off.", answers: ["much"] },
+      // such + a/an + adjetivo + sustantivo
+      { id: "ss12", text: "It was ___ a long meeting that I missed lunch.", answers: ["such"] },
+      { id: "ss13", text: "It was such ___ long meeting that I missed lunch.", answers: ["a"] },
+      { id: "ss14", text: "She's such ___ efficient manager that projects always finish on time.", answers: ["an"] },
+      { id: "ss15", text: "They're ___ old computers that they can't run the new IDE.", answers: ["such"] },
+      { id: "ss16", text: "She gave me ___ useful advice about the interview.", answers: ["such"] },
+      { id: "ss17", text: "We had such a ___ of work that we stayed until nine.", answers: ["lot"] },
+      // so vs such: el sustantivo decide
+      { id: "ss18", text: "The weather was ___ bad that the launch was postponed.", answers: ["so"] },
+      { id: "ss19", text: "It was ___ bad weather that the launch was postponed.", answers: ["such"] },
+      { id: "ss20", text: "The new office is ___ modern! I love it.", answers: ["so"] },
+      { id: "ss21", text: "It's ___ a modern office! I love it.", answers: ["such"] },
+      { id: "ss22", text: "The demo went so well ___ the client signed the contract the same day.", answers: ["that"] }
+    ]
+  },
+  "phrasal-verbs": {
+    title: "Phrasal verbs & collocations (take up, have a go, turn up…)",
+    emoji: "🧗",
+    topicId: "phrasal-verbs",
+    items: [
+      // take up
+      { id: "pv1", text: "I took ___ chess during lockdown and now I play every week.", answers: ["up"] },
+      { id: "pv2", text: "My manager has ___ up running — she does a half marathon every year.", answers: ["taken"] },
+      { id: "pv3", text: "Climbing looked fun, so I decided to take ___ up.", answers: ["it"] },
+      { id: "pv4", text: "Meetings take ___ half of my working day.", answers: ["up"] },
+      // have a go
+      { id: "pv5", text: "I've never used Terraform, but I'll have ___ go.", answers: ["a"] },
+      { id: "pv6", text: "Why don't you have a ___ at fixing the bug yourself?", answers: ["go"] },
+      { id: "pv7", text: "She had a go ___ writing the deployment script.", answers: ["at"] },
+      // turn up
+      { id: "pv8", text: "Only five people turned ___ to the product demo.", answers: ["up"] },
+      { id: "pv9", text: "The technician ___ up two hours late. (turn)", answers: ["turned"] },
+      // get / be used to
+      { id: "pv10", text: "I'm getting used to ___ (work) from home.", answers: ["working"] },
+      { id: "pv11", text: "It took me months to get ___ to the new IDE.", answers: ["used"] },
+      { id: "pv12", text: "I'm not used ___ getting up so early.", answers: ["to"] },
+      { id: "pv13", text: "I ___ to work in a bank, but now I'm a developer.", answers: ["used"] },
+      // take risks
+      { id: "pv14", text: "Start-ups have to ___ risks to grow.", answers: ["take"] },
+      { id: "pv15", text: "Don't take ___ risk — make a backup before you upgrade.", answers: ["a", "the"] },
+      // take part in
+      { id: "pv16", text: "Our team took ___ in a hackathon last weekend.", answers: ["part"] },
+      { id: "pv17", text: "Twenty people took part ___ the workshop.", answers: ["in"] },
+      // keep a promise
+      { id: "pv18", text: "He promised to fix it by Friday, and he ___ his promise. (keep)", answers: ["kept"] },
+      { id: "pv19", text: "Don't ___ a promise you can't keep.", answers: ["make"] },
+      { id: "pv20", text: "She was angry because he had ___ his promise. (no la cumplió)", answers: ["broken"] }
+    ]
   }
 };

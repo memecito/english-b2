@@ -725,3 +725,11 @@ subsidized meals|comidas subvencionadas|trabajo
 free parking|aparcamiento gratuito|trabajo
 flexible spending account|cuenta de gastos flexibles|trabajo
 workplace nursery|guardería de empresa|trabajo
+# Academia, semana del 2026-10-05 (phrasal verbs y collocations; teoría en el tema "phrasal-verbs")
+take up|empezar a practicar,aficionarse a,ocupar|phrasal
+have a go|intentarlo,probar,hacer un intento|phrasal
+turn up / show up|aparecer,presentarse,llegar|phrasal
+get used to|acostumbrarse a|phrasal
+take risks / take a risk|arriesgarse,correr riesgos|phrasal
+take part in|participar en,tomar parte en|phrasal
+keep a promise|cumplir una promesa|phrasal

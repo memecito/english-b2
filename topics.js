@@ -563,5 +563,102 @@ const TOPICS = [
       <p><i>If you practise more, it becomes easier. (THE)</i> → <b>The more you practise, the</b> easier it becomes.</p>
       <p><i>Prices keep going up. (MORE)</i> → Prices are getting <b>more and more</b> expensive.</p>
     `
+  },
+  {
+    id: "so-such",
+    emoji: "🎯",
+    title: "Linkers: so, so that, so…that, such (a)…that",
+    html: `
+      <p class="hint">📎 Academy class (week of 2026-10-05): linkers so, so + that, so + adjective, such + a/an + adjective + noun.</p>
+
+      <h3>1. so = result (por eso / así que)</h3>
+      <p><i>The server was down, <b>so</b> we worked offline.</i> — cause first, then <b>so</b> + result (usually after a comma).</p>
+      <p>Compare with <b>because</b>, which introduces the <b>cause</b> (your diagnosed <i>if / because</i> confusion lives here too):<br>
+         <i>We worked offline <b>because</b> the server was down.</i> = <i>The server was down, <b>so</b> we worked offline.</i></p>
+
+      <h3>2. so that = purpose (para que / para)</h3>
+      <p><b>so that</b> + subject + <b>can / could / will / would</b>: <i>I left early <b>so that</b> I <b>could</b> catch the train.</i> · <i>Send me the logs <b>so that</b> I <b>can</b> check them.</i></p>
+      <p>In informal English <i>that</i> is often dropped: <i>Send me the logs <b>so</b> I can check them.</i> The modal verb tells you it's purpose, not result.</p>
+      <p>⚠️ Spanish trap: <i>para que + subjuntivo</i> → <b>so that + can/could</b>, never ✗ <i>for that I can</i>, ✗ <i>for I can</i>.</p>
+
+      <h3>3. so + adjective / adverb (tan)</h3>
+      <p><i>The meeting was <b>so long</b>.</i> · <i>He types <b>so fast</b>.</i> — no noun after the adjective.</p>
+      <p><b>so + much / many / few / little + noun</b> (tanto/s): <i>There were <b>so many</b> bugs.</i> · <i>We had <b>so little</b> time.</i> (✗ <i>such many bugs</i>)</p>
+
+      <h3>4. such + (a/an) + adjective + noun (tan… / un… tan…)</h3>
+      <table>
+        <thead><tr><th>Noun</th><th>Pattern</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>singular countable</td><td><b>such a/an</b> + adj + noun</td><td><i>It was <b>such a</b> long meeting.</i> · <i>She's <b>such an</b> efficient manager.</i></td></tr>
+          <tr><td>plural</td><td><b>such</b> + adj + noun (no <i>a</i>)</td><td><i>They're <b>such</b> slow computers.</i></td></tr>
+          <tr><td>uncountable</td><td><b>such</b> + adj + noun (no <i>a</i>)</td><td><i>She gave me <b>such</b> useful advice.</i> (✗ <i>such an advice</i> — <i>advice</i> is uncountable)</td></tr>
+          <tr><td>quantity</td><td><b>such a lot of</b> + noun</td><td><i>We had <b>such a lot of</b> work.</i> (= <i>so much work</i>)</td></tr>
+        </tbody>
+      </table>
+      <p>Word order ⚠️: <b>such a</b> long meeting (✗ <i>a such long meeting</i>, ✗ <i>so a long meeting</i>). The noun decides: <b>noun → such</b>, <b>no noun → so</b>.</p>
+
+      <h3>5. so / such … that = result (tan… que)</h3>
+      <p><i>The meeting was <b>so</b> long <b>that</b> I fell asleep.</i> · <i>It was <b>such a</b> long meeting <b>that</b> I fell asleep.</i></p>
+      <p><i>that</i> can be dropped in speech (<i>It was so long I fell asleep</i>), but write it in the exam.</p>
+      <p><b>so…that</b> (result) ≠ <b>so that</b> (purpose): <i>I was <b>so</b> tired <b>that</b> I went home</i> (consecuencia) vs <i>I went home <b>so that</b> I could rest</i> (finalidad).</p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>The presentation was so boring that people left. (SUCH)</i> → It was <b>such a boring presentation</b> that people left.</p>
+      <p><i>It was such bad weather that the launch was postponed. (SO)</i> → The weather was <b>so bad that</b> the launch was postponed.</p>
+      <p><i>I'll write it down in order not to forget it. (THAT)</i> → I'll write it down <b>so that I won't</b> forget it.</p>
+    `
+  },
+  {
+    id: "phrasal-verbs",
+    emoji: "🧗",
+    title: "Phrasal verbs & collocations (take up, have a go, turn up…)",
+    html: `
+      <p class="hint">📎 Academy class (week of 2026-10-05): take up, have a go, turn up, get used to, take risks, take part in, keep a promise. Only some are phrasal verbs — the rest are <b>collocations</b> (fixed word partners). Both are tested in Part 1 and Part 2.</p>
+
+      <h3>1. Meanings</h3>
+      <table>
+        <thead><tr><th>Expression</th><th>Meaning</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>take up</b> sth</td><td>start a hobby or activity (empezar a practicar)</td><td><i>I <b>took up</b> chess during lockdown.</i></td></tr>
+          <tr><td><b>take up</b> time/space</td><td>occupy (ocupar)</td><td><i>Meetings <b>take up</b> half my day.</i></td></tr>
+          <tr><td><b>have a go</b> (at sth / at doing)</td><td>try something, often for the first time (intentarlo, probar)</td><td><i>I've never used Terraform, but I'll <b>have a go</b>.</i> · also <i><b>give it a go</b></i></td></tr>
+          <tr><td><b>turn up</b></td><td>arrive / appear, often late or unexpectedly (= <i>show up</i>; aparecer, presentarse)</td><td><i>Only five people <b>turned up</b> to the demo.</i></td></tr>
+          <tr><td><b>get used to</b> + -ing / noun</td><td>become accustomed (acostumbrarse a)</td><td><i>I'm <b>getting used to working</b> from home.</i></td></tr>
+          <tr><td><b>take a risk / take risks</b></td><td>arriesgarse, correr un riesgo</td><td><i>Start-ups have to <b>take risks</b>.</i></td></tr>
+          <tr><td><b>take part in</b></td><td>participate in (participar en)</td><td><i>Our team <b>took part in</b> a hackathon.</i></td></tr>
+          <tr><td><b>keep a promise</b></td><td>cumplir una promesa</td><td><i>He always <b>keeps his promises</b>.</i></td></tr>
+        </tbody>
+      </table>
+      <p>⚠️ Spanish traps: <b>have <u>a</u> go</b> (the <i>a</i> is compulsory) · <b>take</b> a risk (✗ <i>make / do a risk</i>) · take part <b>in</b> (✗ <i>take part of</i>, ✗ <i>participate on</i>) · <b>make</b> a promise = prometer, <b>keep</b> a promise = cumplirla, <b>break</b> a promise = no cumplirla (✗ <i>do a promise</i>).</p>
+
+      <h3>2. get used to vs be used to vs used to</h3>
+      <table>
+        <thead><tr><th>Form</th><th>Meaning</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>used to</b> + infinitive</td><td>past habit (solía)</td><td><i>I <b>used to work</b> in a bank.</i></td></tr>
+          <tr><td><b>be used to</b> + -ing / noun</td><td>state: already accustomed (estar acostumbrado)</td><td><i>I'<b>m used to working</b> late.</i></td></tr>
+          <tr><td><b>get used to</b> + -ing / noun</td><td>process: becoming accustomed (acostumbrarse)</td><td><i>It took me months to <b>get used to</b> the new IDE.</i></td></tr>
+        </tbody>
+      </table>
+      <p>In <i>be/get used to</i> the <b>to</b> is a preposition, so it takes <b>-ing</b>: ✗ <i>I'm getting used to work from home</i> → ✓ <i>used to <b>working</b></i>. (Same pattern as <i>look forward to <b>hearing</b></i> — see Verb patterns.)</p>
+
+      <h3>3. Grammar: where does the object go?</h3>
+      <table>
+        <thead><tr><th>Type</th><th>Rule</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>intransitive (no object)</td><td>nothing after the particle</td><td><i>He <b>turned up</b> late.</i></td></tr>
+          <tr><td>separable</td><td>noun: either position · <b>pronoun: always in the middle</b></td><td><i>take up chess</i> = <i>take chess up</i> · <i>take <b>it</b> up</i> ✓ / ✗ <i>take up it</i></td></tr>
+          <tr><td>inseparable / with preposition</td><td>object always after the whole verb</td><td><i>take part <b>in it</b></i> · <i>get used to <b>it</b></i></td></tr>
+        </tbody>
+      </table>
+      <p>Note: <i>turn up</i> also has a separable meaning, "increase the volume": <i>Turn <b>it</b> up!</i></p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>I started playing the guitar last year. (UP)</i> → I <b>took up the guitar</b> last year.</p>
+      <p><i>Why don't you try it? (GO)</i> → Why don't you <b>have a go</b>?</p>
+      <p><i>Twenty people participated in the workshop. (PART)</i> → Twenty people <b>took part in</b> the workshop.</p>
+      <p><i>He did what he had promised. (KEPT)</i> → He <b>kept his promise</b>.</p>
+      <p><i>Working nights is still strange for me. (USED)</i> → I'm still <b>not used to working</b> nights.</p>
+    `
   }
 ];
