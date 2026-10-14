@@ -855,5 +855,58 @@ const TOPICS = [
       <p><i>"Don't forget to sign the contract," he said to me. (REMINDED)</i> → He <b>reminded me to sign</b> the contract.</p>
       <p><i>"Where is the server room?" she asked. (WHERE)</i> → She asked <b>where the server room was</b>.</p>
     `
+  },
+  {
+    id: "narrative-tenses",
+    emoji: "📜",
+    title: "Narrative tenses: past continuous, past perfect, used to / would",
+    html: `
+      <p class="hint">Learnlight (work class): used to, used to vs would, past continuous, past perfect simple and continuous. Plan week 3. These are the tenses for telling stories — Writing (story, email), Speaking and Part 2 texts.</p>
+
+      <h3>1. The four narrative tenses on one timeline</h3>
+      <table>
+        <thead><tr><th>Tense</th><th>Use</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>past simple</b></td><td>the main events, in order</td><td><i>I <b>opened</b> the logs, <b>found</b> the bug and <b>fixed</b> it.</i></td></tr>
+          <tr><td><b>past continuous</b><br>was/were + -ing</td><td>background, or an action <b>in progress</b> when something else happened</td><td><i>I <b>was working</b> on the release when the power <b>went</b> off.</i></td></tr>
+          <tr><td><b>past perfect</b><br>had + participle</td><td>an action <b>earlier</b> than another past action ("the past of the past")</td><td><i>When I arrived, the meeting <b>had</b> already <b>started</b>.</i></td></tr>
+          <tr><td><b>past perfect continuous</b><br>had been + -ing</td><td>the <b>duration</b> of an activity up to a past moment, or the cause of a past result</td><td><i>I <b>had been waiting</b> for an hour when the bus came.</i> · <i>She was exhausted: she <b>had been coding</b> all night.</i></td></tr>
+        </tbody>
+      </table>
+      <p>Compare: <i>When I arrived, the meeting <b>started</b>.</i> (I arrived → then it started) vs <i>When I arrived, the meeting <b>had started</b>.</i> (it started before I arrived) vs <i>When I arrived, they <b>were having</b> the meeting.</i> (it was in progress).</p>
+
+      <h3>2. Spanish traps ⚠️</h3>
+      <ul>
+        <li><b>The imperfecto has no single translation.</b> <i>Trabajaba en un banco</i> (state/habit) → <i>I <b>worked</b> / <b>used to work</b> in a bank</i>; <i>Estaba trabajando cuando…</i> (in progress) → <i>I <b>was working</b> when…</i>. ✗ <i>I was working in a bank for five years</i> for a long finished period.</li>
+        <li><b>State verbs</b> (know, believe, want, belong, seem…) are not normally continuous: <i>I <b>didn't know</b> the answer</i> (✗ <i>wasn't knowing</i>).</li>
+        <li><i>Llevaba dos horas esperando</i> → <i>I <b>had been waiting for</b> two hours</i> (✗ <i>I was waiting since two hours</i>).</li>
+        <li><i>Era la primera vez que…</i> → <i>It was the first time I <b>had ever</b> used Linux</i> (past perfect, not ✗ <i>I used</i>).</li>
+      </ul>
+
+      <h3>3. Time words that go with each tense</h3>
+      <p><b>while / as</b> + past continuous: <i><b>While</b> we were testing, the server crashed.</i> · <b>when</b> + past simple (the interruption): <i>…<b>when</b> the server crashed.</i></p>
+      <p><b>already, just, never… before, by the time, after, as soon as</b> + past perfect: <i><b>By the time</b> the fix was ready, the client <b>had</b> cancelled.</i></p>
+      <p>With <b>after / before / as soon as</b> the order is already clear, so the past simple is also fine: <i>After she <b>(had) finished</b> the review, she merged the branch.</i></p>
+      <p><b>until</b>: <i>I waited <b>until</b> the server came back online.</i> · <b>then / afterwards / eventually / in the end</b> to move the story on.</p>
+
+      <h3>4. used to / would / past simple — past habits and states</h3>
+      <table>
+        <thead><tr><th>Form</th><th>Habits (repeated actions)</th><th>States</th><th>One action / exact number of times</th></tr></thead>
+        <tbody>
+          <tr><td><b>used to</b> + infinitive</td><td>✓ <i>I <b>used to stay</b> late on Fridays.</i></td><td>✓ <i>We <b>used to have</b> an office in Barcelona.</i></td><td>✗</td></tr>
+          <tr><td><b>would</b> + infinitive</td><td>✓ (once the past context is set) <i>When I was a junior, I <b>would stay</b> late.</i></td><td>✗ <i>We would have an office</i></td><td>✗</td></tr>
+          <tr><td><b>past simple</b></td><td>✓</td><td>✓</td><td>✓ <i>I <b>went</b> to Cape Canaveral three times.</i> (✗ <i>used to go three times</i>)</td></tr>
+        </tbody>
+      </table>
+      <p>Negative and question: <i>I <b>didn't use to</b> like coffee.</i> · <i><b>Did</b> you <b>use to</b> play video games?</i> (no <i>-d</i> after <i>did</i>).</p>
+      <p>⚠️ Do not confuse with <b>be / get used to + -ing</b> (estar acostumbrado / acostumbrarse — see Phrasal verbs): <i>I <b>used to work</b> late</i> (solía) vs <i>I'<b>m used to working</b> late</i> (estoy acostumbrado).</p>
+      <p>Note: some materials mark <i>I would smoke when I was a teenager</i> as wrong. It is fine — <i>when I was a teenager</i> sets the past context. The safe exam rule: <b>used to</b> to introduce the habit and for states, <b>would</b> only for repeated actions after that.</p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>I've never used Linux before. (FIRST)</i> → It's <b>the first time I've</b> used Linux. (past version: <i>It was the first time I <b>had ever</b> used…</i>)</p>
+      <p><i>We had an office in Barcelona, but not any more. (USED)</i> → We <b>used to have</b> an office in Barcelona.</p>
+      <p><i>The client cancelled before the fix was ready. (TIME)</i> → <b>By the time</b> the fix was ready, the client <b>had cancelled</b>.</p>
+      <p><i>I started waiting at 9 and the bus came at 10. (BEEN)</i> → I <b>had been waiting for</b> an hour when the bus came.</p>
+    `
   }
 ];

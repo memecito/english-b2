@@ -583,5 +583,48 @@ const GRAMMAR = {
       { id: "rs35", text: "'I'll pay — no arguments!' → He insisted ___ paying.", answers: ["on"] },
       { id: "rs36", text: "'If you're late again, I'll report you.' → She ___ to report him. (amenazar)", answers: ["threatened"] }
     ]
+  },
+  "narrative-tenses": {
+    title: "Narrative tenses: past continuous, past perfect, used to / would",
+    emoji: "📜",
+    topicId: "narrative-tenses",
+    items: [
+      // past continuous
+      { id: "nt1", text: "I ___ working on the release when the power went off.", answers: ["was"] },
+      { id: "nt2", text: "While we were ___ the app, the server crashed. (test)", answers: ["testing"] },
+      { id: "nt3", text: "The server crashed ___ we were testing the app.", answers: ["while", "as", "when"] },
+      { id: "nt4", text: "What ___ you doing at ten o'clock last night?", answers: ["were"] },
+      { id: "nt5", text: "As I ___ leaving the office, my phone rang. (be)", answers: ["was"] },
+      { id: "nt6", text: "The sun was ___ and everyone was in a good mood when the launch began. (shine)", answers: ["shining"] },
+      // past perfect
+      { id: "nt7", text: "When I got to the office, the meeting had ___ started.", answers: ["already"] },
+      { id: "nt8", text: "When I arrived, the meeting ___ already started.", answers: ["had"] },
+      { id: "nt9", text: "By the time the fix was ready, the client ___ cancelled the contract.", answers: ["had"] },
+      { id: "nt10", text: "I didn't recognise him because he ___ grown a beard.", answers: ["had"] },
+      { id: "nt11", text: "It was the first time I had ___ used Linux.", answers: ["ever"] },
+      { id: "nt12", text: "She had ___ seen a rocket launch before that day.", answers: ["never"] },
+      { id: "nt13", text: "I realised I ___ left my laptop on the train.", answers: ["had"] },
+      { id: "nt14", text: "He left the company ___ he had found a better job.", answers: ["after", "because", "once", "when", "as", "since"] },
+      // past perfect continuous
+      { id: "nt15", text: "I had been ___ for an hour when the bus finally arrived. (wait)", answers: ["waiting"] },
+      { id: "nt16", text: "She was exhausted because she had ___ coding all night.", answers: ["been"] },
+      { id: "nt17", text: "How long had you been ___ there before you got promoted? (work)", answers: ["working"] },
+      { id: "nt18", text: "The roads were wet. It had been ___ all night. (rain)", answers: ["raining"] },
+      { id: "nt19", text: "They ___ been working together for ten years when the company closed.", answers: ["had"] },
+      // conectores
+      { id: "nt20", text: "I waited ___ the server came back online.", answers: ["until", "till"] },
+      { id: "nt21", text: "___ the time we arrived, the launch had already happened.", answers: ["by"] },
+      // used to / would / past simple
+      { id: "nt22", text: "I ___ to work in a bank before I became a developer.", answers: ["used"] },
+      { id: "nt23", text: "Did you ___ to play video games when you were a kid?", answers: ["use"] },
+      { id: "nt24", text: "I didn't ___ to like coffee, but now I can't live without it.", answers: ["use"] },
+      { id: "nt25", text: "When I was a junior, I ___ stay late every Friday to fix bugs.", answers: ["would"] },
+      { id: "nt26", text: "We ___ to have an office in Barcelona, but it closed.", answers: ["used"] },
+      { id: "nt27", text: "Last year I ___ to Cape Canaveral three times. (go)", answers: ["went"] },
+      { id: "nt28", text: "I'm ___ to working late — it doesn't bother me any more.", answers: ["used"] },
+      // estados: no continuo
+      { id: "nt29", text: "I ___ know the answer, so I asked a colleague. (no sabía)", answers: ["didn't"] },
+      { id: "nt30", text: "I read your report yesterday — it ___ excellent. (be)", answers: ["was"] }
+    ]
   }
 };
