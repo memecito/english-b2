@@ -448,6 +448,11 @@ function buildCategories() {
 
 function buildGrammarTopics() {
   const box = $("grammarSeg"); box.textContent = "";
+  const rb = document.createElement("button");
+  rb.className = "opt"; rb.type = "button"; rb.dataset.topic = REVIEW;
+  rb.innerHTML = `🔁 Repaso de gramática<small id="grDueCount">0 frases</small>`;
+  rb.onclick = () => { cfg.topic = REVIEW; refreshHome(); };
+  box.append(rb);
   Object.entries(GRAMMAR).forEach(([key, g]) => {
     const b = document.createElement("button");
     b.className = "opt"; b.type = "button"; b.dataset.topic = key;
@@ -483,8 +488,24 @@ function leitnerReview(enKey, ok, hinted) {
   const due = new Date(); due.setDate(due.getDate() + BOX_INTERVALS[box]);
   db.leitner[enKey] = { box, due: dayKey(due) };
 }
+// Repaso de gramática: frases de TODOS los temas cuya caja Leitner toca hoy
+// (solo las ya jugadas alguna vez). Mezclar temas obliga a reconocer qué
+// estructura pide cada frase, como en el examen. Cada item lleva su tema.
+const REVIEW = "__review", REVIEW_MAX = 20;
+function dueGrammar() {
+  const t = dayKey(), out = [];
+  Object.entries(GRAMMAR).forEach(([key, g]) => g.items.forEach(it => {
+    const r = db.leitner[`gr:${key}:${it.id}`];
+    if (r && r.due <= t) out.push({ ...it, topic: key });
+  }));
+  return out;
+}
+const itemTopic = () => G.cur.item.topic || cfg.topic;
 function pool() {
-  if (cfg.category === "grammar") return (GRAMMAR[cfg.topic] || {}).items || [];
+  if (cfg.category === "grammar") {
+    if (cfg.topic === REVIEW) return shuffle(dueGrammar()).slice(0, REVIEW_MAX);
+    return (GRAMMAR[cfg.topic] || {}).items || [];
+  }
   if (cfg.mode === "mixed") return WORDS;
   if (cfg.mode === "review") return dueWords();
   if (cfg.mode === "category") return WORDS.filter(w => w.cat && cfg.categories.has(w.cat));
@@ -497,6 +518,7 @@ function refreshHome() {
   $("lvBar").style.width = (nx ? (db.total - lv[0]) / (nx[0] - lv[0]) * 100 : 100) + "%";
   $("stToday").textContent = t.points; $("stStreak").textContent = streakDays(); $("stBest").textContent = db.best;
   $("dueCount").textContent = `${dueWords().length} palabras`;
+  if ($("grDueCount")) $("grDueCount").textContent = `${dueGrammar().length} frases`;
   document.querySelectorAll("#categorySeg .opt").forEach(b => b.setAttribute("aria-pressed", b.dataset.category === cfg.category));
   document.querySelectorAll("#modeSeg .opt").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === cfg.mode));
   document.querySelectorAll("#dirSeg .opt").forEach(b => b.setAttribute("aria-pressed", b.dataset.dir === cfg.dir));
@@ -510,7 +532,9 @@ function refreshHome() {
   $("categoriesBox").classList.toggle("hidden", cfg.category !== "vocab" || cfg.mode !== "category");
   const n = pool().length;
   if (cfg.category === "grammar") {
-    $("poolInfo").textContent = `${n} frases para practicar`;
+    $("poolInfo").textContent = cfg.topic !== REVIEW ? `${n} frases para practicar`
+      : n ? `${n} frases de varios temas que toca repasar hoy (máx. ${REVIEW_MAX} por partida)`
+      : "Nada que repasar hoy. Juega temas nuevos: lo que falles volverá aquí.";
   } else {
     $("poolInfo").textContent = cfg.mode === "review" && !n ? "Cola de repaso vacía por hoy. Vuelve mañana o practica otras." : `${n} palabras para practicar`;
   }
@@ -591,7 +615,7 @@ function nextGrammarQuestion() {
   if (G.i >= G.queue.length) return finish(false);
   const item = G.queue[G.i++];
   G.cur = { item }; G.answered = false; G.hinted = false;
-  $("dir").textContent = "✏️ " + GRAMMAR[cfg.topic].title;
+  $("dir").textContent = (cfg.topic === REVIEW ? "🔁 " : "✏️ ") + GRAMMAR[itemTopic()].title;
   $("word").classList.add("hidden"); $("sentence").classList.remove("hidden");
   $("sentence").innerHTML = item.text.replace("___", "<b>___</b>");
   $("input").value = ""; $("input").disabled = false; $("input").placeholder = "Escribe la palabra que falta…";
@@ -639,7 +663,7 @@ function answer(action) { // action: "check" | "skip"
   $("input").disabled = true; $("checkBtn").disabled = true; $("hintBtn").disabled = true; $("skipBtn").disabled = true;
   fb.textContent = "";
   const sol = document.createElement("span"); sol.className = "sol"; sol.textContent = solutionText();
-  const leitKey = G.kind === "grammar" ? `gr:${cfg.topic}:${G.cur.item.id}` : G.cur.w.en[0];
+  const leitKey = G.kind === "grammar" ? `gr:${itemTopic()}:${G.cur.item.id}` : G.cur.w.en[0];
 
   if (ok) {
     G.streak++; G.right++; G.wrongStreak = 0;
@@ -660,7 +684,7 @@ function answer(action) { // action: "check" | "skip"
   }
   $("score").textContent = G.score; $("streak").textContent = G.streak; renderHearts();
   $("actions").classList.add("hidden");
-  const canReview = G.kind === "grammar" && G.wrongStreak >= 2 && TOPICS.some(t => t.id === GRAMMAR[cfg.topic].topicId);
+  const canReview = G.kind === "grammar" && G.wrongStreak >= 2 && TOPICS.some(t => t.id === GRAMMAR[itemTopic()].topicId);
   $("reviewTheoryBtn").classList.toggle("hidden", !canReview);
   const nb = $("nextBtn"); nb.classList.remove("hidden");
   nb.textContent = G.lives <= 0 ? "Ver resultado 🏁" : "Siguiente ➜"; nb.focus();
@@ -716,7 +740,7 @@ function finish(quit) {
   });
   $("endMissedTitle").textContent = G.kind === "grammar" ? "Repasa estas frases" : "Repasa estas palabras";
   $("endMissedHint").textContent = G.kind === "grammar"
-    ? "Vuelve a practicar este tema en «Gramática» cuando quieras."
+    ? "Se han guardado en «🔁 Repaso de gramática»: vuelven cuando toque repasarlas."
     : "Se han guardado en «Repaso» para que las practiques luego.";
   $("endMissedBox").classList.toggle("hidden", !G.missedList.length);
   show("end");
@@ -728,7 +752,7 @@ function finish(quit) {
 function reviewTheory() {
   G.active = false;
   saveGameResult();
-  const topic = TOPICS.find(t => t.id === GRAMMAR[cfg.topic].topicId);
+  const topic = TOPICS.find(t => t.id === GRAMMAR[itemTopic()].topicId);
   renderStudy(); // deja la sección Estudiar en su estado normal (pestaña Teoría, lista de temas)
   show("study");
   if (topic) openTopic(topic);
