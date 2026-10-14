@@ -104,6 +104,20 @@ th:first-child,td:first-child{text-align:left}
 .badge{border:2px dashed var(--line);border-radius:14px;padding:10px;text-align:center;opacity:.5}
 .badge.on{border:2px solid var(--gold);opacity:1;background:var(--brand-soft)}
 .badge b{display:block;font-size:1.8rem}
+.wr-field{width:100%;box-sizing:border-box;border:2px solid var(--line);border-radius:14px;padding:10px 12px;background:var(--card);color:var(--ink);font:inherit;margin:6px 0 10px}
+textarea.wr-field{min-height:120px;resize:vertical;line-height:1.5}
+#wrText{min-height:300px}
+.wr-good{color:var(--good)} .wr-bad{color:var(--bad)}
+.wr-scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:10px 0}
+.wr-scores b{display:block;font-size:1.4rem}
+.wr-comment{font-size:.8rem;text-align:left;margin:6px 0 0;overflow-wrap:anywhere}
+.wr-text{white-space:pre-wrap;line-height:1.7}
+.wr-text mark{background:var(--bad-soft);color:var(--ink);border-radius:4px;padding:0 2px}
+.wr-text sup{color:var(--bad);font-weight:800;margin-left:2px}
+.wr-errors li{margin-bottom:10px} .wr-errors p{margin:2px 0}
+.wr-errors s{color:var(--bad)}
+.wr-tag{display:inline-block;margin-left:8px;font-size:.75rem;background:var(--brand-soft);color:var(--brand);border-radius:99px;padding:1px 8px}
+details.card summary{font-weight:800;cursor:pointer}
 .danger{background:none;border:0;color:var(--bad);text-decoration:underline;font-weight:700}
 .topic{display:block;width:100%;text-align:left;border:2px solid var(--line);background:var(--card);
   border-radius:14px;padding:12px 14px;font-weight:700;margin-bottom:8px}
@@ -127,6 +141,7 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
     <div class="tabs" role="tablist">
       <button class="tab" role="tab" id="tab-study" aria-selected="false">📖 Estudiar</button>
       <button class="tab" role="tab" id="tab-exercises" aria-selected="true">🎮 Ejercicios</button>
+      <button class="tab" role="tab" id="tab-writing" aria-selected="false">✍️ Writing</button>
       <button class="tab" role="tab" id="tab-hist" aria-selected="false">Historial</button>
     </div>
   </div>
@@ -260,6 +275,45 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
       <div id="tableBox"></div>
     </div>
     <p class="center"><button class="danger" id="resetBtn">Borrar todo el historial</button></p>
+  </section>
+
+  <!-- WRITING (corrector con IA: ai.js + writing.js) -->
+  <section id="writing" class="hidden">
+    <details class="card" id="wrCfg">
+      <summary>⚙️ Configuración de la IA</summary>
+      <p class="hint">La clave se guarda solo en este navegador (nunca en el código ni en el repo). Créala gratis en
+        <a id="wrKeyLink" target="_blank" rel="noopener noreferrer">la consola de Groq</a>, sin tarjeta.</p>
+      <p class="hint">⚠️ El texto que corriges se envía a Groq. No pegues nada del trabajo ni datos de clientes: solo tus textos de práctica.</p>
+      <input class="wr-field" id="wrKey" type="password" autocomplete="off" spellcheck="false" placeholder="gsk_…" aria-label="Clave de la API">
+      <label class="hint" for="wrModel">Modelo</label>
+      <select class="wr-field" id="wrModel"></select>
+      <div class="actions">
+        <button class="secondary" id="wrSaveKey" type="button">Guardar</button>
+        <button class="danger" id="wrClearKey" type="button">Borrar clave</button>
+      </div>
+      <p class="hint" id="wrKeyState"></p>
+    </details>
+
+    <div class="card">
+      <h2>✍️ Corrector de Writing (B2 First)</h2>
+      <label class="hint" for="wrType">Tipo de texto</label>
+      <select class="wr-field" id="wrType"></select>
+      <label class="hint" for="wrTask">Enunciado de la tarea (opcional, mejora la nota de Content)</label>
+      <textarea class="wr-field" id="wrTask" placeholder="Pega aquí el enunciado del examen, o pide uno a la IA."></textarea>
+      <div class="actions"><button class="secondary" id="wrSuggest" type="button">🎲 Proponer una tarea</button></div>
+      <label class="hint" for="wrText">Tu texto</label>
+      <textarea class="wr-field" id="wrText" spellcheck="false" placeholder="Escribe aquí tu texto en inglés…"></textarea>
+      <p class="hint" id="wrCount"></p>
+      <button class="primary" id="wrCheck" type="button">Corregir 🛰️</button>
+      <p class="hint center" id="wrStatus" role="status" aria-live="polite"></p>
+    </div>
+
+    <div id="wrResult"></div>
+
+    <div class="card">
+      <h2>🗂️ Mis writings</h2>
+      <div id="wrHistory"></div>
+    </div>
   </section>
 
   <!-- ESTUDIAR -->
@@ -551,8 +605,9 @@ $("optSound").onchange = e => { db.opts.sound = e.target.checked; save(); };
 
 /* ====================== Navegación ====================== */
 function show(id) {
-  ["home", "game", "end", "history", "study"].forEach(s => $(s).classList.toggle("hidden", s !== id));
-  const tab = id === "history" ? "hist" : id === "study" ? "study" : "exercises";
+  ["home", "game", "end", "history", "study", "writing"].forEach(s => $(s).classList.toggle("hidden", s !== id));
+  const tab = id === "history" ? "hist" : id === "study" ? "study" : id === "writing" ? "writing" : "exercises";
+  $("tab-writing").setAttribute("aria-selected", tab === "writing");
   $("tab-exercises").setAttribute("aria-selected", tab === "exercises");
   $("tab-study").setAttribute("aria-selected", tab === "study");
   $("tab-hist").setAttribute("aria-selected", tab === "hist");
@@ -913,5 +968,7 @@ $("vocabWordsBack").onclick = () => renderVocabBlocks(vocabCurLetter);
 /* ====================== Arranque ====================== */
 buildLetters(); buildCategories(); buildGrammarTopics(); refreshHome();
 </script>
+<script src="ai.js"></script>
+<script src="writing.js"></script>
 </body>
 </html>
