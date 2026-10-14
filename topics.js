@@ -660,5 +660,121 @@ const TOPICS = [
       <p><i>He did what he had promised. (KEPT)</i> → He <b>kept his promise</b>.</p>
       <p><i>Working nights is still strange for me. (USED)</i> → I'm still <b>not used to working</b> nights.</p>
     `
+  },
+  {
+    id: "get",
+    emoji: "🔑",
+    title: "GET: one verb, many meanings",
+    html: `
+      <p class="hint">📎 Academy class (week of 2026-10-05): "Are you getting + noun?" and <i>get used to</i>. <b>get</b> is the most frequent "multi-meaning" verb in spoken English — what follows it decides the meaning.</p>
+
+      <h3>1. The pattern decides the meaning</h3>
+      <table>
+        <thead><tr><th>get + …</th><th>Meaning</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td><b>noun</b></td><td>obtain, receive, buy, fetch (conseguir, recibir, comprar, traer)</td><td><i>She <b>got a new job</b>.</i> · <i>Did you <b>get my email</b>?</i> · <i>I'll <b>get you a coffee</b>.</i> · <i><b>Are you getting a new laptop</b>?</i></td></tr>
+          <tr><td><b>adjective</b></td><td>become, change state (ponerse, volverse)</td><td><i>It's <b>getting dark</b>.</i> · <i>Get <b>ready</b>!</i> · <i>Don't get <b>angry</b>.</i> · <i>Are you <b>getting tired</b>?</i></td></tr>
+          <tr><td><b>comparative</b></td><td>change gradually</td><td><i>Your English is <b>getting better</b>.</i> · <i>The servers are getting <b>slower and slower</b>.</i></td></tr>
+          <tr><td><b>past participle</b></td><td>something happens to you (passive with get) / reflexive actions</td><td><i>He <b>got fired</b>.</i> · <i>She <b>got promoted</b>.</i> · <i>We <b>got lost</b>.</i> · <i>get <b>married</b> / <b>dressed</b> / <b>started</b></i></td></tr>
+          <tr><td><b>place / preposition</b></td><td>move, arrive (llegar, subir, bajar)</td><td><i>get <b>to</b> work</i> · <i>get <b>home</b></i> · <i>get <b>there</b></i> · <i>get <b>on/off</b> the bus</i> · <i>get <b>in/out of</b> a car</i></td></tr>
+          <tr><td><b>sb + to-infinitive</b></td><td>persuade / arrange (causative)</td><td><i>I <b>got the intern to check</b> the logs.</i></td></tr>
+          <tr><td><b>sth + past participle</b></td><td>arrange for someone to do it (causative)</td><td><i>We need to <b>get the server fixed</b>.</i> (see Passive)</td></tr>
+          <tr><td><b>used to + -ing</b></td><td>become accustomed (acostumbrarse)</td><td><i>Are you <b>getting used to working</b> nights?</i> (see Phrasal verbs)</td></tr>
+        </tbody>
+      </table>
+      <p>So <b>"Are you getting + noun?"</b> normally = "Are you going to obtain/buy/receive…?": <i>Are you getting a new car?</i> · <i>Are you getting a bonus this year?</i> — the present continuous here talks about a <b>future plan</b>.</p>
+
+      <h3>2. Spanish traps</h3>
+      <ul>
+        <li><b>get home / get there</b> — no <i>to</i> (✗ <i>get to home</i>), but <b>get to work / to the office</b>.</li>
+        <li><b>get married</b> = casarse · <b>marry</b> sb (✗ <i>marry with</i>, ✗ <i>get married with</i> → ✓ <i>get married <b>to</b></i>).</li>
+        <li><b>get on / off</b> buses, trains, planes · <b>get in / out of</b> cars and taxis.</li>
+        <li><b>have got</b> (BrE) = have (possession): <i>I've <b>got</b> two monitors.</i> — present meaning, not past.</li>
+      </ul>
+
+      <h3>3. Common phrasal verbs with get (B2)</h3>
+      <table>
+        <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>get on (well) with</b> sb</td><td>llevarse bien con</td><td><i>I <b>get on well with</b> my new team.</i></td></tr>
+          <tr><td><b>get over</b> sth</td><td>superar, recuperarse de</td><td><i>It took her weeks to <b>get over</b> the failed launch.</i></td></tr>
+          <tr><td><b>get back to</b> sb</td><td>volver a contactar, responder más tarde</td><td><i>I'll <b>get back to you</b> tomorrow.</i></td></tr>
+          <tr><td><b>get through</b> sth</td><td>acabar / superar algo difícil; contactar por teléfono</td><td><i>We <b>got through</b> the audit.</i> · <i>I couldn't <b>get through</b> to support.</i></td></tr>
+          <tr><td><b>get by</b></td><td>apañárselas</td><td><i>I <b>get by</b> in German.</i></td></tr>
+        </tbody>
+      </table>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>My English is improving. (GETTING)</i> → My English is <b>getting better</b>.</p>
+      <p><i>I persuaded IT to reset my password. (GOT)</i> → I <b>got IT to reset</b> my password.</p>
+      <p><i>We have a good relationship with the client. (ON)</i> → We <b>get on well with</b> the client.</p>
+      <p><i>She's recovered from the shock. (GOT)</i> → She's <b>got over</b> the shock.</p>
+    `
+  },
+  {
+    id: "nouns-articles",
+    emoji: "📦",
+    title: "Nouns, quantifiers & articles",
+    html: `
+      <p class="hint">Learnlight (work class): countable and uncountable nouns, a few / a little, much / many, too much / too many, enough / plenty of, articles. Includes your diagnosed <b>plural agreement</b> error.</p>
+
+      <h3>1. Uncountable nouns that are countable in Spanish ⚠️</h3>
+      <p>No <i>a/an</i>, no plural, singular verb:</p>
+      <p><b>advice, information, news, feedback, research, progress, knowledge, evidence, equipment, furniture, luggage, software, hardware, homework, work, accommodation, traffic, weather</b></p>
+      <p>✗ <i>an advice</i>, ✗ <i>informations</i>, ✗ <i>the news are</i> → ✓ <i><b>some</b> advice / <b>a piece of</b> advice</i>, ✓ <i>information</i>, ✓ <i>The news <b>is</b> good.</i></p>
+      <p>To count them: <b>a piece of</b> advice / information / equipment / software · <b>an item of</b> news.</p>
+      <p><b>work</b> (uncountable) = trabajo en general; <b>a job</b> (countable) = un empleo: <i>I've got a lot of <b>work</b>.</i> · <i>She got a new <b>job</b>.</i> (✗ <i>a work</i>)</p>
+
+      <h3>2. Nouns that can be both</h3>
+      <table>
+        <thead><tr><th>Uncountable</th><th>Countable</th></tr></thead>
+        <tbody>
+          <tr><td><i>She has a lot of <b>experience</b>.</i> (experiencia profesional)</td><td><i>The trip was an amazing <b>experience</b>.</i> (una vivencia)</td></tr>
+          <tr><td><i>I don't have <b>time</b>.</i></td><td><i>I've told you three <b>times</b>.</i> (veces)</td></tr>
+          <tr><td><i>The printer needs <b>paper</b>.</i></td><td><i>I read it in a <b>paper</b>.</i> (periódico) / a research paper</td></tr>
+          <tr><td><i>There's no <b>room</b> for a desk.</i> (espacio)</td><td><i>a meeting <b>room</b></i></td></tr>
+        </tbody>
+      </table>
+      <p>Always plural: <b>clothes, trousers, glasses, scissors, goods, belongings, earnings, premises</b>. <b>people</b> and <b>police</b> take a plural verb: <i>People <b>are</b>…</i>, <i>The police <b>are</b> investigating.</i></p>
+
+      <h3>3. Numbers + plural ⚠️ your diagnosed error</h3>
+      <ul>
+        <li>After a number &gt; 1 the noun is <b>plural</b>: <i>two <b>years</b>, three hundred <b>users</b></i>.</li>
+        <li>But <b>hundred / thousand / million</b> stay singular after a number: <i>three <b>hundred</b> users</i> (✗ <i>three hundreds</i>). Plural only without a number + <b>of</b>: <i><b>hundreds of</b> users</i>.</li>
+        <li><b>Compound adjectives</b> (number + noun before another noun) have NO -s: <i>a <b>two-year</b> contract, a <b>ten-minute</b> break, a <b>five-star</b> hotel</i> (✗ <i>a two-years contract</i>). Compare: <i>The contract lasts two <b>years</b>.</i></li>
+      </ul>
+
+      <h3>4. Quantifiers</h3>
+      <table>
+        <thead><tr><th></th><th>+ countable plural</th><th>+ uncountable</th></tr></thead>
+        <tbody>
+          <tr><td>large amount</td><td><b>many</b> (questions, negatives) · a lot of · plenty of</td><td><b>much</b> (questions, negatives) · a lot of · plenty of</td></tr>
+          <tr><td>small amount, <b>positive</b> (some)</td><td><b>a few</b> minutes</td><td><b>a little</b> time</td></tr>
+          <tr><td>small amount, <b>negative</b> (not enough)</td><td><b>few</b> people came (casi nadie)</td><td><b>little</b> time (casi nada)</td></tr>
+          <tr><td>more than you want</td><td><b>too many</b> meetings</td><td><b>too much</b> noise</td></tr>
+          <tr><td>sufficient</td><td colspan="2"><b>enough</b> + noun (<i>enough laptops</i>) · adjective + <b>enough</b> (<i>big enough</i>) · <b>plenty of</b> = more than enough</td></tr>
+          <tr><td>zero</td><td colspan="2"><b>no</b> + noun · <b>none of</b> + the/my… (<i><b>None of</b> the tests passed.</i>) · <b>not any</b></td></tr>
+        </tbody>
+      </table>
+      <p>⚠️ <i>a few / a little</i> (positive) ≠ <i>few / little</i> (negative): <i>I've got <b>a few</b> minutes</i> — let's talk · <i><b>Few</b> people came</i> — disappointing.</p>
+      <p>✗ <i>too much meetings</i> · ✗ <i>enough big</i> · ✗ <i>much people</i> → <i>a lot of people</i>.</p>
+
+      <h3>5. Articles</h3>
+      <table>
+        <thead><tr><th>Article</th><th>Use</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td><b>a / an</b></td><td>one of many, first mention; <b>jobs</b> ⚠️</td><td><i>I bought <b>a</b> laptop.</i> · <i>She's <b>an</b> engineer.</i> (✗ <i>She's engineer</i> — Spanish <i>es ingeniera</i>)</td></tr>
+          <tr><td><b>the</b></td><td>already known, the only one, superlatives</td><td><i><b>The</b> laptop was broken.</i> · <i><b>the</b> Moon, <b>the</b> internet</i> · <i><b>the</b> best option</i></td></tr>
+          <tr><td><b>Ø</b> (no article)</td><td>things <b>in general</b> (plural or uncountable) ⚠️</td><td><i><b>Life</b> is short.</i> · <i><b>Software</b> is expensive.</i> · <i><b>People</b> hate change.</i> (✗ <i>The life</i>, ✗ <i>The people</i> — Spanish <i>la vida, la gente</i>)</td></tr>
+        </tbody>
+      </table>
+      <p><b>No article</b> in fixed expressions: <i>go to <b>work</b> / <b>bed</b> / <b>school</b></i>, <i>at <b>home</b></i>, <i>at <b>work</b></i>, <i>on <b>holiday</b></i> (✗ <i>in holidays</i>), <i>have <b>lunch</b></i>, <i>by <b>bus</b></i>, <i><b>next</b> week</i> / <i><b>last</b> year</i> (✗ <i>the next week</i> to mean "la semana que viene"), languages (<i>I speak <b>English</b></i>).</p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>She advised me on the contract. (ADVICE)</i> → She gave me <b>some advice on</b> the contract.</p>
+      <p><i>The break lasts ten minutes. (TEN-MINUTE)</i> → There's <b>a ten-minute break</b>.</p>
+      <p><i>There weren't many people at the demo. (FEW)</i> → <b>Few people came</b> to / <b>Very few people were</b> at the demo.</p>
+      <p><i>The room is too small for all of us. (ENOUGH)</i> → The room <b>isn't big enough for</b> all of us.</p>
+    `
   }
 ];

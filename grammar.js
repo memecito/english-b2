@@ -460,5 +460,79 @@ const GRAMMAR = {
       { id: "pv19", text: "Don't ___ a promise you can't keep.", answers: ["make"] },
       { id: "pv20", text: "She was angry because he had ___ his promise. (no la cumplió)", answers: ["broken"] }
     ]
+  },
+  "get": {
+    title: "GET: one verb, many meanings",
+    emoji: "🔑",
+    topicId: "get",
+    items: [
+      // get + noun
+      { id: "gt1", text: "She ___ a new job at a satellite company last month. (get)", answers: ["got"] },
+      { id: "gt2", text: "Did you ___ my email about the release?", answers: ["get", "receive"] },
+      { id: "gt3", text: "Are you ___ a new laptop, or are you keeping the old one? (get)", answers: ["getting"] },
+      // get + adjective / comparative
+      { id: "gt4", text: "It's ___ dark — let's go home. (get)", answers: ["getting"] },
+      { id: "gt5", text: "Your English is getting ___ every week. (good)", answers: ["better"] },
+      { id: "gt6", text: "Get ___ — the meeting starts in five minutes!", answers: ["ready"] },
+      { id: "gt7", text: "They're getting ___ next summer. (casarse)", answers: ["married"] },
+      // get + past participle
+      { id: "gt8", text: "He got ___ for leaking client data. (fire)", answers: ["fired", "sacked"] },
+      { id: "gt9", text: "She got ___ to team lead last year. (promote)", answers: ["promoted"] },
+      { id: "gt10", text: "We got ___ on the way to the client's office. (lose)", answers: ["lost"] },
+      // get + lugar
+      { id: "gt11", text: "What time did you get ___ last night? (a casa)", answers: ["home"] },
+      { id: "gt12", text: "How long does it take you to get ___ work?", answers: ["to"] },
+      { id: "gt13", text: "Get ___ the bus at the third stop. (bajarse)", answers: ["off"] },
+      // phrasal verbs con get
+      { id: "gt14", text: "I get ___ well with my new colleagues.", answers: ["on", "along"] },
+      { id: "gt15", text: "It took her weeks to get ___ the failed launch. (superar)", answers: ["over"] },
+      { id: "gt16", text: "I'll get ___ to you with the figures tomorrow.", answers: ["back"] },
+      // causativa y used to
+      { id: "gt17", text: "I got the intern ___ check the logs.", answers: ["to"] },
+      { id: "gt18", text: "We need to get the server ___ before Monday. (fix)", answers: ["fixed"] },
+      { id: "gt19", text: "Are you getting used to ___ a headset all day? (wear)", answers: ["wearing"] },
+      { id: "gt20", text: "I've ___ two monitors on my desk. (have got = have)", answers: ["got"] }
+    ]
+  },
+  "nouns-articles": {
+    title: "Nouns, quantifiers & articles",
+    emoji: "📦",
+    topicId: "nouns-articles",
+    items: [
+      // incontables
+      { id: "na1", text: "Can I give you a piece of ___? Back up everything before the upgrade.", answers: ["advice"] },
+      { id: "na2", text: "Thanks for all the ___ about the new contract. (information)", answers: ["information"] },
+      { id: "na3", text: "The news ___ good: the launch was a success. (be)", answers: ["is"] },
+      { id: "na4", text: "We bought some new ___ for the lab. (equipment)", answers: ["equipment"] },
+      { id: "na5", text: "Thanks for your ___ on my presentation. (feedback)", answers: ["feedback"] },
+      { id: "na6", text: "We've made a lot of ___ this sprint. (progress)", answers: ["progress"] },
+      { id: "na7", text: "I've got a lot of ___ this week, so I can't help. (trabajo)", answers: ["work"] },
+      { id: "na8", text: "She has a lot of ___ with Kubernetes. (experience)", answers: ["experience"] },
+      // números + plural / adjetivos compuestos
+      { id: "na9", text: "There are three hundred ___ on the platform. (user)", answers: ["users"] },
+      { id: "na10", text: "Hundreds ___ users complained about the outage.", answers: ["of"] },
+      { id: "na11", text: "There are three ___ users online right now. (hundred)", answers: ["hundred"] },
+      { id: "na12", text: "I signed a two-___ contract. (year)", answers: ["year"] },
+      { id: "na13", text: "We had a ten-___ break between sessions. (minute)", answers: ["minute"] },
+      { id: "na14", text: "The project lasted two ___. (year)", answers: ["years"] },
+      // cuantificadores
+      { id: "na15", text: "How ___ bugs did you find in the code review?", answers: ["many"] },
+      { id: "na16", text: "How ___ time do we have left before the demo?", answers: ["much"] },
+      { id: "na17", text: "Don't worry, I've got a ___ minutes before my next meeting.", answers: ["few"] },
+      { id: "na18", text: "Very ___ people came to the demo, which was disappointing.", answers: ["few"] },
+      { id: "na19", text: "There's very ___ coffee left, so let's buy some more.", answers: ["little"] },
+      { id: "na20", text: "We've got ___ of time — the deadline is next month.", answers: ["plenty", "lots"] },
+      { id: "na21", text: "The meeting room isn't big ___ for the whole team.", answers: ["enough"] },
+      { id: "na22", text: "There are too ___ meetings in my calendar.", answers: ["many"] },
+      { id: "na23", text: "I spend too ___ time answering emails.", answers: ["much"] },
+      { id: "na24", text: "___ of the tests passed — every single one failed.", answers: ["none"] },
+      // artículos
+      { id: "na25", text: "My sister is ___ engineer at a space agency.", answers: ["an"] },
+      { id: "na26", text: "I bought a laptop and a monitor. ___ laptop was fine, but the monitor was broken.", answers: ["the"] },
+      { id: "na27", text: "___ is too short to work every weekend. (life, en general)", answers: ["life"] },
+      { id: "na28", text: "I'm going on ___ next month — two weeks in Portugal.", answers: ["holiday"] },
+      { id: "na29", text: "I'll call you ___ week, when I'm back from the conference.", answers: ["next"] },
+      { id: "na30", text: "___ who work remotely often feel isolated. (people, en general)", answers: ["people"] }
+    ]
   }
 };
