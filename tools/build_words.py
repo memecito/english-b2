@@ -7,7 +7,7 @@ Copia B2 de ingles-ari (ver CLAUDE.md) — el vocabulario sale de
 ~/claude/English/theory/vocabulary.txt y del plan de estudio propio,
 no de un PDF de editorial. Palabras puramente gramaticales o
 ambiguas se excluyen (SKIP). La categoría (3er campo) es opcional:
-solo algunas palabras la tienen, sirve para el filtro "por temática"
+solo algunas palabras la tienen; sirve para el filtro "por temática"
 del juego.
 """
 import json, pathlib

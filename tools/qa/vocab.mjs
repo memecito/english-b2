@@ -1,0 +1,23 @@
+export default async (page) => {
+  const errs=[]; page.on('pageerror',e=>errs.push(String(e))); page.on('console',m=>m.type()==='error'&&errs.push(m.text()));
+  const out={}; page.on('dialog',d=>d.accept());
+  await page.click('#tab-study'); await page.click('#studySeg [data-view="vocab"]');
+  out.groups=await page.locator('#vocabCats h3').allInnerTexts();
+  out.cats=(await page.locator('#vocabCats .opt').allInnerTexts()).map(t=>t.replace(/\n/g,' '));
+  await page.locator('#vocabCats .opt',{hasText:'Falsos amigos'}).click();
+  out.blocksTitle=await page.locator('#vocabBlocksTitle').innerText();
+  out.blocks=(await page.locator('#vocabBlocks .opt').allInnerTexts()).map(t=>t.replace(/\n/g,' ')).slice(0,3);
+  await page.locator('#vocabBlocks .opt').first().click();
+  out.words=(await page.locator('#vocabWordsList li').allInnerTexts()).slice(0,4).map(t=>t.replace(/\n/g,' | '));
+  await page.click('#vocabWordsBack'); await page.click('#vocabPractice');
+  out.poolInfo=await page.locator('#poolInfo').innerText();
+  out.pressedCats=(await page.locator('#categories .opt[aria-pressed="true"]').allInnerTexts()).map(t=>t.replace(/\n/g,' '));
+  await page.click('#startBtn'); out.firstQ=await page.locator('#word').innerText();
+  await page.click('#quitBtn').catch(()=>{});
+  await page.click('#tab-study'); await page.click('#studySeg [data-view="vocab"]');
+  await page.click('#vocabGroupSeg [data-group="letter"]');
+  out.letters=await page.locator('#vocabLetters .letter').count(); out.catsHidden=await page.locator('#vocabCats').isHidden();
+  await page.locator('#vocabLetters .letter').first().click(); out.letterTitle=await page.locator('#vocabBlocksTitle').innerText();
+  out.practiceHiddenForLetter=await page.locator('#vocabPractice').isHidden();
+  out.errs=errs; return out;
+};

@@ -118,6 +118,7 @@ textarea.wr-field{min-height:120px;resize:vertical;line-height:1.5}
 .wr-errors s{color:var(--bad)}
 .wr-tag{display:inline-block;margin-left:8px;font-size:.75rem;background:var(--brand-soft);color:var(--brand);border-radius:99px;padding:1px 8px}
 details.card summary{font-weight:800;cursor:pointer}
+#vocabCats h3{margin:14px 0 6px}
 .danger{background:none;border:0;color:var(--bad);text-decoration:underline;font-weight:700}
 .topic{display:block;width:100%;text-align:left;border:2px solid var(--line);background:var(--card);
   border-radius:14px;padding:12px 14px;font-weight:700;margin-bottom:8px}
@@ -340,14 +341,19 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
 
     <div id="studyVocab" class="hidden">
       <div class="card" id="vocabLettersBox">
-        <h2>📚 Vocabulario por letra</h2>
-        <p class="hint" style="margin-top:-4px">Elige una letra y después un bloque de 10 palabras para repasarlas antes de jugar.</p>
+        <div class="seg" id="vocabGroupSeg">
+          <button class="opt" data-group="cat" aria-pressed="true">🏷️ Por categoría</button>
+          <button class="opt" data-group="letter" aria-pressed="false">🔤 Por letra</button>
+        </div>
+        <p class="hint" id="vocabGroupHint" style="margin-top:-4px"></p>
+        <div id="vocabCats"></div>
         <div class="letters" id="vocabLetters"></div>
       </div>
       <div class="card hidden" id="vocabBlocksBox">
-        <button class="link" id="vocabBlocksBack">← Volver a las letras</button>
+        <button class="link" id="vocabBlocksBack">← Volver</button>
         <h2 id="vocabBlocksTitle"></h2>
         <div class="seg" id="vocabBlocks"></div>
+        <div class="actions"><button class="secondary hidden" id="vocabPractice" type="button">🎮 Practicar esta categoría</button></div>
       </div>
       <div class="card hidden" id="vocabWordsBox">
         <button class="link" id="vocabWordsBack">← Volver a los bloques</button>
@@ -469,28 +475,43 @@ function confetti() {
 /* ====================== Pantalla de inicio ====================== */
 const cfg = { category: "vocab", mode: "letters", dir: "en-es", letters: new Set(["A"]), categories: new Set(), topic: Object.keys(GRAMMAR)[0] };
 const LETTERS = [...new Set(WORDS.map(letterOf))].sort();
-const CATEGORIES = [...new Set(WORDS.filter(w => w.cat).map(w => w.cat))].sort();
-cfg.categories = new Set(CATEGORIES.slice(0, 1));
+// Categorías del vocabulario (3er campo de data/translations.txt). El orden de
+// este objeto es el orden en pantalla; "group" agrupa en la sección Estudiar.
 const CATEGORY_META = {
-  animals: { emoji: "🐾", label: "Animales" },
-  food: { emoji: "🍎", label: "Comida y bebida" },
-  clothes: { emoji: "👕", label: "Ropa" },
-  sport: { emoji: "⚽", label: "Deporte" },
-  family: { emoji: "👪", label: "Familia" },
-  house: { emoji: "🏠", label: "Casa" },
-  colours: { emoji: "🎨", label: "Colores" },
-  trabajo: { emoji: "💼", label: "Trabajo" },
-  comida: { emoji: "🍎", label: "Comida" },
-  naturaleza: { emoji: "🌿", label: "Naturaleza" },
-  historia: { emoji: "🏛️", label: "Historia" },
-  phrasal: { emoji: "🧗", label: "Phrasal verbs y expresiones" },
+  empleo: { emoji: "💼", label: "Empleo y carrera", group: "💼 Trabajo" },
+  condiciones: { emoji: "📋", label: "Condiciones laborales", group: "💼 Trabajo" },
+  oficina: { emoji: "🖥️", label: "Día a día en la oficina", group: "💼 Trabajo" },
+  negocios: { emoji: "📈", label: "Empresa y negocios", group: "💼 Trabajo" },
+  cualidades: { emoji: "🌟", label: "Cualidades y habilidades", group: "💼 Trabajo" },
+  tecnologia: { emoji: "💻", label: "Tecnología e internet", group: "🎯 Temas del examen" },
+  ciencia: { emoji: "🔭", label: "Ciencia y espacio", group: "🎯 Temas del examen" },
+  naturaleza: { emoji: "🌍", label: "Naturaleza y medio ambiente", group: "🎯 Temas del examen" },
+  salud: { emoji: "🩺", label: "Salud y deporte", group: "🎯 Temas del examen" },
+  viajes: { emoji: "✈️", label: "Viajes y transporte", group: "🎯 Temas del examen" },
+  educacion: { emoji: "🎓", label: "Educación y aprendizaje", group: "🎯 Temas del examen" },
+  medios: { emoji: "📺", label: "Medios y comunicación", group: "🎯 Temas del examen" },
+  dinero: { emoji: "💶", label: "Dinero y consumo", group: "🎯 Temas del examen" },
+  sociedad: { emoji: "⚖️", label: "Sociedad, ley y crimen", group: "🎯 Temas del examen" },
+  personas: { emoji: "🧑‍🤝‍🧑", label: "Personalidad y relaciones", group: "🎯 Temas del examen" },
+  ciudad: { emoji: "🏙️", label: "Casa y ciudad", group: "🎯 Temas del examen" },
+  ocio: { emoji: "🎭", label: "Ocio y cultura", group: "🎯 Temas del examen" },
+  comida: { emoji: "🍎", label: "Comida", group: "🎯 Temas del examen" },
+  historia: { emoji: "🏛️", label: "Historia", group: "🎯 Temas del examen" },
+  collocations: { emoji: "🔗", label: "Collocations (make, do, take…)", group: "🧠 Lengua" },
+  phrasal: { emoji: "🧗", label: "Phrasal verbs y expresiones", group: "🧠 Lengua" },
+  "falsos-amigos": { emoji: "🪤", label: "Falsos amigos", group: "🧠 Lengua" },
 };
+const catMeta = c => CATEGORY_META[c] || { emoji: "🏷️", label: c, group: "🏷️ Otras" };
+const CAT_ORDER = Object.keys(CATEGORY_META);
+const catRank = c => (CAT_ORDER.indexOf(c) + 1 || CAT_ORDER.length + 1);
+const CATEGORIES = [...new Set(WORDS.filter(w => w.cat).map(w => w.cat))].sort((a, b) => catRank(a) - catRank(b) || a.localeCompare(b));
+cfg.categories = new Set(CATEGORIES.slice(0, 1));
 
 function buildCategories() {
   const box = $("categories"); box.textContent = "";
   CATEGORIES.forEach(c => {
     const n = WORDS.filter(w => w.cat === c).length;
-    const meta = CATEGORY_META[c] || { emoji: "🏷️", label: c };
+    const meta = catMeta(c);
     const b = document.createElement("button");
     b.className = "opt"; b.type = "button"; b.dataset.cat = c;
     b.setAttribute("aria-pressed", cfg.categories.has(c));
@@ -906,50 +927,87 @@ document.querySelectorAll("#studySeg .opt").forEach(b => b.onclick = () => {
   if (b.dataset.view === "vocab") renderVocabLetters();
 });
 
-// Vocabulario para repasar (solo lectura, sin puntos): letra -> bloque de 10 -> palabras
-let vocabCurLetter = null;
+// Vocabulario para repasar (solo lectura, sin puntos): categoría o letra ->
+// bloque de 10 -> palabras. Un "grupo" es { title, words }.
+let vocabGroupBy = "cat", vocabCurGroup = null;
+const vocabGroupOf = key => vocabGroupBy === "cat"
+  ? { title: key ? `${catMeta(key).emoji} ${catMeta(key).label}` : "🏷️ Sin categoría", words: WORDS.filter(w => (w.cat || null) === key) }
+  : { title: `Letra ${key}`, words: WORDS.filter(w => letterOf(w) === key) };
 function renderVocabLetters() {
   $("vocabBlocksBox").classList.add("hidden");
   $("vocabWordsBox").classList.add("hidden");
   $("vocabLettersBox").classList.remove("hidden");
-  const box = $("vocabLetters"); box.textContent = "";
-  LETTERS.forEach(L => {
-    const n = WORDS.filter(w => letterOf(w) === L).length;
-    const b = document.createElement("button");
-    b.className = "letter"; b.type = "button";
-    b.append(L); const s = document.createElement("small"); s.textContent = n; b.append(s);
-    b.onclick = () => renderVocabBlocks(L);
-    box.append(b);
-  });
+  document.querySelectorAll("#vocabGroupSeg .opt").forEach(b => b.setAttribute("aria-pressed", b.dataset.group === vocabGroupBy));
+  $("vocabGroupHint").textContent = vocabGroupBy === "cat"
+    ? "Elige una categoría y después un bloque de 10 palabras. Estudiar por temas ayuda a recordar: las palabras se asocian entre sí."
+    : "Elige una letra y después un bloque de 10 palabras para repasarlas antes de jugar.";
+  const cats = $("vocabCats"), letters = $("vocabLetters");
+  cats.textContent = ""; letters.textContent = "";
+  cats.classList.toggle("hidden", vocabGroupBy !== "cat"); letters.classList.toggle("hidden", vocabGroupBy !== "letter");
+  if (vocabGroupBy === "cat") {
+    const keys = [...CATEGORIES]; if (WORDS.some(w => !w.cat)) keys.push(null);
+    let group = null, seg = null;
+    keys.forEach(c => {
+      const g = c ? catMeta(c).group : "🏷️ Otras";
+      if (g !== group) {
+        group = g; const h = document.createElement("h3"); h.textContent = g; cats.append(h);
+        seg = document.createElement("div"); seg.className = "seg"; cats.append(seg);
+      }
+      const n = WORDS.filter(w => (w.cat || null) === c).length;
+      const b = document.createElement("button"); b.className = "opt"; b.type = "button";
+      b.textContent = c ? `${catMeta(c).emoji} ${catMeta(c).label}` : "🏷️ Sin categoría";
+      const sm = document.createElement("small"); sm.textContent = `${n} palabras`; b.append(sm);
+      b.onclick = () => renderVocabBlocks(c);
+      seg.append(b);
+    });
+  } else {
+    LETTERS.forEach(L => {
+      const n = WORDS.filter(w => letterOf(w) === L).length;
+      const b = document.createElement("button");
+      b.className = "letter"; b.type = "button";
+      b.append(L); const s = document.createElement("small"); s.textContent = n; b.append(s);
+      b.onclick = () => renderVocabBlocks(L);
+      letters.append(b);
+    });
+  }
 }
-function renderVocabBlocks(L) {
-  vocabCurLetter = L;
+document.querySelectorAll("#vocabGroupSeg .opt").forEach(b => b.onclick = () => { vocabGroupBy = b.dataset.group; renderVocabLetters(); });
+function renderVocabBlocks(key) {
+  vocabCurGroup = key;
   $("vocabLettersBox").classList.add("hidden");
   $("vocabWordsBox").classList.add("hidden");
   $("vocabBlocksBox").classList.remove("hidden");
-  $("vocabBlocksTitle").textContent = `Letra ${L}`;
-  const words = WORDS.filter(w => letterOf(w) === L);
+  const { title, words } = vocabGroupOf(key);
+  $("vocabBlocksTitle").textContent = `${title} · ${words.length} palabras`;
   const box = $("vocabBlocks"); box.textContent = "";
   for (let i = 0; i < words.length; i += 10) {
     const n = Math.min(10, words.length - i);
     const b = document.createElement("button");
     b.className = "opt"; b.type = "button";
-    b.innerHTML = `${i + 1}–${i + n}<small>${n} palabras</small>`;
-    b.onclick = () => renderVocabWords(L, i);
+    b.textContent = `${i + 1}–${i + n}`;
+    const sm = document.createElement("small"); sm.textContent = `${words[i].en[0]} … ${words[i + n - 1].en[0]}`; b.append(sm);
+    b.onclick = () => renderVocabWords(key, i);
     box.append(b);
   }
+  const canPlay = vocabGroupBy === "cat" && key;
+  $("vocabPractice").classList.toggle("hidden", !canPlay);
+  $("vocabPractice").onclick = () => {
+    Object.assign(cfg, { category: "vocab", mode: "category", categories: new Set([key]) });
+    refreshHome(); show("home");
+  };
+  window.scrollTo(0, 0);
 }
-function renderVocabWords(L, start) {
+function renderVocabWords(key, start) {
   $("vocabBlocksBox").classList.add("hidden");
   $("vocabWordsBox").classList.remove("hidden");
-  const words = WORDS.filter(w => letterOf(w) === L);
+  const { title, words } = vocabGroupOf(key);
   const chunk = words.slice(start, start + 10);
-  $("vocabWordsTitle").textContent = `Letra ${L} · palabras ${start + 1}–${start + chunk.length}`;
+  $("vocabWordsTitle").textContent = `${title} · palabras ${start + 1}–${start + chunk.length}`;
   const list = $("vocabWordsList"); list.textContent = "";
   chunk.forEach(w => {
     const li = document.createElement("li");
-    const a = document.createElement("b"); a.textContent = w.en[0];
-    const sp = document.createElement("span"); sp.textContent = w.es.slice(0, 2).join(" / ");
+    const a = document.createElement("b"); a.textContent = w.en.join(" / ");
+    const sp = document.createElement("span"); sp.textContent = w.es.slice(0, 3).join(" / ");
     const btn = document.createElement("button"); btn.type = "button"; btn.textContent = "🔊";
     btn.setAttribute("aria-label", `Escuchar ${w.en[0]}`);
     btn.onclick = () => say(w.en[0]);
@@ -958,12 +1016,12 @@ function renderVocabWords(L, start) {
   });
   $("vocabPrevBlock").classList.toggle("hidden", start <= 0);
   $("vocabNextBlock").classList.toggle("hidden", start + 10 >= words.length);
-  $("vocabPrevBlock").onclick = () => renderVocabWords(L, start - 10);
-  $("vocabNextBlock").onclick = () => renderVocabWords(L, start + 10);
+  $("vocabPrevBlock").onclick = () => renderVocabWords(key, start - 10);
+  $("vocabNextBlock").onclick = () => renderVocabWords(key, start + 10);
   window.scrollTo(0, 0);
 }
 $("vocabBlocksBack").onclick = renderVocabLetters;
-$("vocabWordsBack").onclick = () => renderVocabBlocks(vocabCurLetter);
+$("vocabWordsBack").onclick = () => renderVocabBlocks(vocabCurGroup);
 
 /* ====================== Arranque ====================== */
 buildLetters(); buildCategories(); buildGrammarTopics(); refreshHome();
