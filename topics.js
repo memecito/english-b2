@@ -908,5 +908,315 @@ const TOPICS = [
       <p><i>The client cancelled before the fix was ready. (TIME)</i> → <b>By the time</b> the fix was ready, the client <b>had cancelled</b>.</p>
       <p><i>I started waiting at 9 and the bus came at 10. (BEEN)</i> → I <b>had been waiting for</b> an hour when the bus came.</p>
     `
+  },
+  {
+    id: "writing-overview",
+    group: "writing",
+    emoji: "✍️",
+    title: "Writing paper: how it works and how to plan",
+    html: `
+      <p class="hint">B2 First, Paper 2 (Writing). Read this first, then the guide for each text type. Practise in the ✍️ Writing tab: the AI marks your text with the same four scales.</p>
+
+      <h3>1. The paper</h3>
+      <table>
+        <thead><tr><th></th><th>Part 1</th><th>Part 2</th></tr></thead>
+        <tbody>
+          <tr><td>Task</td><td><b>Essay</b> — compulsory</td><td><b>Choose one</b> of three: article, email/letter, report, review</td></tr>
+          <tr><td>Length</td><td colspan="2"><b>140–190 words</b> each · 80 minutes for both</td></tr>
+          <tr><td>Input</td><td>A question + <b>two notes</b> + "your own idea"</td><td>A short situation: who reads it, why, what to include</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2. How it is marked — four scales, 0–5 each (20 per task)</h3>
+      <table>
+        <thead><tr><th>Scale</th><th>The examiner asks…</th><th>How to get a 5</th></tr></thead>
+        <tbody>
+          <tr><td><b>Content</b></td><td>Did you answer <b>everything</b> the task asked?</td><td>Tick off every point of the task in your plan. One missing point = lower Content.</td></tr>
+          <tr><td><b>Communicative Achievement</b></td><td>Is it the right <b>type of text</b> and <b>register</b> for the reader?</td><td>An article sounds like an article, a report like a report. Formal for a manager, friendly for a friend — and consistent.</td></tr>
+          <tr><td><b>Organisation</b></td><td>Is it easy to follow?</td><td>Clear paragraphs, one idea each, and a <b>variety</b> of linkers (not <i>and… but… so…</i> only).</td></tr>
+          <tr><td><b>Language</b></td><td>Range and accuracy of grammar and vocabulary</td><td>Some less common words and complex structures (relative clauses, conditionals, passives), with few errors.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3. A method for every task (≈ 40 min each)</h3>
+      <ol>
+        <li><b>Read (3 min)</b>: underline <b>who</b> the reader is, <b>why</b> you are writing and <b>every point</b> you must cover.</li>
+        <li><b>Plan (7 min)</b>: one line per paragraph. Decide your opinion <b>before</b> you start.</li>
+        <li><b>Write (25 min)</b>: follow the plan. Aim for about 170 words — enough to develop ideas, short enough to check.</li>
+        <li><b>Check (5 min)</b>: use the checklist in section 6. Spelling and your typical errors first.</li>
+      </ol>
+
+      <h3>4. Register: formal vs informal</h3>
+      <table>
+        <thead><tr><th></th><th>Formal / neutral (essay, report, formal letter)</th><th>Informal (email to a friend, many articles)</th></tr></thead>
+        <tbody>
+          <tr><td>Contractions</td><td><i>it is, I would, do not</i></td><td><i>it's, I'd, don't</i></td></tr>
+          <tr><td>Verbs</td><td><i>receive, discover, postpone, tolerate</i></td><td><i>get, find out, put off, put up with</i></td></tr>
+          <tr><td>Linkers</td><td><i>However, Moreover, Therefore, In addition</i></td><td><i>But, Also, So, Anyway, By the way</i></td></tr>
+          <tr><td>Tone</td><td>impersonal: <i>It is often said that…, There are several reasons…</i></td><td>direct: <i>You know what? Guess what!</i>, exclamations, questions</td></tr>
+        </tbody>
+      </table>
+      <p>⚠️ <b>Mixing registers</b> is a typical B2 mistake: <i>Dear Sir or Madam, … Anyway, see you!</i> Choose one and keep it.</p>
+
+      <h3>5. Linkers by function — use a variety</h3>
+      <table>
+        <thead><tr><th>Function</th><th>Linkers</th></tr></thead>
+        <tbody>
+          <tr><td>Adding</td><td><i>In addition, Moreover, What is more, Not only… but also…, as well as</i></td></tr>
+          <tr><td>Contrast</td><td><i>However, Although / Even though + clause, Despite / In spite of + -ing or noun, On the other hand, whereas</i></td></tr>
+          <tr><td>Cause / result</td><td><i>because, as, since · so, therefore, as a result, which is why</i></td></tr>
+          <tr><td>Purpose</td><td><i>to, in order to, so that + can/could</i></td></tr>
+          <tr><td>Examples</td><td><i>for example, for instance, such as, in particular</i></td></tr>
+          <tr><td>Opinion</td><td><i>In my opinion, I believe that, It seems to me that, As far as I'm concerned</i></td></tr>
+          <tr><td>Conclusion</td><td><i>In conclusion, To sum up, All in all, Overall</i></td></tr>
+        </tbody>
+      </table>
+      <p>⚠️ <i>Despite <b>of</b></i> ✗ → <i>Despite</i> / <i>In spite <b>of</b></i> ✓ · <i>Despite <b>it was</b> late</i> ✗ → <i>Despite <b>being</b> late</i> / <i><b>Although</b> it was late</i> ✓ · <i>On the other hand</i> introduces the <b>opposite side</b>, not just another point.</p>
+
+      <h3>6. Checklist before you finish ⚠️ (your diagnosed errors first)</h3>
+      <ul>
+        <li><b>recommend / suggest + -ing</b> (or <i>that + clause</i>) — never <i>recommend to do</i>.</li>
+        <li><b>Plurals after numbers</b> and <i>one of the + plural</i>; <i>three <b>hundred</b></i>, <i>a <b>two-year</b> course</i>.</li>
+        <li><b>as … as</b> for equality, <b>than</b> only with comparatives.</li>
+        <li><b>because</b> for reasons, <b>if</b> for conditions.</li>
+        <li><b>, which</b> to refer to the whole previous clause (<i>…, which is why…</i>).</li>
+        <li>Uncountables: <i>advice, information, news, equipment</i> (no <i>a</i>, no <i>-s</i>).</li>
+        <li>Spelling of Latin-root words: <i>recommend, necessary, possibility, responsibility</i>.</li>
+        <li>Every point of the task covered? Right register all the way through? 140–190 words?</li>
+      </ul>
+
+      <h3>7. Spanish-speaker habits to avoid</h3>
+      <ul>
+        <li><b>Very long sentences</b> joined with commas. In English, use a full stop or a linker: ✗ <i>The office is big, it has a canteen, we like it</i>.</li>
+        <li><b>Subject missing</b>: ✗ <i>Is important to…</i> → ✓ <i><b>It</b> is important to…</i></li>
+        <li><b>Articles for general ideas</b>: ✗ <i>The technology is changing the society</i> → ✓ <i>Technology is changing society</i>.</li>
+        <li><b>Repeating the question word for word</b>: paraphrase it in the introduction.</li>
+        <li><b>Literal translations</b>: <i>make a photo</i> ✗ → <i>take</i>; <i>assist to a meeting</i> ✗ → <i>attend</i>; <i>actually</i> ≠ actualmente.</li>
+      </ul>
+    `
+  },
+  {
+    id: "writing-essay",
+    group: "writing",
+    emoji: "📝",
+    title: "Essay (Part 1)",
+    html: `
+      <p class="hint">Part 1, compulsory. You discuss a question using the <b>two notes</b> given plus <b>your own idea</b>, and give your opinion. Reader: your teacher. Register: neutral / formal.</p>
+
+      <h3>1. Structure (4–5 paragraphs)</h3>
+      <table>
+        <thead><tr><th>Paragraph</th><th>What to do</th></tr></thead>
+        <tbody>
+          <tr><td>1. Introduction</td><td>Introduce the topic in your own words (do <b>not</b> copy the question). Optional: say what you will discuss. 2–3 sentences.</td></tr>
+          <tr><td>2. Note 1</td><td>Topic sentence + reason + example.</td></tr>
+          <tr><td>3. Note 2</td><td>Same pattern. Often the <b>other side</b> of the argument (<i>On the other hand…</i>).</td></tr>
+          <tr><td>4. Your own idea</td><td>A <b>different</b> point, not a repetition of the notes. ⚠️ Forgetting it lowers Content.</td></tr>
+          <tr><td>5. Conclusion</td><td>Summarise and give a <b>clear opinion</b> that answers the question. No new arguments.</td></tr>
+        </tbody>
+      </table>
+      <p>You can give your opinion in the introduction and confirm it at the end, or stay balanced until the conclusion. Both are fine — but the conclusion must answer the question.</p>
+
+      <h3>2. Useful language</h3>
+      <ul>
+        <li><b>Introducing</b>: <i>In recent years, … · Nowadays it is common for… · Many people believe that…, while others…</i></li>
+        <li><b>Arguments</b>: <i>The main argument in favour of… is… · One advantage / drawback of… is that… · Another point to consider is…</i></li>
+        <li><b>Supporting</b>: <i>For instance, … · This is because… · As a result, …</i></li>
+        <li><b>Contrasting</b>: <i>On the other hand, … · However, … · Although…, …</i></li>
+        <li><b>Concluding</b>: <i>In conclusion, I believe that… · All things considered, … · Overall, the advantages outweigh the disadvantages.</i></li>
+      </ul>
+      <p>⚠️ <i>In my opinion, I think…</i> is redundant — choose one. Avoid <i>I'm going to talk about…</i>: it sounds like a presentation, not an essay.</p>
+
+      <h3>3. Model answer (172 words)</h3>
+      <p class="hint"><b>Task</b>: <i>In many companies employees can now work from home. Is this a positive development?</i> Notes: 1. productivity 2. relationships with colleagues 3. (your own idea)</p>
+      <div class="model">
+        <p>In recent years, more and more companies have allowed their staff to work from home. While this has clear advantages, it also raises some important questions.</p>
+        <p>The main argument in favour of remote work is productivity. Without long commutes or constant interruptions, many employees find it easier to concentrate and get their work done. In fact, several studies suggest that people working from home are at least as efficient as those in the office.</p>
+        <p>On the other hand, relationships with colleagues may suffer. Video calls are useful, but they cannot completely replace a quick chat by the coffee machine, which is often where problems are solved and new ideas appear. New employees, in particular, may feel isolated.</p>
+        <p>Another point to consider is the environment. Fewer people travelling to work every day means less traffic and lower emissions, which benefits everyone.</p>
+        <p>In conclusion, I believe that working from home is a positive development, provided that companies find ways to keep their teams connected. A hybrid model, combining both options, seems the best solution.</p>
+      </div>
+      <p><b>Why it works</b>: the introduction paraphrases the question · one note per paragraph, each with a reason and an example · own idea (the environment) is genuinely new · a clear opinion with a condition (<i>provided that</i>) · varied linkers (<i>While, In fact, On the other hand, in particular, Another point, In conclusion</i>) · B2 structures: present perfect, relative clause with <i>which</i>, <i>as … as</i>, reduced relative clause (<i>people working from home</i> = <i>people who work…</i>).</p>
+    `
+  },
+  {
+    id: "writing-email",
+    group: "writing",
+    emoji: "✉️",
+    title: "Email / letter (Part 2)",
+    html: `
+      <p class="hint">Part 2. You reply to an email or letter, or write to an organisation. <b>The reader decides the register</b>: a friend (informal) or a manager, company or editor (formal).</p>
+
+      <h3>1. Opening and closing ⚠️</h3>
+      <table>
+        <thead><tr><th>Reader</th><th>Opening</th><th>Closing</th></tr></thead>
+        <tbody>
+          <tr><td>Name unknown (formal)</td><td><i>Dear Sir or Madam,</i></td><td><i>Yours faithfully,</i> + full name</td></tr>
+          <tr><td>Name known (formal)</td><td><i>Dear Ms Smith, / Dear Mr Jones,</i></td><td><i>Yours sincerely,</i> / <i>Kind regards,</i></td></tr>
+          <tr><td>Friend (informal)</td><td><i>Hi Sam, / Dear Sam,</i></td><td><i>Best wishes, / Take care, / Love,</i> + first name</td></tr>
+        </tbody>
+      </table>
+      <p>⚠️ Title + <b>surname</b>, never first name: ✗ <i>Dear Mr John</i> → ✓ <i>Dear Mr Smith</i> or <i>Dear John</i>. <i>Ms</i> for any woman unless you know she prefers <i>Mrs/Miss</i>.</p>
+
+      <h3>2. Structure</h3>
+      <table>
+        <thead><tr><th>Paragraph</th><th>Informal</th><th>Formal</th></tr></thead>
+        <tbody>
+          <tr><td>1. Reason for writing</td><td><i>Thanks for your email – great to hear from you!</i></td><td><i>I am writing to enquire about / apply for / complain about…</i></td></tr>
+          <tr><td>2–3. Main points</td><td colspan="2">Answer <b>every question</b> in the input, one paragraph per point. Add detail and examples.</td></tr>
+          <tr><td>4. Closing line</td><td><i>Let me know… · Can't wait to see you! · Write soon.</i></td><td><i>I look forward to hearing from you. · Please do not hesitate to contact me if…</i></td></tr>
+        </tbody>
+      </table>
+
+      <h3>3. Useful language</h3>
+      <ul>
+        <li><b>Giving advice</b> (very common in the task): <i>If I were you, I'd… · You should / You'd better… · Why don't you…? · I'd recommend <b>doing</b>…</i> (✗ <i>recommend to do</i>)</li>
+        <li><b>Asking politely</b> (formal): <i>I would be grateful if you could… · Could you tell me whether…?</i> (indirect question order — see Reported speech)</li>
+        <li><b>Informal fillers</b>: <i>to be honest, anyway, by the way, guess what</i> — natural in an email to a friend, wrong in a formal letter.</li>
+      </ul>
+
+      <h3>4. Model answer — informal (158 words)</h3>
+      <p class="hint"><b>Task</b>: your English friend Sam writes: <i>"I'm thinking of doing a coding bootcamp next summer. You did one, didn't you? Was it worth it? What advice would you give me?"</i> Write your email.</p>
+      <div class="model">
+        <p>Hi Sam,</p>
+        <p>Thanks for your email – it&#x27;s great to hear you&#x27;re thinking about a bootcamp!</p>
+        <p>Yes, I did one two years ago and, to be honest, it was one of the best decisions I&#x27;ve ever made. It was really intense: we had classes from nine to six every day and quite a lot of homework at the weekends. However, I learnt more in those twelve weeks than in a whole year of studying on my own, and I found a job as a junior developer soon after finishing.</p>
+        <p>If I were you, I&#x27;d choose a course that includes a real project, because that&#x27;s what employers want to see. I&#x27;d also recommend doing some free online tutorials before you start, so that the first weeks aren&#x27;t such a shock. Oh, and make sure you get enough sleep – you&#x27;ll need it!</p>
+        <p>Let me know which course you choose. I&#x27;d be happy to help if you get stuck.</p>
+        <p>Best wishes,<br>Alex</p>
+      </div>
+      <p><b>Why it works</b>: answers all three questions (did you do one? was it worth it? advice?) · consistently friendly register (contractions, <i>to be honest</i>, <i>Oh, and…</i>) · advice with variety (<i>If I were you, I'd recommend doing, make sure</i>) · <i>so that</i> for purpose, <i>such a shock</i>, superlative + present perfect.</p>
+    `
+  },
+  {
+    id: "writing-article",
+    group: "writing",
+    emoji: "📰",
+    title: "Article (Part 2)",
+    html: `
+      <p class="hint">Part 2. For a magazine, website or blog. The goal is to <b>interest and entertain</b> the reader while answering the questions in the task. Register: neutral or informal, lively.</p>
+
+      <h3>1. What makes it an article</h3>
+      <ul>
+        <li>A <b>title</b> that catches attention (short, can be a question or a play on words).</li>
+        <li>An <b>opening that hooks</b> the reader: a question, a surprising fact, a short anecdote.</li>
+        <li><b>Talk to the reader</b>: <i>you</i>, direct and rhetorical questions (<i>Have you ever…? Who doesn't love…?</i>).</li>
+        <li><b>Personal experience and opinion</b>, with examples.</li>
+        <li>An <b>ending</b> that leaves the reader thinking: a question, a recommendation, a final twist.</li>
+      </ul>
+
+      <h3>2. Structure</h3>
+      <table>
+        <thead><tr><th>Part</th><th>Content</th></tr></thead>
+        <tbody>
+          <tr><td>Title</td><td><i>My pocket-sized assistant · Is your phone running your life?</i></td></tr>
+          <tr><td>1. Hook</td><td>Question / anecdote that introduces the topic.</td></tr>
+          <tr><td>2–3. Body</td><td>One paragraph for each question in the task.</td></tr>
+          <tr><td>4. Ending</td><td>Your final thought, often addressed to the reader.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>3. Useful language</h3>
+      <ul>
+        <li><b>Hooks</b>: <i>Can you remember the last time…? · Imagine a world where… · Believe it or not, …</i></li>
+        <li><b>Engaging the reader</b>: <i>I'm sure you'll agree that… · Let's face it, … · You might be surprised to learn that…</i></li>
+        <li><b>Balancing</b>: <i>Having said that, … · That's not to say that… · Still, …</i></li>
+        <li><b>Endings</b>: <i>So, next time you…, why not…? · Give it a go — you won't regret it!</i></li>
+        <li><b>Vivid vocabulary</b> instead of <i>good/bad/nice</i>: <i>breathtaking, gripping, exhausting, invaluable, pointless</i>.</li>
+      </ul>
+      <p>⚠️ An article is not an essay: no <i>In conclusion</i>, no <i>Firstly / Secondly</i> lists, and you <b>can</b> use contractions and humour.</p>
+
+      <h3>4. Model answer (153 words)</h3>
+      <p class="hint"><b>Task</b>: <i>We're looking for articles for our website: "The piece of technology I couldn't live without". Tell us what it is, why it's so important to you, and whether people depend on technology too much.</i></p>
+      <div class="model">
+        <p><b>My pocket-sized assistant</b></p>
+        <p>Can you remember the last time you left home without your phone? I certainly can&#x27;t. For me, my smartphone isn&#x27;t just a gadget – it&#x27;s my alarm clock, my map, my bank and my music player, all in one.</p>
+        <p>What I value most, though, is how it keeps me connected. My closest friends live in different countries, but thanks to a simple messaging app, we chat every day as if we lived next door. When I moved to Madrid for work, those messages made me feel much less lonely.</p>
+        <p>Having said that, I sometimes wonder whether we&#x27;ve gone too far. How many times have you seen a group of friends in a restaurant, all staring at their screens? I&#x27;m as guilty as anyone, which is why I&#x27;ve started leaving my phone in a drawer after dinner.</p>
+        <p>So, could I live without it? Probably – but I&#x27;d rather not have to find out!</p>
+      </div>
+      <p><b>Why it works</b>: catchy title and a question as a hook · each paragraph answers one question of the task · personal anecdote (moving to Madrid) · talks to the reader (<i>How many times have you seen…?</i>) · <i>Having said that</i> to balance · witty ending · range: <i>as if we lived</i>, <i>I'd rather</i>, <i>which is why</i>, <i>as guilty as</i>.</p>
+    `
+  },
+  {
+    id: "writing-review",
+    group: "writing",
+    emoji: "⭐",
+    title: "Review (Part 2)",
+    html: `
+      <p class="hint">Part 2. About a film, series, book, app, restaurant, course, place… The reader wants to know <b>whether it is worth it</b>. Register: neutral / informal. You must <b>describe</b>, <b>evaluate</b> and <b>recommend</b>.</p>
+
+      <h3>1. Structure</h3>
+      <table>
+        <thead><tr><th>Paragraph</th><th>Content</th></tr></thead>
+        <tbody>
+          <tr><td>Title (optional)</td><td>Name + short opinion: <i>Signal from Europa – a slow-burning space thriller</i></td></tr>
+          <tr><td>1. Introduction</td><td>What it is, where/when, who it is for. Hint at your opinion.</td></tr>
+          <tr><td>2. Description + positives</td><td>Brief summary (<b>no spoilers</b>, present simple) and what you liked, with reasons.</td></tr>
+          <tr><td>3. Negatives</td><td>What could be better. A balanced review is more convincing.</td></tr>
+          <tr><td>4. Recommendation</td><td>Would you recommend it? <b>To whom</b>? Final verdict.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2. Useful language</h3>
+      <ul>
+        <li><b>Describing</b> (present simple): <i>It tells the story of… · It is set in… · The series follows… · It stars…</i></li>
+        <li><b>Positive</b>: <i>What struck me most was… · It is well worth watching / reading / visiting · The highlight is… · gripping, moving, hilarious, stunning, user-friendly</i></li>
+        <li><b>Negative</b>: <i>It is not without its faults · The only drawback is… · It is rather slow / predictable / overpriced · I was disappointed by…</i></li>
+        <li><b>Recommending</b>: <i>I would highly recommend it to anyone who… · It is a must-see for… · If you like…, you'll love… · Give it a miss if…</i></li>
+      </ul>
+      <p>⚠️ Avoid <i>very good / very bad</i> — use <b>gradable</b> and <b>extreme</b> adjectives correctly: <i>very interesting</i> but <i>absolutely gripping</i> (✗ <i>very gripping</i>, ✗ <i>absolutely interesting</i>). ⚠️ <i>The film <b>is about</b>…</i>, not ✗ <i>The film talks about…</i>.</p>
+
+      <h3>3. Model answer (150 words)</h3>
+      <p class="hint"><b>Task</b>: <i>Write a review of a science fiction film or series you have watched recently for an English-language website. Say what it is about, what you liked or disliked, and whether you would recommend it.</i> (The series is invented.)</p>
+      <div class="model">
+        <p><b>Signal from Europa – a slow-burning space thriller</b></p>
+        <p>If you enjoy science fiction that makes you think, Signal from Europa is definitely worth watching. Released last year, this eight-episode series follows a small team of scientists who receive a mysterious message from one of Jupiter&#x27;s moons.</p>
+        <p>The first thing that struck me was how realistic it looks. Instead of epic battles, we see cramped spaceships, endless data and exhausted engineers trying to fix broken equipment. The cast is excellent too, especially the actress who plays the mission commander, a tough but surprisingly sensitive character.</p>
+        <p>However, the series is not without its faults. The middle episodes are rather slow, and some viewers may find the scientific dialogue hard to follow.</p>
+        <p>Overall, I would highly recommend it to anyone who prefers ideas to explosions. Just be patient: the final two episodes are absolutely gripping, and the ending will stay with you for days.</p>
+      </div>
+      <p><b>Why it works</b>: title with an opinion · intro says what, when and for whom · description in the present without spoilers · balanced (<i>However, the series is not without its faults</i>) · clear recommendation to a specific audience · vocabulary: <i>struck me, cramped, gripping, slow-burning, worth watching</i>; <i>absolutely</i> with an extreme adjective.</p>
+    `
+  },
+  {
+    id: "writing-report",
+    group: "writing",
+    emoji: "📊",
+    title: "Report (Part 2)",
+    html: `
+      <p class="hint">Part 2. For a manager, teacher or committee. Its purpose is to <b>present information clearly</b> and make <b>recommendations</b>. Register: formal and impersonal. Very close to the reports you may write at work.</p>
+
+      <h3>1. Structure — with headings</h3>
+      <table>
+        <thead><tr><th>Heading</th><th>Content</th></tr></thead>
+        <tbody>
+          <tr><td>Title</td><td><i>Report on…</i></td></tr>
+          <tr><td>Introduction</td><td>Purpose: <i>The aim / purpose of this report is to…</i></td></tr>
+          <tr><td>2–3 sections</td><td>One heading for each point in the task (<i>Course content, Usefulness, Problems…</i>). Facts first, then evaluation.</td></tr>
+          <tr><td>Recommendations / Conclusion</td><td>What should be done, based on what you have reported.</td></tr>
+        </tbody>
+      </table>
+      <p>Headings and short bullet points are allowed — and expected. Use the <b>task's own words</b> for the headings: it shows the examiner you covered every point.</p>
+
+      <h3>2. Useful language</h3>
+      <ul>
+        <li><b>Purpose</b>: <i>The aim of this report is to evaluate / describe / suggest… · This report is based on a survey of…</i></li>
+        <li><b>Presenting facts</b> (impersonal, often passive): <i>According to the survey, … · Most participants said / felt that… · It was found that… · A significant number of…</i></li>
+        <li><b>Problems</b>: <i>A number of employees complained that… · The main issue appears to be… · As a result, …</i></li>
+        <li><b>Recommendations</b> ⚠️: <i>I would recommend <b>moving</b>… · I would recommend <b>that</b> the sessions <b>(should) be</b> moved… · It would be a good idea to… · The company should consider <b>-ing</b>…</i> (✗ <i>I recommend to move</i>)</li>
+      </ul>
+      <p>⚠️ No <i>Dear…</i> and no informal language. Numbers: <i>80% of participants</i>, <i>most of the employees</i> (✗ <i>the most of</i>).</p>
+
+      <h3>3. Model answer (164 words)</h3>
+      <p class="hint"><b>Task</b>: <i>Your manager has asked you to write a report on the English course the company offered last term. Describe what the course included, say how useful it was for employees and recommend improvements.</i></p>
+      <div class="model">
+        <p><b>Report on the company English course</b></p>
+        <p><b>Introduction</b><br>The aim of this report is to evaluate the English course offered to employees last term and to suggest how it could be improved.</p>
+        <p><b>Course content</b><br>The course consisted of two weekly online sessions focusing on meetings, emails and presentations. Participants also had access to a digital platform with grammar and vocabulary exercises.</p>
+        <p><b>Usefulness</b><br>Most participants found the course very practical. According to a survey, 80% felt more confident when speaking in meetings, and several said that writing emails now takes them less time. However, some employees complained that the sessions were held at the end of the working day, when they were tired, and attendance dropped as a result.</p>
+        <p><b>Recommendations</b><br>Based on these findings, I would recommend moving the sessions to the morning. It would also be a good idea to divide participants into smaller groups according to their level, so that everyone can take part more actively. Finally, the course should include more speaking practice.</p>
+      </div>
+      <p><b>Why it works</b>: headings match the three points of the task · purpose stated in the first sentence · facts with data (<i>According to a survey, 80%…</i>) · impersonal and formal throughout · recommendations follow from the problems found · <i>recommend + -ing</i>, passive (<i>were held</i>), <i>so that</i>, <i>as a result</i>.</p>
+    `
   }
 ];

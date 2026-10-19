@@ -10,11 +10,11 @@ const WORDS_MIN = 140, WORDS_MAX = 190;
 
 // Convenciones de cada tipo de texto (resumen propio del handbook de B2 First)
 const WRITING_TYPES = {
-  essay: { label: "📝 Essay (Part 1)", conv: "Part 1, compulsory. Neutral/formal register. Answers the question, covers BOTH given notes plus the candidate's own idea, introduction and conclusion with a clear opinion, paragraphs, linkers." },
-  email: { label: "✉️ Email / letter (Part 2)", conv: "Part 2. Register appropriate to the reader (informal for a friend, formal for an organisation), suitable opening and closing, answers every point of the input." },
-  article: { label: "📰 Article (Part 2)", conv: "Part 2. For a magazine or website. Engages the reader: a title, direct questions, personal examples, lively but neutral/informal register." },
-  review: { label: "⭐ Review (Part 2)", conv: "Part 2. Describes and evaluates (a film, app, place, product…) and gives a recommendation. Neutral/informal register, title optional." },
-  report: { label: "📊 Report (Part 2)", conv: "Part 2. Formal. Clear purpose in the introduction, headings, factual presentation and recommendations at the end." },
+  essay: { guide: "writing-essay", label: "📝 Essay (Part 1)", conv: "Part 1, compulsory. Neutral/formal register. Answers the question, covers BOTH given notes plus the candidate's own idea, introduction and conclusion with a clear opinion, paragraphs, linkers." },
+  email: { guide: "writing-email", label: "✉️ Email / letter (Part 2)", conv: "Part 2. Register appropriate to the reader (informal for a friend, formal for an organisation), suitable opening and closing, answers every point of the input." },
+  article: { guide: "writing-article", label: "📰 Article (Part 2)", conv: "Part 2. For a magazine or website. Engages the reader: a title, direct questions, personal examples, lively but neutral/informal register." },
+  review: { guide: "writing-review", label: "⭐ Review (Part 2)", conv: "Part 2. Describes and evaluates (a film, app, place, product…) and gives a recommendation. Neutral/informal register, title optional." },
+  report: { guide: "writing-report", label: "📊 Report (Part 2)", conv: "Part 2. Formal. Clear purpose in the introduction, headings, factual presentation and recommendations at the end." },
 };
 
 const SCALES = [
@@ -27,7 +27,7 @@ const SCALES = [
 const countWords = s => (s.trim().match(/[A-Za-z0-9’'-]+/g) || []).length;
 
 function writingSystemPrompt(type) {
-  const topics = TOPICS.map(t => `${t.id} = ${t.title}`).join("\n");
+  const topics = TOPICS.filter(t => !t.group).map(t => `${t.id} = ${t.title}`).join("\n");
   return `You are an experienced Cambridge B2 First (FCE) Writing examiner and English teacher.
 The student is a Spanish-speaking IT professional preparing for B2 First.
 
@@ -187,6 +187,8 @@ function renderFeedback(entry) {
   });
   head.append(grid);
   head.append(el("p", "hint", "Orientativo: la IA no es un examinador oficial. Cambridge suma las dos tareas del Writing (40 puntos) y lo convierte a su escala; usa la nota para ver tu evolución, no como predicción exacta."));
+  const guide = WRITING_TYPES[entry.type]?.guide;
+  if (guide) { const g = el("button", "link", "📖 Repasar la guía de este tipo de texto"); g.type = "button"; g.onclick = () => openTheory(guide); head.append(g); }
   out.append(head);
 
   const txt = el("div", "card");
@@ -269,6 +271,8 @@ $("wrCheck").onclick = async () => {
     saveWriting(entry); renderWritingHistory(); wrBusy(false); renderFeedback(entry);
   } catch (e) { wrBusy(false, "❌ " + e.message); if (e.kind === "auth") $("wrCfg").open = true; }
 };
+$("wrGuide").onclick = () => openTheory(WRITING_TYPES[$("wrType").value].guide);
+$("wrGuideAll").onclick = () => openTheory("writing-overview");
 $("tab-writing").onclick = () => {
   if (G.active && !confirm("¿Salir de la partida?")) return;
   G.active = false; renderWritingPage(); show("writing");

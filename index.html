@@ -100,6 +100,7 @@ input[type=text]:disabled{opacity:.7}
 table{width:100%;border-collapse:collapse;font-size:.95rem}
 th,td{padding:8px 6px;text-align:right;border-bottom:1px solid var(--line)}
 th:first-child,td:first-child{text-align:left}
+#topicBody th,#topicBody td{text-align:left;vertical-align:top}
 .badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
 .badge{border:2px dashed var(--line);border-radius:14px;padding:10px;text-align:center;opacity:.5}
 .badge.on{border:2px solid var(--gold);opacity:1;background:var(--brand-soft)}
@@ -118,7 +119,8 @@ textarea.wr-field{min-height:120px;resize:vertical;line-height:1.5}
 .wr-errors s{color:var(--bad)}
 .wr-tag{display:inline-block;margin-left:8px;font-size:.75rem;background:var(--brand-soft);color:var(--brand);border-radius:99px;padding:1px 8px}
 details.card summary{font-weight:800;cursor:pointer}
-#vocabCats h3{margin:14px 0 6px}
+#vocabCats h3,#topicsBox h3{margin:14px 0 6px}
+.model{background:var(--brand-soft);border-radius:14px;padding:4px 16px;margin:8px 0 12px;line-height:1.6}
 .danger{background:none;border:0;color:var(--bad);text-decoration:underline;font-weight:700}
 .topic{display:block;width:100%;text-align:left;border:2px solid var(--line);background:var(--card);
   border-radius:14px;padding:12px 14px;font-weight:700;margin-bottom:8px}
@@ -299,6 +301,10 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
       <h2>✍️ Corrector de Writing (B2 First)</h2>
       <label class="hint" for="wrType">Tipo de texto</label>
       <select class="wr-field" id="wrType"></select>
+      <div class="actions" style="margin-top:-4px">
+        <button class="link" id="wrGuide" type="button">📖 Guía de este tipo de texto</button>
+        <button class="link" id="wrGuideAll" type="button">📖 Cómo funciona el Writing</button>
+      </div>
       <label class="hint" for="wrTask">Enunciado de la tarea (opcional, mejora la nota de Content)</label>
       <textarea class="wr-field" id="wrTask" placeholder="Pega aquí el enunciado del examen, o pide uno a la IA."></textarea>
       <div class="actions"><button class="secondary" id="wrSuggest" type="button">🎲 Proponer una tarea</button></div>
@@ -904,12 +910,19 @@ function renderStudy() {
     p.textContent = "Todavía no hay temas de teoría.";
     box.append(p); return;
   }
-  TOPICS.forEach(t => {
-    const b = document.createElement("button");
-    b.className = "topic"; b.type = "button";
-    b.textContent = `${t.emoji || "📘"} ${t.title}`;
-    b.onclick = () => openTopic(t);
-    box.append(b);
+  // Agrupados por t.group (sin group = gramática), en el orden de TOPICS_GROUPS
+  const TOPICS_GROUPS = [["grammar", "✏️ Gramática"], ["writing", "✍️ Writing: cómo escribir cada tipo de texto"]];
+  TOPICS_GROUPS.forEach(([g, label]) => {
+    const list = TOPICS.filter(t => (t.group || "grammar") === g);
+    if (!list.length) return;
+    const h = document.createElement("h3"); h.textContent = label; box.append(h);
+    list.forEach(t => {
+      const b = document.createElement("button");
+      b.className = "topic"; b.type = "button";
+      b.textContent = `${t.emoji || "📘"} ${t.title}`;
+      b.onclick = () => openTopic(t);
+      box.append(b);
+    });
   });
 }
 function openTopic(t) {
