@@ -1,10 +1,13 @@
-# Formato: ingles|es1,es2,...|categoria (categoría opcional)
+# Formato: ingles|es1,es2,...|categoria|descripcion|ejemplo (los 3 últimos, opcionales)
 # Categorías (orden y etiquetas en CATEGORY_META de index.html; una nueva sin
 # entrada allí sale como "🏷️ Otras"):
 #   trabajo:  empleo, condiciones, oficina, negocios, cualidades
 #   examen:   tecnologia, ciencia, naturaleza, salud, viajes, educacion, medios,
 #             dinero, sociedad, personas, ciudad, ocio, comida, historia
-#   lengua:   collocations, phrasal, falsos-amigos
+#   lengua:   collocations, falsos-amigos
+#   verbos:   phrasal-<verbo> (get, take, look, go, come, turn, make, set, give, cut,
+#             bring, call, pick, carry, be, keep, see), phrasal (otros), irregulares
+#             (en = "infinitivo – pasado – participio"; variantes separadas por /)
 # Origen: ~/claude/English/theory/vocabulary.txt (migrado 2026-09-28)
 raw|crudo,cruda,sin cocinar|comida
 tuck into|comer con ganas,zampar,devorar|comida
@@ -12,7 +15,6 @@ vary|variar,cambiar
 endangered|en peligro de extinción,amenazado|naturaleza
 dam|presa,embalse|naturaleza
 saliva|saliva
-seek / sought|buscar,solicitar
 onboarding program / onboarding programme|programa de incorporación,programa de acogida,onboarding|empleo
 on-site support|soporte presencial,soporte in situ,asistencia in situ|oficina
 bunker|búnker,refugio|historia
@@ -110,7 +112,7 @@ dismiss|despedir,cesar|empleo
 sack / fire|despedir,echar|empleo
 give notice|dar el preaviso,avisar|empleo
 hand in one's resignation|presentar la renuncia,dimitir|empleo
-take over|asumir el control,hacerse cargo|negocios
+take over|asumir el control,hacerse cargo|phrasal-take|Asumir el control de algo (también: absorber una empresa)|She took over the project after the manager left.
 take on staff|contratar personal,emplear personal|empleo
 recruit|reclutar,contratar|empleo
 recruitment agency|agencia de colocación,agencia de contratación|empleo
@@ -732,12 +734,12 @@ free parking|aparcamiento gratuito|condiciones
 flexible spending account|cuenta de gastos flexibles|condiciones
 workplace nursery|guardería de empresa|condiciones
 # Academia, semana del 2026-10-05 (phrasal verbs y collocations; teoría en el tema "phrasal-verbs")
-take up|empezar a practicar,aficionarse a,ocupar|phrasal
+take up|empezar a practicar,aficionarse a,ocupar|phrasal-take|Empezar una actividad nueva / ocupar espacio o tiempo|I took up yoga last month. / This sofa takes up too much space.
 have a go|intentarlo,probar,hacer un intento|phrasal
-turn up / show up|aparecer,presentarse,llegar|phrasal
-get used to|acostumbrarse a|phrasal
+turn up / show up|aparecer,presentarse,llegar,subir el volumen|phrasal-turn|Aparecer, presentarse / subir el volumen|He turned up late to the meeting. / Turn up the radio.
+get used to|acostumbrarse a|phrasal-get
 take risks / take a risk|arriesgarse,correr riesgos|phrasal
-take part in|participar en,tomar parte en|phrasal
+take part in|participar en,tomar parte en|phrasal-take
 keep a promise|cumplir una promesa|phrasal
 
 # --- Temas del B2 First (añadido 2026-10-19): vocabulario de nivel B2 por área del examen ---
@@ -1132,42 +1134,42 @@ heavy traffic|tráfico denso,mucho tráfico|collocations
 heavy rain|lluvia intensa,lluvias fuertes|collocations
 fast asleep|profundamente dormido|collocations
 # Phrasal verbs frecuentes en B2
-look after|cuidar,cuidar de|phrasal
-look for|buscar|phrasal
-look up|consultar,buscar en el diccionario|phrasal
-look forward to|tener ganas de,esperar con ilusión|phrasal
-look into|investigar,examinar|phrasal
-give up|dejar,rendirse,abandonar|phrasal
+look after|cuidar,cuidar de|phrasal-look|Cuidar de alguien o algo|She looks after her little brother every afternoon.
+look for|buscar|phrasal-look|Buscar algo o a alguien|I'm looking for my keys. Have you seen them?
+look up|consultar,buscar en el diccionario,buscar|phrasal-look|Buscar información (en un diccionario, en internet…)|I looked up the word in the dictionary.
+look forward to|tener ganas de,esperar con ilusión|phrasal-look|Esperar con ilusión algo que va a ocurrir (⚠️ + -ing: looking forward to hearing)|I'm really looking forward to the weekend.
+look into|investigar,examinar|phrasal-look|Investigar, examinar algo|The manager will look into the complaint.
+give up|dejar,rendirse,abandonar|phrasal-give|Rendirse, dejar de intentar o de hacer algo|I gave up trying to fix the printer.
 put off|aplazar,posponer|phrasal
-call off|cancelar,suspender|phrasal
-carry on|continuar,seguir|phrasal
+call off|cancelar,suspender|phrasal-call|Cancelar algo|They called off the wedding at the last minute.
+carry on|continuar,seguir|phrasal-carry|Continuar|Carry on with your work, please.
 find out|averiguar,descubrir,enterarse|phrasal
-come up with|idear,ocurrírsele|phrasal
+come up with|idear,ocurrírsele,proponer|phrasal-come|Idear, proponer una idea|She came up with a great marketing plan.
 run out of|quedarse sin|phrasal
-set up|montar,crear,instalar|phrasal
-turn down|rechazar,bajar el volumen|phrasal
+set up|montar,crear,instalar,establecer|phrasal-set|Establecer, organizar, montar|They set up the meeting room before the presentation.
+turn down|rechazar,bajar el volumen|phrasal-turn|Rechazar / bajar el volumen|She turned down the job offer. / Can you turn down the music?
 work out|resolver,calcular,hacer ejercicio|phrasal
 figure out|entender,averiguar,descifrar|phrasal
 point out|señalar,indicar|phrasal
 deal with|ocuparse de,lidiar con,tratar con|phrasal
 cope with|sobrellevar,hacer frente a|phrasal
-get over|superar,recuperarse de|phrasal
-get on with|llevarse bien con,seguir con|phrasal
-get by|apañárselas,arreglárselas|phrasal
+get over|superar,recuperarse de|phrasal-get|Superar (una situación difícil o una enfermedad)|It took her months to get over the breakup.
+get on with|llevarse bien con,seguir con|phrasal-get
+get by|apañárselas,arreglárselas,sobrevivir|phrasal-get|Arreglárselas, sobrevivir con poco|I don't earn much, but I manage to get by.
 fall out with|pelearse con,enfadarse con|phrasal
 break up / split up|romper,separarse|phrasal
-bring up|criar,sacar un tema|phrasal
+bring up|criar,sacar un tema,mencionar|phrasal-bring|Mencionar un tema / criar (a un niño)|She brought up an interesting point. / They brought up their children in Spain.
 grow up|crecer,criarse|phrasal
-pick up|recoger,aprender de oído|phrasal
-set off|ponerse en camino,salir de viaje|phrasal
+pick up|recoger,aprender de oído,aprender,ligar|phrasal-pick|Recoger / aprender sin estudiar / (informal) ligar / mejorar (la economía)|I'll pick you up at 8. / She picked up some Spanish in Mexico.
+set off|ponerse en camino,salir de viaje,activar,hacer explotar|phrasal-set|Partir (de viaje) / hacer explotar / activar (una alarma)|We set off early in the morning. / The smoke set off the alarm.
 drop out|abandonar los estudios,dejar los estudios|phrasal
 eat out|comer fuera|phrasal
 show off|presumir,fardar|phrasal
 put up with|aguantar,soportar|phrasal
-make up|inventar,hacer las paces,maquillarse|phrasal
-turn out|resultar|phrasal
-cut down on|reducir el consumo de,consumir menos|phrasal
-come across|encontrarse con,toparse con|phrasal
+make up|inventar,hacer las paces,maquillarse,reconciliarse|phrasal-make|Inventar (una historia, una excusa) / reconciliarse / formar parte (make up 20% of)|She made up an excuse for being late. / They finally made up.
+turn out|resultar,acudir|phrasal-turn|Resultar / acudir (a un evento)|It turned out better than we expected. / Thousands turned out to protest.
+cut down on|reducir el consumo de,consumir menos,reducir|phrasal-cut|Reducir el consumo de algo|I'm trying to cut down on sugar.
+come across|encontrarse con,toparse con,dar con|phrasal-come|Encontrarse algo o a alguien por casualidad / dar una impresión (come across as)|I came across an old friend at the market.
 fill in|rellenar|phrasal
 hold on|esperar,aguantar|phrasal
 # Falsos amigos — trampas para hispanohablantes
@@ -1211,3 +1213,231 @@ assume|suponer,dar por hecho|falsos-amigos
 support|apoyar,apoyo|falsos-amigos
 disappointment|decepción|falsos-amigos
 deception|engaño|falsos-amigos
+
+# Phrasal verbs de docs/phrasal-verbs-b2.odt (2026-10-29): ingles|es|phrasal-<verbo>|descripción|ejemplo
+get up|levantarse|phrasal-get|Levantarse (de la cama)|I usually get up at 7 a.m. even at weekends.
+get along / get along with|llevarse bien,llevarse bien con|phrasal-get|Llevarse bien (con alguien)|They really get along well despite their differences.
+get in|entrar,subirse|phrasal-get|Entrar (en un coche o un lugar cerrado)|She got in the car and drove away.
+get out|salir,bajarse|phrasal-get|Salir (de un coche o un lugar cerrado)|Get out of the room, it's not safe!
+get back|volver,regresar|phrasal-get|Volver, regresar|When did you get back from your trip?
+get away|escaparse,alejarse,irse unos días|phrasal-get|Escaparse, alejarse (también: irse unos días de vacaciones)|We're planning to get away for the weekend.
+get ahead|progresar,prosperar,avanzar|phrasal-get|Progresar, avanzar profesionalmente|You need to work hard to get ahead in this company.
+get through|superar,acabar,contactar|phrasal-get|Superar o terminar algo complicado / conseguir hablar con alguien por teléfono|I couldn't get through the book: it was too long. / I tried to call IT but couldn't get through.
+get down to|ponerse a,ponerse manos a la obra,centrarse en|phrasal-get|Ponerse manos a la obra, centrarse en algo|Let's get down to business and start the meeting.
+get around|moverse,desplazarse,sortear|phrasal-get|Moverse por un sitio / sortear o evitar algo|He gets around town by bike.
+get together|reunirse,quedar|phrasal-get|Reunirse, quedar con alguien|Let's get together for lunch next week.
+get off|bajarse,librarse|phrasal-get|Bajarse de un transporte / librarse de un castigo|She got off the train at the last station.
+get on|subirse,llevarse bien|phrasal-get|Subirse a un transporte / llevarse bien (get on with someone)|He got on the bus just in time.
+take off|despegar,quitarse,tener éxito,irse corriendo|phrasal-take|Despegar (avión) / quitarse (ropa) / (informal) volverse popular rápidamente, salir corriendo|The plane took off on time. / His career really took off last year.
+take in|asimilar,entender,acoger|phrasal-take|Entender, asimilar / acoger (a una persona o animal)|That's a lot of information to take in. / They took in a stray cat.
+take out|sacar,invitar a salir|phrasal-take|Sacar / invitar a salir|Could you take the rubbish out? / I'll take you out to dinner.
+take back|devolver,retractarse|phrasal-take|Devolver (a la tienda) / retirar lo dicho|I need to take this shirt back. / I take back what I said.
+take on|asumir,aceptar,contratar|phrasal-take|Aceptar un reto o una responsabilidad / contratar|She took on a new role at work. / We're taking on new staff.
+take down|apuntar,anotar,desmontar|phrasal-take|Apuntar / desmontar, quitar|Let me take down your number. / They took down the decorations.
+take after|parecerse a,salir a|phrasal-take|Parecerse a un familiar (físico o carácter)|She takes after her father: same sense of humour.
+look out|tener cuidado,cuidado|phrasal-look|¡Cuidado!, estar atento|Look out! There's a car coming!
+look up to|admirar|phrasal-look|Admirar a alguien|She has always looked up to her older sister.
+look down on|menospreciar,despreciar|phrasal-look|Menospreciar, mirar por encima del hombro|He looks down on people who don't have a degree.
+look back / look back on|recordar,mirar atrás|phrasal-look|Recordar, mirar hacia el pasado|When I look back on my childhood, I smile.
+look around|echar un vistazo,mirar alrededor,explorar|phrasal-look|Mirar alrededor, recorrer un lugar|We looked around the old town before heading home.
+go on|continuar,seguir,pasar|phrasal-go|Continuar, seguir adelante (What's going on? = ¿qué pasa?)|Please go on with your story.
+go out|salir|phrasal-go|Salir (de casa, de fiesta) / salir con alguien|We're going out for dinner tonight.
+go over|revisar,repasar|phrasal-go|Revisar, repasar|Let's go over the report before submitting it.
+go back|volver,regresar|phrasal-go|Volver, regresar|I have to go back to the office this afternoon.
+go through|pasar por,sufrir,revisar|phrasal-go|Pasar por una experiencia difícil / revisar algo a fondo|She went through a lot last year.
+go off|sonar,explotar,estropearse|phrasal-go|Sonar (alarma), explotar, estropearse (comida)|The alarm went off at 6 a.m. / This milk has gone off.
+go ahead|adelante,seguir adelante|phrasal-go|Adelante, seguir adelante con algo|If you have a question, go ahead and ask.
+go up|subir,aumentar|phrasal-go|Subir (precios, temperatura)|Prices have gone up again this month.
+go down|bajar,disminuir|phrasal-go|Bajar, disminuir / ser recibido (go down well = gustar)|The temperature went down last night.
+go with|combinar con,acompañar,elegir|phrasal-go|Combinar con / acompañar / quedarse con una opción|This shirt goes with your jeans. / I'll go with the cheaper option.
+come in|entrar,pasar|phrasal-come|Entrar, pasar|Please come in and have a seat.
+come out|salir,salir a la luz,publicarse|phrasal-come|Salir / hacerse público / publicarse|The truth finally came out.
+come up|surgir|phrasal-come|Surgir (un tema, una oportunidad, un problema)|That issue came up during the meeting.
+come over|venir,pasarse por casa|phrasal-come|Pasarse por casa de alguien, visitar|Why don't you come over for dinner tonight?
+come back|volver,regresar|phrasal-come|Volver|She came back from her trip last night.
+come down with|caer enfermo de,pillar|phrasal-come|Caer enfermo de algo|I think I'm coming down with a cold.
+come off|salir bien,despegarse,soltarse|phrasal-come|Salir bien (un plan) / despegarse, soltarse|The plan came off better than expected. / The label came off easily.
+come through|superar,cumplir,salir adelante|phrasal-come|Superar algo difícil / cumplir cuando hace falta|He really came through in the end and saved the deal.
+turn on|encender|phrasal-turn|Encender (luz, aparato)|Can you turn on the light, please?
+turn off|apagar|phrasal-turn|Apagar (luz, aparato)|Don't forget to turn off the TV before bed.
+turn around / turn round|darse la vuelta,dar la vuelta,reflotar|phrasal-turn|Darse la vuelta / mejorar algo rápidamente (una empresa)|Turn around and look at this. / The new manager turned the company around.
+turn into|convertirse en,transformarse en|phrasal-turn|Convertirse en|The caterpillar turned into a butterfly.
+turn over|dar la vuelta,voltear,entregar|phrasal-turn|Dar la vuelta (a una hoja) / entregar|Please turn over the paper. / He turned over the keys to the landlord.
+turn to|recurrir a,acudir a|phrasal-turn|Recurrir a alguien o algo|In tough times, she always turns to her family.
+turn back|volver atrás,dar media vuelta|phrasal-turn|Volver atrás|It's getting dark, we should turn back now.
+make out|distinguir,entender,besarse|phrasal-make|Distinguir, entender / (informal, EE. UU.) besarse apasionadamente|I couldn't make out what he was saying.
+make over|transformar,renovar|phrasal-make|Transformar, renovar|They made over the living room completely.
+make up for|compensar|phrasal-make|Compensar por algo|He worked extra hours to make up for his absence.
+make into|convertir en|phrasal-make|Convertir algo en otra cosa|They made the garage into a home office.
+make of|opinar de,pensar de|phrasal-make|Qué opinas de algo (What do you make of…?)|What do you make of this situation?
+make do / make do with|apañárselas,arreglárselas con|phrasal-make|Arreglárselas con lo que se tiene|We didn't have much food, but we made do with what we had.
+make out to be|hacerse pasar por,pintar como|phrasal-make|Pretender ser, presentar algo como lo que no es|He makes himself out to be smarter than he is.
+make after|perseguir|phrasal-make|Perseguir (⚠️ poco común y anticuado: hoy se dice go after o chase)|The dog made after the cat as soon as it saw it.
+make away with / make off with|robar y huir,llevarse|phrasal-make|Robar y huir|The thieves made off with several valuable paintings.
+set out|emprender,proponerse,exponer|phrasal-set|Emprender un viaje o un objetivo / exponer (ideas)|He set out to become a doctor. / She set out her ideas clearly.
+set back|retrasar,costar|phrasal-set|Retrasar / costar dinero (informal)|The accident set us back several weeks. / The repairs set me back £200.
+set in|instalarse,empezar|phrasal-set|Comenzar algo negativo y quedarse (mal tiempo, una enfermedad)|Winter has set in early this year.
+set aside|apartar,reservar,ahorrar|phrasal-set|Apartar, reservar (dinero o tiempo)|He set aside some money for the holidays.
+set down|dejar,posar,poner por escrito|phrasal-set|Colocar, dejar / poner por escrito|She set the tray down carefully. / He set down his thoughts in a notebook.
+set against|enfrentar,poner en contra|phrasal-set|Enfrentar, poner a alguien en contra de otro|The story sets brother against brother.
+set upon / set on|atacar|phrasal-set|Atacar (⚠️ poco común, sobre todo en pasiva)|The hikers were set upon by wild animals.
+set forth|exponer,presentar|phrasal-set|Exponer, presentar (formal)|He set forth his vision during the conference.
+give in|ceder,rendirse|phrasal-give|Ceder, rendirse ante la presión|He finally gave in to their demands.
+give out|repartir,agotarse,fallar|phrasal-give|Repartir / agotarse, dejar de funcionar|They gave out free samples at the shop. / The batteries gave out.
+give away|regalar,revelar,delatar|phrasal-give|Regalar / revelar un secreto|She gave away her old clothes. / Don't give away the surprise!
+give off|desprender,emitir,despedir|phrasal-give|Despedir, emitir (olor, luz, calor…)|The flowers gave off a lovely scent.
+give back|devolver|phrasal-give|Devolver algo|Don't forget to give back the book you borrowed.
+give over to|dedicar a,destinar a|phrasal-give|Dedicar tiempo o espacio a algo (sobre todo en pasiva)|The entire room was given over to storage.
+give on to / give onto|dar a|phrasal-give|Dar a (una calle, un jardín…) (⚠️ poco común: hoy se dice look onto / overlook)|My room gives onto the courtyard.
+give it to someone|echar la bronca,regañar|phrasal-give|Regañar fuertemente (⚠️ informal)|The boss really gave it to him after the mistake.
+give way|ceder el paso,ceder,derrumbarse|phrasal-give|Ceder el paso / derrumbarse, ceder|You must give way at the junction. / The bridge gave way.
+cut off|cortar,desconectar,aislar|phrasal-cut|Cortar, desconectar / aislar (cut off from)|The phone call was cut off suddenly. / The village was cut off from the rest of the world.
+cut out|eliminar,recortar,dejar de tomar|phrasal-cut|Eliminar (de la dieta) / recortar (con tijeras) / cut out for = valer para|Cut the pictures out of the magazine. / I've cut out dairy.
+cut back / cut back on|recortar,reducir gastos|phrasal-cut|Recortar (gastos, consumo)|We had to cut back on our spending.
+cut in|interrumpir,meterse|phrasal-cut|Interrumpir, meterse en una conversación / colarse (con el coche)|She kept cutting in while I was speaking.
+cut up|trocear,cortar en trozos|phrasal-cut|Cortar en pedazos|He cut up the vegetables for the salad.
+cut across|atajar,atravesar|phrasal-cut|Atajar, cruzar por un camino más corto|We cut across the field to save time.
+cut into|quitar,reducir,interrumpir|phrasal-cut|Quitar parte de algo (tiempo, beneficios)|The extra meetings cut into my time.
+cut out for|valer para,estar hecho para|phrasal-cut|Ser apto para algo (casi siempre en negativa: not cut out for)|I'm not cut out for office work.
+bring about|provocar,causar,ocasionar|phrasal-bring|Provocar, causar|The new law brought about many changes.
+bring out|sacar,resaltar,lanzar|phrasal-bring|Sacar, resaltar / lanzar (un producto)|That shirt really brings out your eyes.
+bring down|derribar,hacer caer,reducir,bajar|phrasal-bring|Hacer caer (a un gobierno, a alguien) / reducir|The scandal brought down the politician. / We need to bring down costs.
+bring in|introducir,generar,traer|phrasal-bring|Introducir (una ley, una norma) / generar (ingresos) / traer a alguien (un experto)|The new product brought in a lot of revenue.
+bring forward|adelantar|phrasal-bring|Adelantar (una fecha) (⚠️ al revés: put off / postpone = aplazar)|They brought the meeting forward to Monday.
+bring back|devolver,traer recuerdos,recordar|phrasal-bring|Devolver, traer de vuelta / traer recuerdos|Can you bring back my book? / This song brings back memories.
+bring along|traer,llevar consigo|phrasal-bring|Traer contigo|Don't forget to bring along your ID.
+bring over|traer a casa,traer|phrasal-bring|Traer o llevar a alguien a casa|I'll bring my friend over for dinner.
+bring together|reunir,unir|phrasal-bring|Reunir, unir|The event brought together people from all backgrounds.
+call back|devolver la llamada,volver a llamar|phrasal-call|Devolver una llamada|I'll call you back in five minutes.
+call out|llamar la atención,denunciar,gritar|phrasal-call|Criticar o señalar públicamente / gritar (para llamar a alguien)|The manager called out the employee in front of everyone.
+call up|llamar por teléfono,llamar,evocar|phrasal-call|Llamar por teléfono / evocar recuerdos / convocar (a filas, a la selección)|She called up her friend to share the news.
+call on|pedir,visitar,recurrir a|phrasal-call|Pedir a alguien que haga algo / visitar|The teacher called on Tom to answer. / We called on our neighbours.
+call for|requerir,exigir,pedir|phrasal-call|Requerir, exigir|This situation calls for a quick response.
+call in|llamar,hacer venir,llamar al trabajo|phrasal-call|Hacer venir a alguien (un experto) / llamar al trabajo (call in sick)|They called in an expert.
+call over|llamar|phrasal-call|Llamar a alguien para que se acerque|He called the waiter over to complain.
+call at|parar en,hacer parada en|phrasal-call|Hacer parada en (trenes, autobuses)|The train calls at several stations.
+call by|pasarse por|phrasal-call|Pasar brevemente por un lugar|I'll call by your office later today.
+pick out|elegir,escoger,distinguir|phrasal-pick|Elegir, seleccionar / distinguir entre muchos|She picked out a beautiful dress for the wedding.
+pick on|meterse con,acosar|phrasal-pick|Meterse con alguien, tomarla con alguien|The kids at school used to pick on him.
+pick at|picotear,comer sin ganas,hurgar|phrasal-pick|Comer con desgana / hurgar|He was just picking at his food.
+pick over|examinar,revisar|phrasal-pick|Examinar con cuidado (comida, objetos) para elegir|They picked over the fruit before buying.
+pick apart|desmenuzar,criticar|phrasal-pick|Criticar en exceso, analizar al detalle buscando fallos|The critics picked the film apart.
+pick yourself up|recuperarse,levantarse|phrasal-pick|Recuperarse (física o emocionalmente)|It's time to pick yourself up and keep going.
+pick off|abatir uno a uno,eliminar uno a uno|phrasal-pick|Eliminar uno por uno|The sniper picked off the targets one by one.
+pick up on|notar,captar,darse cuenta de|phrasal-pick|Notar, captar algo que no se dice|She picked up on his nervousness.
+pick through|rebuscar,buscar entre|phrasal-pick|Buscar entre cosas|He picked through the box looking for his keys.
+carry out|llevar a cabo,realizar|phrasal-carry|Llevar a cabo (una investigación, un experimento, una tarea)|They carried out a detailed investigation.
+carry over|trasladar,transferir,arrastrar|phrasal-carry|Transferir, trasladar a otro periodo|The balance will be carried over to next month.
+carry off|llevarse,lograr,salir airoso|phrasal-carry|Lograr con éxito / llevarse (un premio) / (enfermedad) llevarse la vida de alguien|She carried off the award with grace.
+carry around|llevar encima,llevar consigo|phrasal-carry|Llevar encima|He carries around a notebook everywhere.
+carry through|sacar adelante,llevar a término|phrasal-carry|Sacar adelante, llevar a término / ayudar a superar|Her determination carried her through the hard times.
+carry forward|arrastrar,trasladar|phrasal-carry|Pasar (días, saldo) al siguiente periodo|Unused holiday days will be carried forward.
+carry back|transportar,trasladar al pasado|phrasal-carry|Hacer recordar el pasado (⚠️ poco común: hoy se dice take back)|This music carries me back to my childhood.
+carry on with|seguir con,continuar con|phrasal-carry|Seguir con algo en particular|Let's carry on with the lesson.
+be in|estar en casa,estar|phrasal-be|Estar en casa, en la oficina o disponible|I'll be in all afternoon if you want to stop by.
+be out|estar fuera,no estar|phrasal-be|Estar fuera, no estar disponible|She's out right now. Can I take a message?
+be up|estar despierto,haberse acabado|phrasal-be|Estar despierto / haberse acabado (Time's up!) / pasar (What's up?)|I was up until 2 a.m. / Time's up!
+be over|haberse acabado,terminar|phrasal-be|Haber terminado|The film is over now. Let's go.
+be off|tener el día libre,irse,estar cancelado|phrasal-be|Estar libre / irse / estar cancelado / (comida) estar pasada|I'm off today. / The meeting is off.
+be into|interesarse por,ser aficionado a,gustar|phrasal-be|Estar interesado en algo, ser aficionado|He's really into jazz lately.
+be back|volver,estar de vuelta|phrasal-be|Regresar, estar de vuelta|I'll be back in 10 minutes.
+be out of|no tener,quedarse sin|phrasal-be|No quedar algo, haberse quedado sin|We're out of milk again!
+be down|estar deprimido,haber bajado,estar caído|phrasal-be|Estar deprimido / haber bajado / (sistema) estar caído|Sales are down this quarter. / The server is down.
+be on|estar encendido,echar,dar|phrasal-be|Estar encendido / echar (en la tele, en el cine)|The lights are on. / What's on TV tonight?
+keep on|seguir,continuar|phrasal-keep|Seguir haciendo algo (+ -ing)|He kept on talking even after everyone left.
+keep up|mantener el ritmo,seguir,mantener|phrasal-keep|Mantener el ritmo (keep up with) / seguir así|Keep up the good work! / I couldn't keep up with the pace.
+keep out|no entrar,no dejar entrar|phrasal-keep|Mantenerse fuera / no dejar entrar|Keep out of my room!
+keep in|no dejar salir,retener|phrasal-keep|Mantener dentro, no dejar salir|They kept the children in during the storm.
+keep back|mantenerse alejado,retener,ocultar|phrasal-keep|Mantenerse alejado / ocultar información|Please keep back from the edge. / He kept back information.
+keep down|bajar,controlar,retener|phrasal-keep|Mantener bajo (la voz, los costes) / retener la comida|Try to keep your voice down. / We need to keep costs down.
+keep off|no pisar,evitar|phrasal-keep|No pisar / evitar (un tema, el alcohol)|Keep off the grass! / He was told to keep off alcohol.
+keep to|ceñirse a,cumplir|phrasal-keep|Ceñirse a algo (el plan, el horario)|Please keep to the plan.
+keep from|evitar,contenerse|phrasal-keep|Evitar hacer algo / ocultar algo a alguien|I couldn't keep from laughing.
+keep away|mantenerse alejado,no acercarse|phrasal-keep|Mantenerse alejado|Keep away from the fire.
+see off|despedir|phrasal-see|Despedirse de alguien que se va (ir a despedirlo)|We went to the airport to see them off.
+see to|encargarse de,ocuparse de|phrasal-see|Encargarse de algo|I'll see to the arrangements.
+see through|calar,no dejarse engañar,sacar adelante|phrasal-see|No dejarse engañar por alguien / llevar algo hasta el final (see something through)|She saw through his lies.
+see out|acompañar a la salida,aguantar hasta el final|phrasal-see|Acompañar hasta la salida / aguantar hasta el final (de un contrato, de un año)|I'll see you out. / He wants to see out his contract.
+see over|inspeccionar,visitar|phrasal-see|Inspeccionar, visitar (⚠️ poco común: hoy se dice look round)|We went to see over the new house.
+see about|ocuparse de,encargarse de,ver|phrasal-see|Ocuparse de algo, ver qué se puede hacer|I'll see about getting tickets.
+see in|recibir|phrasal-see|Recibir (el Año Nuevo) / acompañar adentro|We always see in the New Year with fireworks.
+see beyond|ver más allá de|phrasal-see|Ver más allá de algo|She could see beyond the surface.
+
+# Verbos irregulares de docs/irregular-verbs-b2.odt (2026-10-29): infinitivo – pasado – participio|es|irregulares|nota
+be – was, were – been|ser,estar|irregulares|was con I/he/she/it; were con you/we/they
+become – became – become|llegar a ser,convertirse en,volverse|irregulares
+begin – began – begun|empezar,comenzar|irregulares
+break – broke – broken|romper|irregulares
+bring – brought – brought|traer|irregulares|⚠️ brought (traer) ≠ bought (comprar)
+build – built – built|construir|irregulares
+burn – burnt – burnt / burn – burned – burned|quemar|irregulares|burnt (más británico) / burned (más americano)
+buy – bought – bought|comprar|irregulares|⚠️ bought (comprar) ≠ brought (traer)
+catch – caught – caught|coger,atrapar,pillar|irregulares
+choose – chose – chosen|elegir,escoger|irregulares
+come – came – come|venir|irregulares
+cost – cost – cost|costar|irregulares
+cut – cut – cut|cortar|irregulares
+deal – dealt – dealt|tratar,ocuparse,repartir|irregulares|deal with = ocuparse de; se pronuncia /delt/
+do – did – done|hacer (una tarea),hacer|irregulares|do = actividades y tareas (do homework); make = crear, fabricar
+draw – drew – drawn|dibujar,sacar|irregulares
+drink – drank – drunk|beber|irregulares
+drive – drove – driven|conducir|irregulares
+eat – ate – eaten|comer|irregulares
+fall – fell – fallen|caer,caerse|irregulares|⚠️ fell (pasado de fall) ≠ feel – felt (sentir)
+feel – felt – felt|sentir,sentirse|irregulares
+find – found – found|encontrar|irregulares
+fly – flew – flown|volar|irregulares
+forget – forgot – forgotten|olvidar|irregulares
+get – got – got / get – got – gotten|conseguir,obtener,llegar,ponerse|irregulares|gotten = participio en inglés americano
+give – gave – given|dar|irregulares
+go – went – gone|ir|irregulares|been = haber ido y vuelto (I've been to Paris); gone = se ha ido y sigue allí
+grow – grew – grown|crecer,cultivar|irregulares
+have – had – had|tener,haber|irregulares
+hear – heard – heard|oír|irregulares
+hit – hit – hit|golpear,pegar|irregulares
+hold – held – held|sostener,celebrar|irregulares|hold a meeting = celebrar una reunión
+keep – kept – kept|guardar,mantener,seguir|irregulares
+know – knew – known|saber,conocer|irregulares
+learn – learnt – learnt / learn – learned – learned|aprender|irregulares|learnt (más británico) / learned (más americano)
+leave – left – left|irse,salir,dejar|irregulares
+lend – lent – lent|prestar|irregulares|⚠️ lend = prestar (dar); borrow = pedir prestado
+let – let – let|dejar,permitir|irregulares|let + infinitivo sin to: let me go
+lie – lay – lain|tumbarse,estar tumbado,yacer|irregulares|⚠️ lie – lied – lied = mentir; lay – laid – laid = poner, colocar
+light – lit – lit / light – lighted – lighted|encender,iluminar|irregulares
+lose – lost – lost|perder|irregulares
+make – made – made|hacer (fabricar),fabricar,crear|irregulares|make = crear, fabricar (make a decision); do = tareas
+mean – meant – meant|significar,querer decir|irregulares|se pronuncia /ment/
+meet – met – met|conocer (a alguien),quedar con,reunirse|irregulares
+pay – paid – paid|pagar|irregulares
+put – put – put|poner|irregulares
+read – read – read|leer|irregulares|se escribe igual, pero el pasado se pronuncia /red/
+ring – rang – rung|sonar,llamar por teléfono|irregulares
+rise – rose – risen|subir,aumentar,elevarse|irregulares|⚠️ rise (subir, sin objeto) ≠ raise – raised – raised (subir algo, regular)
+run – ran – run|correr,dirigir|irregulares|run a company = dirigir una empresa
+say – said – said|decir|irregulares|say something; tell someone something
+see – saw – seen|ver|irregulares
+sell – sold – sold|vender|irregulares
+send – sent – sent|enviar,mandar|irregulares
+set – set – set|poner,fijar,establecer|irregulares|set a goal = fijarse un objetivo
+shake – shook – shaken|agitar,sacudir,temblar|irregulares|shake hands = darse la mano
+show – showed – shown|mostrar,enseñar|irregulares
+shut – shut – shut|cerrar|irregulares
+sing – sang – sung|cantar|irregulares
+sit – sat – sat|sentarse|irregulares
+sleep – slept – slept|dormir|irregulares
+smell – smelt – smelt / smell – smelled – smelled|oler|irregulares
+speak – spoke – spoken|hablar|irregulares
+spell – spelt – spelt / spell – spelled – spelled|deletrear|irregulares
+spend – spent – spent|gastar,pasar (tiempo)|irregulares|spend time = pasar tiempo
+stand – stood – stood|estar de pie,aguantar|irregulares|can't stand = no soportar
+swim – swam – swum|nadar|irregulares
+take – took – taken|tomar,coger,llevar|irregulares
+teach – taught – taught|enseñar|irregulares
+tell – told – told|decir,contar|irregulares|tell someone something (con persona); say something
+think – thought – thought|pensar,creer|irregulares
+throw – threw – thrown|lanzar,tirar|irregulares
+understand – understood – understood|entender,comprender|irregulares
+wake – woke – woken|despertar,despertarse|irregulares
+wear – wore – worn|llevar puesto,vestir|irregulares
+win – won – won|ganar|irregulares|⚠️ win (un partido, un premio) ≠ earn (dinero trabajando)
+write – wrote – written|escribir|irregulares

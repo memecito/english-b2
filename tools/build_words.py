@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Genera words.js a partir de data/translations.txt
-(formato: ingles|es1,es2,...  o  ingles|es1,es2,...|categoria;
-las líneas que empiezan por # son comentarios).
+(formato: ingles|es1,es2,...|categoria|descripcion|ejemplo — los tres
+últimos campos son opcionales; las líneas que empiezan por # son comentarios).
 
 Copia B2 de ingles-ari (ver CLAUDE.md) — el vocabulario sale de
 ~/claude/English/theory/vocabulary.txt y del plan de estudio propio,
@@ -32,6 +32,10 @@ for line in (ROOT / "data/translations.txt").read_text(encoding="utf8").splitlin
     entry = {"en": en, "es": [v.strip() for v in es.split(",") if v.strip()]}
     if cat:
         entry["cat"] = cat
+    # descripción con contexto y ejemplo: se muestran en Estudiar y tras responder
+    for i, k in ((3, "desc"), (4, "ex")):
+        if len(parts) > i and parts[i].strip():
+            entry[k] = parts[i].strip()
     words.append(entry)
 
 words.sort(key=lambda w: w["en"][0].lower())

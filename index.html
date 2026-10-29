@@ -119,7 +119,13 @@ textarea.wr-field{min-height:120px;resize:vertical;line-height:1.5}
 .wr-errors s{color:var(--bad)}
 .wr-tag{display:inline-block;margin-left:8px;font-size:.75rem;background:var(--brand-soft);color:var(--brand);border-radius:99px;padding:1px 8px}
 details.card summary{font-weight:800;cursor:pointer}
-#vocabCats h3,#topicsBox h3{margin:14px 0 6px}
+#vocabCats h3,#topicsBox h3,#categories h3{margin:14px 0 6px}
+#categories h3:first-child{margin-top:0}
+.wordlist li.has-note{flex-wrap:wrap}
+.wordlist .note{flex-basis:100%;color:var(--muted);font-size:.9rem;padding:0}
+.wordlist .note i{display:block;color:var(--ink)}
+.feedback .note{display:block;font-weight:400;color:var(--ink);margin-top:6px;font-size:.95rem}
+.feedback .note i{display:block;color:var(--muted)}
 .model{background:var(--brand-soft);border-radius:14px;padding:4px 16px;margin:8px 0 12px;line-height:1.6}
 .danger{background:none;border:0;color:var(--bad);text-decoration:underline;font-weight:700}
 .topic{display:block;width:100%;text-align:left;border:2px solid var(--line);background:var(--card);
@@ -187,7 +193,7 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
           <button class="link" id="noLetters">Quitar todas</button>
         </div>
         <div id="categoriesBox" class="hidden">
-          <div class="seg" id="categories"></div>
+          <div id="categories"></div>
         </div>
       </div>
 
@@ -504,8 +510,11 @@ const CATEGORY_META = {
   comida: { emoji: "🍎", label: "Comida", group: "🎯 Temas del examen" },
   historia: { emoji: "🏛️", label: "Historia", group: "🎯 Temas del examen" },
   collocations: { emoji: "🔗", label: "Collocations (make, do, take…)", group: "🧠 Lengua" },
-  phrasal: { emoji: "🧗", label: "Phrasal verbs y expresiones", group: "🧠 Lengua" },
   "falsos-amigos": { emoji: "🪤", label: "Falsos amigos", group: "🧠 Lengua" },
+  irregulares: { emoji: "🔁", label: "Verbos irregulares", group: "🔤 Verbos irregulares y phrasal verbs" },
+  ...Object.fromEntries("get take look go come turn make set give cut bring call pick carry be keep see".split(" ")
+    .map(v => [`phrasal-${v}`, { emoji: "🧗", label: `Phrasal verbs con ${v.toUpperCase()}`, group: "🔤 Verbos irregulares y phrasal verbs" }])),
+  phrasal: { emoji: "🧗", label: "Otros phrasal verbs y expresiones", group: "🔤 Verbos irregulares y phrasal verbs" },
 };
 const catMeta = c => CATEGORY_META[c] || { emoji: "🏷️", label: c, group: "🏷️ Otras" };
 const CAT_ORDER = Object.keys(CATEGORY_META);
@@ -515,15 +524,20 @@ cfg.categories = new Set(CATEGORIES.slice(0, 1));
 
 function buildCategories() {
   const box = $("categories"); box.textContent = "";
+  let group = null, seg = null;
   CATEGORIES.forEach(c => {
     const n = WORDS.filter(w => w.cat === c).length;
     const meta = catMeta(c);
+    if (meta.group !== group) {
+      group = meta.group; const h = document.createElement("h3"); h.textContent = group; box.append(h);
+      seg = document.createElement("div"); seg.className = "seg"; box.append(seg);
+    }
     const b = document.createElement("button");
     b.className = "opt"; b.type = "button"; b.dataset.cat = c;
     b.setAttribute("aria-pressed", cfg.categories.has(c));
     b.innerHTML = `${meta.emoji} ${meta.label}<small>${n}</small>`;
     b.onclick = () => { cfg.categories.has(c) ? cfg.categories.delete(c) : cfg.categories.add(c); refreshHome(); };
-    box.append(b);
+    seg.append(b);
   });
 }
 
@@ -764,12 +778,21 @@ function answer(action) { // action: "check" | "skip"
     setMascot("💥"); sndKo(); $("qCard").classList.remove("shake"); void $("qCard").offsetWidth; $("qCard").classList.add("shake");
     if (G.kind === "vocab" && db.opts.speak) say(G.cur.w.en[0]);
   }
+  if (G.kind === "vocab") { const note = wordNote(G.cur.w); if (note) fb.append(note); }
   $("score").textContent = G.score; $("streak").textContent = G.streak; renderHearts();
   $("actions").classList.add("hidden");
   const canReview = G.kind === "grammar" && G.wrongStreak >= 2 && TOPICS.some(t => t.id === GRAMMAR[itemTopic()].topicId);
   $("reviewTheoryBtn").classList.toggle("hidden", !canReview);
   const nb = $("nextBtn"); nb.classList.remove("hidden");
   nb.textContent = G.lives <= 0 ? "Ver resultado 🏁" : "Siguiente ➜"; nb.focus();
+}
+// Descripción con contexto y ejemplo de la palabra (campos 4 y 5 de data/translations.txt)
+function wordNote(w) {
+  if (!w.desc && !w.ex) return null;
+  const d = document.createElement("span"); d.className = "note";
+  if (w.desc) d.append(w.desc);
+  if (w.ex) { const i = document.createElement("i"); i.textContent = w.ex; d.append(i); }
+  return d;
 }
 function floatText(t) {
   const f = document.createElement("div"); f.className = "float"; f.textContent = t; document.body.append(f);
@@ -1025,6 +1048,8 @@ function renderVocabWords(key, start) {
     btn.setAttribute("aria-label", `Escuchar ${w.en[0]}`);
     btn.onclick = () => say(w.en[0]);
     li.append(a, sp, btn);
+    const note = wordNote(w);
+    if (note) { li.classList.add("has-note"); li.append(note); }
     list.append(li);
   });
   $("vocabPrevBlock").classList.toggle("hidden", start <= 0);
