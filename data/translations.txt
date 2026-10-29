@@ -1505,3 +1505,132 @@ undertake – undertook – undertaken|emprender,llevar a cabo,comprometerse a|i
 upset – upset – upset|disgustar,alterar,molestar|irregulares
 wind – wound – wound|enrollar,dar cuerda,serpentear|irregulares|se pronuncia /waɪnd/ (≠ wind /wɪnd/ = viento)
 withdraw – withdrew – withdrawn|retirar,sacar (dinero),retirarse|irregulares|withdraw cash = sacar dinero
+
+# Collocations añadidas por Claude (2026-10-29): ingles|es|collocations|trampa|ejemplo
+make a suggestion|hacer una sugerencia,sugerir|collocations|⚠️ make, no do|Can I make a suggestion about the design?
+make a phone call|hacer una llamada,llamar por teléfono|collocations||I need to make a quick phone call.
+make a noise|hacer ruido|collocations||Try not to make a noise — the baby is asleep.
+make an excuse|poner una excusa,excusarse|collocations|⚠️ make, no put|He always makes an excuse to miss the stand-up.
+make a profit|obtener beneficios,ganar dinero|collocations||The start-up made a profit in its second year.
+make a loss|tener pérdidas,perder dinero|collocations||The company made a loss of two million.
+make a difference|marcar la diferencia,cambiar las cosas|collocations||Good documentation makes a big difference.
+make a change|hacer un cambio|collocations||We need to make a few changes to the plan.
+make a plan|hacer un plan,planear|collocations||Let's make a plan before we start coding.
+make an offer|hacer una oferta|collocations||They made me an offer I couldn't refuse.
+make a choice|elegir,tomar una decisión|collocations||You have to make a choice between the two tools.
+make a comment|hacer un comentario,comentar|collocations||She made a comment about the budget.
+make a speech|dar un discurso,pronunciar un discurso|collocations|⚠️ make / give a speech, no say|The CEO made a speech at the launch.
+make a request|hacer una petición,solicitar|collocations||We made a request for more servers.
+make arrangements|organizarlo todo,hacer los preparativos|collocations||I'll make arrangements for the visit.
+make room|hacer sitio,dejar espacio|collocations||Can you make room for one more chair?
+make use of|hacer uso de,aprovechar,utilizar|collocations||We should make better use of automation.
+make the most of|sacar el máximo partido de,aprovechar al máximo|collocations||Make the most of your free time.
+make a fortune|hacer una fortuna,forrarse|collocations||He made a fortune selling software.
+make a mess|ensuciarlo todo,liarla|collocations||The intern made a mess of the database.
+make a promise|hacer una promesa,prometer|collocations||Don't make a promise you can't keep.
+make a living|ganarse la vida|collocations||She makes a living as a freelance designer.
+do homework|hacer los deberes|collocations|⚠️ do, no make|I have to do my English homework tonight.
+do an exam|hacer un examen|collocations|también take / sit an exam; ⚠️ pass an exam = aprobar|I'm doing the B2 First in June.
+do a course|hacer un curso|collocations|⚠️ do / take a course, no make|I'm doing a course on cloud security.
+do exercise|hacer ejercicio|collocations||I try to do some exercise every morning.
+do the housework|hacer las tareas de casa|collocations||We share the housework at home.
+do a job|hacer un trabajo|collocations||They did a great job on the migration.
+do harm|hacer daño,perjudicar|collocations|it does more harm than good = es peor el remedio que la enfermedad|A bit of stress doesn't do any harm.
+do well|irle bien a alguien,tener éxito|collocations||She did well in her interview.
+do overtime|hacer horas extra|collocations|también work overtime|I did a lot of overtime before the release.
+do a survey|hacer una encuesta|collocations||We did a survey of 200 users.
+do an experiment|hacer un experimento|collocations|también carry out / conduct an experiment|NASA did an experiment on the space station.
+take a seat|tomar asiento,sentarse|collocations||Please take a seat — she'll be with you in a minute.
+take notes|tomar notas,apuntar|collocations||Can someone take notes during the meeting?
+take a decision|tomar una decisión|collocations|británico; make a decision es más común|The board will take a decision next week.
+take action|tomar medidas,actuar|collocations||We must take action before the problem gets worse.
+take responsibility for|asumir la responsabilidad de|collocations||The manager took responsibility for the mistake.
+take a look|echar un vistazo|collocations|también have a look|Can you take a look at my code?
+take your time|tomarse tu tiempo,no tener prisa|collocations||Take your time — there's no rush.
+take a chance|arriesgarse,probar suerte|collocations||Let's take a chance and try the new framework.
+take a step|dar un paso|collocations||This is an important step forward for the project.
+take a course|hacer un curso,apuntarse a un curso|collocations||She's taking a course in data science.
+take an interest in|interesarse por|collocations||He takes a real interest in his team.
+take something seriously|tomarse algo en serio|collocations||Take security seriously from day one.
+take charge|hacerse cargo,tomar el mando|collocations||She took charge of the project after the crisis.
+take the lead|tomar la iniciativa,ponerse en cabeza|collocations||Who will take the lead on this proposal?
+take steps|tomar medidas|collocations||We are taking steps to reduce costs.
+take turns|turnarse|collocations||We take turns to be on call at weekends.
+take a shower|ducharse|collocations|⚠️ take / have a shower|I always take a shower after running.
+have a meeting|tener una reunión,reunirse|collocations||We're having a meeting at three.
+have a chat|charlar,tener una charla|collocations||Let's have a quick chat after lunch.
+have a good time|pasarlo bien,divertirse|collocations||Did you have a good time at the conference?
+have a problem|tener un problema|collocations||We have a problem with the login page.
+have an argument|discutir,tener una discusión|collocations|⚠️ argument = discusión (pelea); discussion = debate|They had an argument about the deadline.
+have a rest|descansar|collocations||You look tired — have a rest.
+have breakfast|desayunar|collocations|⚠️ have breakfast, no take breakfast; sin artículo|I have breakfast at seven.
+have a baby|tener un bebé|collocations||My colleague has just had a baby.
+have an idea|tener una idea,ocurrírsele algo|collocations||I have an idea for the new feature.
+have trouble|tener dificultades,costar|collocations|have trouble + -ing|I had trouble finding the bug.
+have an effect on|tener efecto en,afectar|collocations||The new policy had an effect on morale.
+have a word with|hablar un momento con|collocations||Can I have a word with you?
+pay a compliment|hacer un cumplido|collocations|⚠️ pay, no make|He paid me a compliment on my presentation.
+pay the price|pagar el precio,pagar las consecuencias|collocations||We're paying the price for ignoring the tests.
+pay a fine|pagar una multa|collocations||They had to pay a fine for the data breach.
+pay in cash|pagar en efectivo|collocations|⚠️ in cash, pero by card|Can I pay in cash?
+pay a bill|pagar una factura|collocations||Don't forget to pay the electricity bill.
+pay tribute to|rendir homenaje a|collocations||The team paid tribute to the retiring engineer.
+keep a secret|guardar un secreto|collocations||Can you keep a secret?
+keep calm|mantener la calma|collocations||Keep calm and restart the server.
+keep an eye on|vigilar,echar un ojo a|collocations||Keep an eye on the CPU usage.
+keep a record|llevar un registro,anotar|collocations||Keep a record of every change you make.
+keep a diary|llevar un diario|collocations||I keep a diary of new English words.
+keep quiet|guardar silencio,callarse|collocations||Please keep quiet during the call.
+keep your word|cumplir tu palabra|collocations||She always keeps her word.
+keep track of|llevar la cuenta de,seguir|collocations||It's hard to keep track of all the tickets.
+keep in mind|tener en cuenta,tener presente|collocations||Keep in mind that the API has a rate limit.
+catch a bus|coger el autobús|collocations|⚠️ catch / take, no pick|I catch the bus at 8:10.
+catch fire|prender fuego,incendiarse|collocations||The battery caught fire during the test.
+catch someone's attention|llamar la atención de alguien|collocations|también catch someone's eye|The headline caught my attention.
+catch sight of|vislumbrar,alcanzar a ver|collocations||I caught sight of the rocket above the clouds.
+break a record|batir un récord|collocations||The launch broke the record for the heaviest payload.
+break a promise|romper una promesa,no cumplir una promesa|collocations||He broke his promise to finish on time.
+break the rules|saltarse las normas|collocations||Don't break the rules on password sharing.
+break the ice|romper el hielo|collocations||A quick game helps to break the ice.
+break a habit|dejar un hábito,quitarse una costumbre|collocations||It's hard to break the habit of checking email.
+give advice|dar consejos,aconsejar|collocations|⚠️ advice es incontable: some advice / a piece of advice|Can you give me some advice?
+give an example|dar un ejemplo,poner un ejemplo|collocations|⚠️ give, no put|Let me give you an example.
+give permission|dar permiso,autorizar|collocations||The client gave permission to use the data.
+give someone a hand|echar una mano a alguien|collocations||Can you give me a hand with these boxes?
+give birth to|dar a luz a|collocations||She gave birth to twins.
+give a talk|dar una charla|collocations||He gave a talk on DevSecOps.
+give someone a call|llamar a alguien,dar un toque|collocations||Give me a call when you arrive.
+save money|ahorrar dinero|collocations||We saved money by moving to the cloud.
+save energy|ahorrar energía|collocations||Turn off the screens to save energy.
+save a file|guardar un archivo|collocations|⚠️ save, no keep|Remember to save the file before closing.
+save someone's life|salvarle la vida a alguien|collocations||The seatbelt saved his life.
+waste time|perder el tiempo|collocations|⚠️ waste time, no lose time|Don't waste time on meetings without an agenda.
+come to a decision|llegar a una decisión|collocations||We finally came to a decision.
+come to an end|llegar a su fin,terminar|collocations||The project came to an end in May.
+come into force|entrar en vigor|collocations||The new law comes into force in January.
+run a risk|correr un riesgo|collocations|también take a risk|You run the risk of losing data.
+run a test|hacer una prueba,ejecutar una prueba|collocations||Let's run a test before deploying.
+set an example|dar ejemplo|collocations||Managers should set an example.
+set a record|establecer un récord|collocations||The athlete set a new world record.
+draw a conclusion|sacar una conclusión|collocations||What conclusion can we draw from the data?
+draw attention to|llamar la atención sobre|collocations||The report draws attention to security risks.
+meet a need|satisfacer una necesidad,cubrir una necesidad|collocations||The new tool meets the needs of the team.
+face a problem|enfrentarse a un problema|collocations||We are facing a serious problem.
+lose your temper|perder los nervios,enfadarse|collocations||He lost his temper when the server crashed again.
+lose weight|adelgazar,perder peso|collocations||I've lost weight since I started cycling.
+gain weight|engordar,ganar peso|collocations|también put on weight|I gained weight during the lockdown.
+strong coffee|café cargado|collocations|⚠️ strong, no fuerte en sentido literal: strong coffee/tea, heavy smoker|I need a strong coffee before the meeting.
+heavy smoker|fumador empedernido,gran fumador|collocations||My grandfather was a heavy smoker.
+high price|precio alto,precio elevado|collocations|⚠️ high price, no expensive price|We paid a high price for that mistake.
+strong wind|viento fuerte|collocations||The launch was delayed because of strong winds.
+deep sleep|sueño profundo|collocations||I was in a deep sleep when the alarm went off.
+bitterly disappointed|profundamente decepcionado|collocations||The team was bitterly disappointed with the result.
+highly unlikely|muy poco probable,altamente improbable|collocations||It's highly unlikely that the server will fail.
+fully aware|plenamente consciente|collocations||I'm fully aware of the risks.
+deeply concerned|profundamente preocupado|collocations||We are deeply concerned about the data leak.
+perfectly clear|totalmente claro,clarísimo|collocations||Let me make this perfectly clear.
+widely used|ampliamente utilizado,muy usado|collocations||Python is widely used in data science.
+a sense of humour|sentido del humor|collocations||She has a great sense of humour.
+a round of applause|un aplauso|collocations||Let's give the team a round of applause!
+a wide range of|una amplia gama de,una gran variedad de|collocations||We offer a wide range of services.
+a high standard|un alto nivel,alta calidad|collocations||The code meets a high standard.
