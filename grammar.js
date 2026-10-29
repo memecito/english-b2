@@ -713,5 +713,59 @@ const GRAMMAR = {
       { id: "lk29", text: "In addition ___ the salary, they offer private health insurance.", answers: ["to"] },
       { id: "lk30", text: "What's ___, the new version is twice as fast. (además, informal)", answers: ["more"] }
     ]
+  },
+  "prepositions": {
+    title: "Dependent prepositions & prepositional phrases",
+    emoji: "📍",
+    topicId: "prepositions",
+    items: [
+      // adjetivo + preposición
+      { id: "pp1", text: "She's very interested ___ cloud security.", answers: ["in"] },
+      { id: "pp2", text: "He's really good ___ explaining complex ideas.", answers: ["at"] },
+      { id: "pp3", text: "Are you aware ___ the risks of using public Wi-Fi?", answers: ["of"] },
+      { id: "pp4", text: "Who is responsible ___ the backups?", answers: ["for"] },
+      { id: "pp5", text: "I'm worried ___ the deadline — we're behind schedule.", answers: ["about"] },
+      { id: "pp6", text: "Are you familiar ___ Terraform?", answers: ["with"] },
+      { id: "pp7", text: "The new version is very similar ___ the old one.", answers: ["to"] },
+      { id: "pp8", text: "This job is very different ___ my last one.", answers: ["from", "to"] },
+      { id: "pp9", text: "I'm tired ___ waiting for the build to finish.", answers: ["of"] },
+      { id: "pp10", text: "The manager was angry ___ me because I missed the meeting.", answers: ["with"] },
+      { id: "pp11", text: "We're very proud ___ what the team has achieved.", answers: ["of"] },
+      // verbo + preposición
+      { id: "pp12", text: "It depends ___ the budget. (depender de)", answers: ["on", "upon"] },
+      { id: "pp13", text: "The team consists ___ six developers and a designer. (consistir en)", answers: ["of"] },
+      { id: "pp14", text: "I applied ___ the job last week.", answers: ["for"] },
+      { id: "pp15", text: "She finally succeeded ___ fixing the memory leak.", answers: ["in"] },
+      { id: "pp16", text: "Many users complained ___ the new interface.", answers: ["about"] },
+      { id: "pp17", text: "Could you explain the process ___ me again? (me lo explicas)", answers: ["to"] },
+      { id: "pp18", text: "Who's going to pay ___ the dinner? (pagar la cena)", answers: ["for"] },
+      { id: "pp19", text: "The firewall protects the network ___ attacks.", answers: ["from", "against"] },
+      { id: "pp20", text: "We can't rely ___ a single server. (contar con, fiarse de)", answers: ["on", "upon"] },
+      { id: "pp21", text: "They accused him ___ leaking the data.", answers: ["of"] },
+      { id: "pp22", text: "I agree ___ you about the new process.", answers: ["with"] },
+      { id: "pp23", text: "Let's discuss ___ plan tomorrow. (discutir el plan — ⚠️ sin preposición)", answers: ["the"] },
+      { id: "pp24", text: "We arrived ___ the airport two hours early.", answers: ["at"] },
+      { id: "pp25", text: "She got married ___ a colleague from the Houston office. (casarse con)", answers: ["to"] },
+      // sustantivo + preposición
+      { id: "pp26", text: "There has been a sharp increase ___ the price of memory chips.", answers: ["in"] },
+      { id: "pp27", text: "What's the reason ___ the delay?", answers: ["for"] },
+      { id: "pp28", text: "We still haven't found a solution ___ the problem.", answers: ["to", "for"] },
+      { id: "pp29", text: "Remote work has had a big impact ___ productivity.", answers: ["on"] },
+      { id: "pp30", text: "What's the difference ___ a container and a virtual machine?", answers: ["between"] },
+      // frases preposicionales
+      { id: "pp31", text: "Sorry, I didn't delete it ___ purpose. It was an accident.", answers: ["on"] },
+      { id: "pp32", text: "I sent the email to the wrong client ___ mistake.", answers: ["by"] },
+      { id: "pp33", text: "Ana is ___ charge of the support team.", answers: ["in"] },
+      { id: "pp34", text: "If we don't patch the server, our data will be ___ risk.", answers: ["at"] },
+      { id: "pp35", text: "This documentation is out ___ date — it describes version 1.", answers: ["of"] },
+      { id: "pp36", text: "The train left ___ time, at exactly 8:15. (puntual)", answers: ["on"] },
+      { id: "pp37", text: "We got to the gate just ___ time to board the plane. (con el tiempo justo)", answers: ["in"] },
+      { id: "pp38", text: "Please book the meeting room ___ advance. (con antelación)", answers: ["in"] },
+      { id: "pp39", text: "We tried three different tools and, ___ the end, we chose the first one. (al final, finalmente)", answers: ["in"] },
+      { id: "pp40", text: "Everyone is working ___ a lot of pressure this week.", answers: ["under"] },
+      // tiempo
+      { id: "pp41", text: "The meeting is ___ Monday morning at ten.", answers: ["on"] },
+      { id: "pp42", text: "I'm interested ___ learning Kubernetes. (preposición + -ing)", answers: ["in"] }
+    ]
   }
 };

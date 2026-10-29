@@ -1042,6 +1042,94 @@ const TOPICS = [
     `
   },
   {
+    id: "prepositions",
+    emoji: "📍",
+    title: "Dependent prepositions & prepositional phrases",
+    html: `
+      <p class="hint">Part 1 (multiple-choice cloze) and Part 2 (open cloze) test these all the time, and Spanish gives the wrong preposition in many of them (<i>depender <b>de</b></i> → <i>depend <b>on</b></i>). There is no rule that predicts them: learn each word <b>with</b> its preposition, as one unit. Remember: after any preposition, the verb goes in <b>-ing</b> (see Verb patterns).</p>
+
+      <h3>1. Adjective + preposition</h3>
+      <table>
+        <thead><tr><th>Preposition</th><th>Adjectives</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>in</b></td><td>interested, involved, experienced</td><td><i>She's <b>interested in</b> cloud security.</i></td></tr>
+          <tr><td><b>at</b></td><td>good, bad, brilliant, terrible, surprised (also <i>by</i>)</td><td><i>He's <b>good at</b> explaining things.</i></td></tr>
+          <tr><td><b>of</b></td><td>afraid, aware, capable, fond, full, proud, tired, typical, jealous</td><td><i>Are you <b>aware of</b> the risks?</i> · <i>I'm <b>tired of</b> waiting.</i></td></tr>
+          <tr><td><b>for</b></td><td>responsible, famous, suitable, ready, late, grateful (for something)</td><td><i>Who is <b>responsible for</b> the backups?</i></td></tr>
+          <tr><td><b>about</b></td><td>worried, excited, sorry (about something), anxious, curious</td><td><i>I'm <b>worried about</b> the deadline.</i></td></tr>
+          <tr><td><b>with</b></td><td>happy / satisfied / pleased, bored, familiar, angry / annoyed (with someone), busy</td><td><i>Are you <b>familiar with</b> Terraform?</i></td></tr>
+          <tr><td><b>to</b></td><td>similar, married, kind, polite, used (= acostumbrado), addicted, related</td><td><i>The new version is <b>similar to</b> the old one.</i></td></tr>
+          <tr><td><b>from</b></td><td>different (also <i>to</i> in British English), absent, safe</td><td><i>This job is very <b>different from</b> my last one.</i></td></tr>
+        </tbody>
+      </table>
+      <p><b>angry / annoyed <u>with</u> someone <u>about</u> something</b> · <b>sorry <u>about</u> something / sorry <u>for</u> doing something</b> · <b>good <u>at</u> maths</b> but <b>good <u>for</u> your health</b> and <b>good <u>to</u> / <u>with</u> people</b>.</p>
+
+      <h3>2. Verb + preposition</h3>
+      <table>
+        <thead><tr><th>Preposition</th><th>Verbs</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>on</b></td><td>depend, rely, concentrate, focus, insist, comment, spend (money on)</td><td><i>It <b>depends on</b> the budget.</i></td></tr>
+          <tr><td><b>in</b></td><td>believe, succeed, specialise, invest, result (= cause), participate</td><td><i>She <b>succeeded in</b> fixing it.</i></td></tr>
+          <tr><td><b>for</b></td><td>apply, ask, wait, pay, look, apologise (for something), blame (someone for)</td><td><i>I <b>applied for</b> the job.</i> · <i>Who's <b>paying for</b> dinner?</i></td></tr>
+          <tr><td><b>of</b></td><td>consist, think (opinion), approve, dream, accuse (someone of), remind (someone of)</td><td><i>The team <b>consists of</b> six people.</i></td></tr>
+          <tr><td><b>about</b></td><td>talk, think (consider), complain, worry, care, hear (news)</td><td><i>Users <b>complained about</b> the update.</i></td></tr>
+          <tr><td><b>to</b></td><td>listen, belong, reply, apologise (to someone), explain (something to someone), happen, object</td><td><i>Can you <b>explain</b> it <b>to</b> me?</i> (✗ <i>explain me</i>)</td></tr>
+          <tr><td><b>with</b></td><td>deal, cope, agree (with someone), provide (someone with), share</td><td><i>I <b>agree with</b> you.</i></td></tr>
+          <tr><td><b>from</b></td><td>suffer, recover, protect, prevent (someone from -ing), differ</td><td><i>The firewall <b>protects</b> us <b>from</b> attacks.</i></td></tr>
+        </tbody>
+      </table>
+      <p>⚠️ <b>No preposition</b> in English (but yes in Spanish): <b>discuss</b> the plan (✗ <i>discuss about</i>), <b>enter</b> the room (✗ <i>enter in</i>), <b>attend</b> a meeting (✗ <i>attend to</i>), <b>approach</b> the problem (✗ <i>approach to</i>), <b>reach</b> an agreement, <b>marry</b> someone (✗ <i>marry with</i>), <b>call / phone</b> someone, <b>answer</b> the email, <b>lack</b> experience.</p>
+      <p><b>arrive <u>in</u></b> a city / country · <b>arrive <u>at</u></b> a building, airport, station (✗ <i>arrive to</i>). <b>get <u>to</u></b> is the exception: <i>I got <b>to</b> the office at nine.</i></p>
+
+      <h3>3. Noun + preposition</h3>
+      <ul>
+        <li><b>in</b>: an increase / rise / fall / drop / change <b>in</b> prices · interest <b>in</b> · experience <b>in</b></li>
+        <li><b>of</b>: an increase <b>of</b> 10% (the amount) · a lack <b>of</b> · the cause <b>of</b> · advantage / disadvantage <b>of</b></li>
+        <li><b>for</b>: the reason <b>for</b> · demand <b>for</b> · a need <b>for</b> · respect <b>for</b> · an application <b>for</b></li>
+        <li><b>to</b>: a solution <b>to</b> · an answer <b>to</b> · a key <b>to</b> · access <b>to</b> · an invitation <b>to</b> · damage <b>to</b></li>
+        <li><b>with</b>: a problem <b>with</b> · a relationship <b>with</b> · contact <b>with</b></li>
+        <li><b>on</b>: an effect / impact / influence <b>on</b> · advice <b>on</b> · a tax <b>on</b></li>
+        <li><b>between</b>: the difference <b>between</b> A and B</li>
+      </ul>
+
+      <h3>4. Prepositional phrases (fixed — learn them whole)</h3>
+      <table>
+        <thead><tr><th>Preposition</th><th>Phrases</th></tr></thead>
+        <tbody>
+          <tr><td><b>on</b></td><td>on purpose (a propósito) · on time (puntual) · on holiday · on business · on average · on behalf of · on the phone · on the whole · on fire · on sale</td></tr>
+          <tr><td><b>in</b></td><td>in time (a tiempo, con margen) · in advance · in charge of · in danger · in general · in public · in a hurry · in my opinion · in the end (al final, finalmente) · in fact · in common · in other words</td></tr>
+          <tr><td><b>at</b></td><td>at risk · at the moment · at first · at least · at last · at the end of (al final de) · at once · at work · at short notice · at a loss</td></tr>
+          <tr><td><b>by</b></td><td>by mistake · by accident / by chance · by email / by car · by hand · by heart (de memoria) · by far · by the way</td></tr>
+          <tr><td><b>out of</b></td><td>out of date · out of order (averiado) · out of work · out of stock · out of control · out of reach</td></tr>
+          <tr><td><b>under</b></td><td>under pressure · under control · under construction · under review</td></tr>
+        </tbody>
+      </table>
+      <p><b>on time</b> (at the planned time) ≠ <b>in time</b> (early enough, before it's too late) · <b>in the end</b> (finally, after a long process) ≠ <b>at the end of</b> (the last part of something).</p>
+
+      <h3>5. Time and place: in / on / at — the points that still fail at B2</h3>
+      <p><b>at</b> + clock time, night, the weekend (BrE), Christmas · <b>on</b> + days and dates (<i>on Monday, on 3 May, on Monday morning</i>) · <b>in</b> + months, years, seasons, parts of the day (<i>in the morning</i>).</p>
+      <p>No preposition before <b>this / next / last / every</b>: <i>I'll see you <b>next Monday</b></i> (✗ <i>on next Monday</i>).</p>
+      <p>Place: <b>at</b> a point or event (<i>at the station, at a conference, at home, at work</i>) · <b>in</b> a space or city (<i>in the office, in Madrid</i>) · <b>on</b> a surface or line (<i>on the screen, on the second floor, on the website</i>).</p>
+
+      <h3>6. Spanish speaker traps ⚠️</h3>
+      <ul>
+        <li><i>depender <b>de</b></i> → depend <b>on</b> · <i>consistir <b>en</b></i> → consist <b>of</b> · <i>casarse <b>con</b></i> → marry / get married <b>to</b> · <i>soñar <b>con</b></i> → dream <b>of / about</b> · <i>pensar <b>en</b></i> → think <b>about / of</b>.</li>
+        <li><i>enfadado <b>con</b></i> → angry <b>with</b> (person) / <b>about</b> (thing) · <i>bueno <b>en</b></i> → good <b>at</b> · <i>interesado <b>en</b></i> → interested <b>in</b> ✓ (same!).</li>
+        <li><i>Me explicó…</i> → He explained <b>to me</b> (✗ <i>explained me</i>). Also <i>describe / suggest / say something <b>to</b> someone</i>.</li>
+        <li><i>pagar la cena</i> → pay <b>for</b> dinner · <i>esperar el autobús</i> → wait <b>for</b> the bus · <i>pedir ayuda</i> → ask <b>for</b> help · <i>buscar</i> → look <b>for</b>.</li>
+        <li><i>Discutir / entrar en / asistir a</i> → <b>discuss / enter / attend</b> + object, no preposition.</li>
+        <li>Preposition + verb → <b>-ing</b>: <i>I'm interested <b>in learning</b></i> (✗ <i>in learn</i> / ✗ <i>to learn</i>).</li>
+      </ul>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>I didn't break it intentionally. (PURPOSE)</i> → I didn't break it <b>on purpose</b>.</p>
+      <p><i>Ana manages the support team. (CHARGE)</i> → Ana <b>is in charge of</b> the support team.</p>
+      <p><i>We'll launch if the weather is good, but not if it's bad. (DEPENDS)</i> → Whether we launch or not <b>depends on</b> the weather.</p>
+      <p><i>The team has six members. (CONSISTS)</i> → The team <b>consists of</b> six members.</p>
+      <p><i>I'm sorry I sent you the wrong file. (APOLOGISE)</i> → I <b>apologise for sending</b> you the wrong file.</p>
+    `
+  },
+  {
     id: "writing-overview",
     group: "writing",
     emoji: "✍️",
