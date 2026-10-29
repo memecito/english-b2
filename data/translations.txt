@@ -1441,3 +1441,67 @@ wake – woke – woken|despertar,despertarse|irregulares
 wear – wore – worn|llevar puesto,vestir|irregulares
 win – won – won|ganar|irregulares|⚠️ win (un partido, un premio) ≠ earn (dinero trabajando)
 write – wrote – written|escribir|irregulares
+
+# Verbos irregulares de nivel B2 añadidos por Claude (2026-10-29)
+arise – arose – arisen|surgir,presentarse|irregulares|formal: a problem arose = surgió un problema
+bear – bore – borne|soportar,aguantar|irregulares|can't bear = no soportar; bear in mind = tener en cuenta
+beat – beat – beaten|vencer,ganar a,batir,golpear|irregulares|⚠️ beat a rival (ganar a alguien) ≠ win a match (ganar algo)
+bend – bent – bent|doblar,doblarse,agacharse|irregulares
+bet – bet – bet|apostar|irregulares
+bind – bound – bound|atar,vincular,obligar|irregulares|be bound to = ser casi seguro que (It's bound to fail)
+bite – bit – bitten|morder,picar|irregulares
+bleed – bled – bled|sangrar|irregulares
+blow – blew – blown|soplar,volar (con explosivos)|irregulares|blow up = explotar, volar
+breed – bred – bred|criar,reproducirse|irregulares
+broadcast – broadcast – broadcast|emitir,retransmitir|irregulares
+burst – burst – burst|reventar,estallar|irregulares|burst into tears = romper a llorar
+creep – crept – crept|arrastrarse,deslizarse sigilosamente|irregulares
+dig – dug – dug|cavar,excavar|irregulares
+dream – dreamt – dreamt / dream – dreamed – dreamed|soñar|irregulares|dreamt (más británico) / dreamed (más americano)
+feed – fed – fed|alimentar,dar de comer|irregulares|be fed up with = estar harto de
+fight – fought – fought|luchar,pelear|irregulares|⚠️ fought (luchar) ≠ found (encontrar)
+flee – fled – fled|huir|irregulares
+forbid – forbade – forbidden|prohibir|irregulares|forbid someone to do / from doing something
+forecast – forecast – forecast|pronosticar,predecir|irregulares|también forecasted, menos común
+foresee – foresaw – foreseen|prever|irregulares
+forgive – forgave – forgiven|perdonar|irregulares
+freeze – froze – frozen|congelar,congelarse,helarse|irregulares|también: bloquearse (the screen froze)
+hang – hung – hung|colgar|irregulares|⚠️ hang – hanged – hanged = ahorcar (regular)
+hide – hid – hidden|esconder,esconderse,ocultar|irregulares
+hurt – hurt – hurt|doler,hacer daño,herir|irregulares
+lay – laid – laid|poner,colocar,poner huevos|irregulares|⚠️ lay (algo) ≠ lie – lay – lain (tumbarse); lay off = despedir
+lead – led – led|dirigir,liderar,llevar a,conducir a|irregulares|lead to = provocar, llevar a; se pronuncia /led/
+lean – leant – leant / lean – leaned – leaned|apoyarse,inclinarse|irregulares
+leap – leapt – leapt / leap – leaped – leaped|saltar,dar un salto|irregulares
+mislead – misled – misled|engañar,inducir a error|irregulares|misleading = engañoso
+mistake – mistook – mistaken|confundir|irregulares|mistake A for B; be mistaken = estar equivocado
+overcome – overcame – overcome|superar,vencer|irregulares|overcome a difficulty / a fear
+overhear – overheard – overheard|oír por casualidad|irregulares
+override – overrode – overridden|anular,invalidar,prevalecer sobre|irregulares|en informática: sobrescribir (un método, una configuración)
+overtake – overtook – overtaken|adelantar (a un coche),superar,adelantar|irregulares
+prove – proved – proven / prove – proved – proved|demostrar,resultar|irregulares|semi-irregular: proven y proved son correctos
+quit – quit – quit|dejar (un trabajo o un hábito),abandonar,dejar|irregulares|también quitted, poco común
+ride – rode – ridden|montar,ir en (bici, moto, caballo)|irregulares
+rewrite – rewrote – rewritten|reescribir|irregulares
+seek – sought – sought|buscar,solicitar|irregulares|formal: seek advice, seek a job
+shine – shone – shone|brillar|irregulares|shine – shined = sacar brillo (regular)
+shoot – shot – shot|disparar,rodar (una película)|irregulares
+shrink – shrank – shrunk|encoger,encogerse,reducirse|irregulares
+sink – sank – sunk|hundirse,hundir|irregulares
+slide – slid – slid|deslizarse,resbalar|irregulares
+spin – spun – spun|girar,dar vueltas|irregulares
+split – split – split|dividir,partir,separarse|irregulares|split up = separarse (una pareja)
+spread – spread – spread|extender,propagar,untar|irregulares
+steal – stole – stolen|robar|irregulares|⚠️ steal something (robar algo) ≠ rob someone / a bank (robar a alguien, atracar)
+stick – stuck – stuck|pegar,clavar,atascarse|irregulares|be stuck = estar atascado
+sting – stung – stung|picar (insecto),escocer|irregulares
+strike – struck – struck|golpear,hacer huelga,ocurrírsele|irregulares|It struck me that… = me di cuenta de que…
+swear – swore – sworn|jurar,decir palabrotas|irregulares
+sweep – swept – swept|barrer|irregulares
+swing – swung – swung|balancearse,columpiarse,oscilar|irregulares
+tear – tore – torn|romper,rasgar,desgarrar|irregulares|se pronuncia /teə/ (≠ tear /tɪə/ = lágrima)
+undergo – underwent – undergone|someterse a,sufrir,experimentar|irregulares|undergo surgery / changes
+undertake – undertook – undertaken|emprender,llevar a cabo,comprometerse a|irregulares
+upset – upset – upset|disgustar,alterar,molestar|irregulares
+wind – wound – wound|enrollar,dar cuerda,serpentear|irregulares|se pronuncia /waɪnd/ (≠ wind /wɪnd/ = viento)
+withdraw – withdrew – withdrawn|retirar,sacar (dinero),retirarse|irregulares|withdraw cash = sacar dinero
