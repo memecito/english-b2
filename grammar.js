@@ -626,5 +626,50 @@ const GRAMMAR = {
       { id: "nt29", text: "I ___ know the answer, so I asked a colleague. (no sabía)", answers: ["didn't"] },
       { id: "nt30", text: "I read your report yesterday — it ___ excellent. (be)", answers: ["was"] }
     ]
+  },
+  "futures": {
+    title: "Futures: will, going to, present continuous, future continuous & perfect",
+    emoji: "🚀",
+    topicId: "futures",
+    items: [
+      // will / going to / presente continuo / presente simple
+      { id: "fu1", text: "The build has failed? Don't worry, I ___ have a look at it now.", answers: ["will", "'ll"] },
+      { id: "fu2", text: "We've already decided: we're ___ to migrate to Kubernetes next year.", answers: ["going"] },
+      { id: "fu3", text: "Look at the error rate! The server is going ___ crash.", answers: ["to"] },
+      { id: "fu4", text: "I'm ___ the client on Friday at ten — it's in the calendar. (meet)", answers: ["meeting", "seeing"] },
+      { id: "fu5", text: "The launch window ___ at 06:14 tomorrow, according to the schedule. (open)", answers: ["opens"] },
+      { id: "fu6", text: "I think AI ___ change the job market a lot in the next ten years.", answers: ["will"] },
+      { id: "fu7", text: "___ I open the window? It's quite hot in here. (¿Abro…?)", answers: ["shall", "should"] },
+      { id: "fu8", text: "___ we start the meeting? Everyone is here. (¿Empezamos?)", answers: ["shall"] },
+      { id: "fu9", text: "It will ___ rain this afternoon, so take a coat. (probablemente)", answers: ["probably"] },
+      { id: "fu10", text: "Don't worry, I ___ tell anyone about the new project. I promise. (negativa)", answers: ["won't"] },
+      { id: "fu11", text: "My train ___ at 7:45, so I need to leave home at seven. (leave)", answers: ["leaves"] },
+      { id: "fu12", text: "What are you ___ this weekend? Any plans? (do)", answers: ["doing"] },
+      // oraciones temporales
+      { id: "fu13", text: "I'll call you as soon as I ___ at the airport. (arrive)", answers: ["arrive", "land"] },
+      { id: "fu14", text: "We won't deploy ___ all the tests pass. (hasta que)", answers: ["until", "till", "unless"] },
+      { id: "fu15", text: "Take an umbrella in ___ it rains.", answers: ["case"] },
+      { id: "fu16", text: "I'll send you the report as soon as I've ___ the review. (finish)", answers: ["finished"] },
+      { id: "fu17", text: "When the new version ___ out, we'll update all the laptops. (come)", answers: ["comes"] },
+      { id: "fu18", text: "I don't know when the release ___ be ready. Ask the project manager.", answers: ["will"] },
+      // future continuous
+      { id: "fu19", text: "This time tomorrow I'll be ___ to Houston. (fly)", answers: ["flying"] },
+      { id: "fu20", text: "Don't call me at ten — I'll ___ presenting the results.", answers: ["be"] },
+      { id: "fu21", text: "___ you be using the meeting room this afternoon? I'd like to book it.", answers: ["will"] },
+      // future perfect
+      { id: "fu22", text: "By June I'll have ___ the course. (finish)", answers: ["finished", "completed"] },
+      { id: "fu23", text: "By the time you get here, we'll ___ fixed the bug.", answers: ["have"] },
+      { id: "fu24", text: "In June I'll have ___ studying English for eight months.", answers: ["been"] },
+      { id: "fu25", text: "Please send me the invoice ___ Friday at the latest. (no más tarde de)", answers: ["by"] },
+      { id: "fu26", text: "I'm working from home ___ Friday, then I'm back in the office. (hasta)", answers: ["until", "till"] },
+      // otras formas
+      { id: "fu27", text: "Hurry up! The rocket is ___ to launch. (a punto de)", answers: ["about"] },
+      { id: "fu28", text: "The new version is ___ to be released in May. (previsto)", answers: ["due"] },
+      { id: "fu29", text: "Without any tests, the project is ___ to fail. (casi seguro)", answers: ["bound", "likely", "sure", "certain"] },
+      { id: "fu30", text: "She was on the point ___ resigning when they offered her a promotion.", answers: ["of"] },
+      // futuro en el pasado
+      { id: "fu31", text: "I was ___ to call you, but I forgot. Sorry!", answers: ["going"] },
+      { id: "fu32", text: "\"I'll fix it tomorrow.\" → He said he ___ fix it the next day.", answers: ["would"] }
+    ]
   }
 };

@@ -910,6 +910,74 @@ const TOPICS = [
     `
   },
   {
+    id: "futures",
+    emoji: "🚀",
+    title: "Futures: will, going to, present continuous, future continuous & perfect",
+    html: `
+      <p class="hint">Learnlight (work class): will vs going to (plans, spontaneous decisions, predictions), present continuous for arrangements, future continuous, future perfect simple and continuous. Spanish often uses the present for the future (<i>mañana te llamo</i>); English almost never does — that is the main source of errors.</p>
+
+      <h3>1. Choosing a future form</h3>
+      <table>
+        <thead><tr><th>Form</th><th>Use</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>will</b> + infinitive</td><td>a decision made <b>now</b>, at the moment of speaking</td><td><i>The build has failed? I<b>'ll</b> have a look.</i></td></tr>
+          <tr><td></td><td>offers, promises, requests</td><td><i>I<b>'ll</b> send you the slides tonight.</i> · <i><b>Will</b> you help me with the demo?</i></td></tr>
+          <tr><td></td><td>predictions based on opinion (<i>I think, probably, I'm sure</i>)</td><td><i>I think AI <b>will</b> change the job market.</i></td></tr>
+          <tr><td><b>be going to</b> + infinitive</td><td>a plan or intention decided <b>before</b> speaking</td><td><i>We<b>'re going to</b> migrate to Kubernetes next year.</i></td></tr>
+          <tr><td></td><td>predictions based on <b>present evidence</b></td><td><i>Look at the error rate — the server<b>'s going to</b> crash.</i></td></tr>
+          <tr><td><b>present continuous</b></td><td>fixed <b>arrangements</b> with other people (time, place agreed — it is in the calendar)</td><td><i>I<b>'m meeting</b> the client on Friday at ten.</i></td></tr>
+          <tr><td><b>present simple</b></td><td><b>timetables</b> and schedules (trains, launches, courses)</td><td><i>The launch window <b>opens</b> at 06:14. · The course <b>starts</b> on Monday.</i></td></tr>
+        </tbody>
+      </table>
+      <p>Plan vs arrangement: <i>I'<b>m going to</b> ask for a raise</i> (my intention) · <i>I'<b>m seeing</b> my manager at 4</i> (we have agreed a meeting). Often both are correct; going to is the safe choice for a plan.</p>
+
+      <h3>2. Spanish traps ⚠️</h3>
+      <ul>
+        <li><b>Present for decisions and offers:</b> <i>Te llamo luego</i> → <i>I<b>'ll</b> call you later</i> (✗ <i>I call you later</i>). <i>¿Te ayudo?</i> → <i><b>Shall</b> I help you?</i> / <i>I'<b>ll</b> help you</i> (✗ <i>Do I help you?</i>).</li>
+        <li><b>Arrangements:</b> <i>Mañana ceno con mi jefe</i> → <i>I<b>'m having</b> dinner with my boss tomorrow</i> (✗ <i>I have dinner</i>).</li>
+        <li><b>Offers and suggestions with shall</b> (only with I / we, in questions): <i><b>Shall</b> I open the window?</i> (¿Abro la ventana?) · <i><b>Shall</b> we start?</i> (¿Empezamos?).</li>
+        <li><b>Probably / definitely</b> go <b>after</b> will and <b>before</b> won't: <i>It <b>will probably</b> rain.</i> · <i>It <b>probably won't</b> rain.</i></li>
+      </ul>
+
+      <h3>3. Time clauses: no "will" after when, as soon as, until… ⚠️</h3>
+      <p>After <b>when, as soon as, before, after, until / till, once, by the time, in case, as long as, unless</b> we use the <b>present</b> for the future — like the first conditional. Spanish uses the subjunctive here (<i>cuando llegue</i>), which pushes learners to write <i>will</i>.</p>
+      <p><i>I'll call you <b>when</b> I <b>arrive</b>.</i> (✗ <i>when I will arrive</i>) · <i>We won't deploy <b>until</b> the tests <b>pass</b>.</i> · <i>Take an umbrella <b>in case</b> it <b>rains</b>.</i></p>
+      <p>To stress that something will be <b>finished</b> first, use the <b>present perfect</b>: <i>I'll send it <b>as soon as</b> I<b>'ve finished</b> the review.</i></p>
+      <p>⚠️ <b>when</b> in a question or as an object is not a time clause, so <i>will</i> is fine: <i>I don't know <b>when</b> the release <b>will</b> be ready.</i> (no sé cuándo estará listo).</p>
+
+      <h3>4. Future continuous: will be + -ing</h3>
+      <p>An action <b>in progress</b> at a moment in the future: <i>This time tomorrow I<b>'ll be flying</b> to Houston.</i> · <i>Don't call at 10 — I<b>'ll be presenting</b> the results.</i></p>
+      <p>Polite questions about plans (not asking a favour): <i><b>Will</b> you <b>be using</b> the meeting room this afternoon?</i></p>
+
+      <h3>5. Future perfect: will have + past participle</h3>
+      <p>An action <b>completed before</b> a point in the future, usually with <b>by</b> (+ time) or <b>by the time</b> (+ present): <i><b>By</b> June I<b>'ll have finished</b> the course.</i> · <i><b>By the time</b> you <b>get</b> here, we<b>'ll have fixed</b> the bug.</i></p>
+      <p><b>Future perfect continuous</b> (will have been + -ing) for the <b>duration</b> up to that point: <i>In June I<b>'ll have been studying</b> for eight months.</i></p>
+      <p><b>by</b> (no más tarde de) ≠ <b>until</b> (hasta, durante todo el tiempo): <i>Send it <b>by</b> Friday</i> vs <i>I'm working from home <b>until</b> Friday</i>.</p>
+
+      <h3>6. Other ways to talk about the future</h3>
+      <table>
+        <thead><tr><th>Form</th><th>Meaning</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><b>be about to</b> + infinitive</td><td>very soon (a punto de)</td><td><i>Hurry up — the rocket <b>is about to</b> launch.</i></td></tr>
+          <tr><td><b>be due to</b> + infinitive</td><td>scheduled, expected (previsto para)</td><td><i>The new version <b>is due to</b> be released in May.</i></td></tr>
+          <tr><td><b>be likely to</b> / <b>be bound to</b></td><td>probably / almost certainly</td><td><i>Prices <b>are likely to</b> rise.</i> · <i>It<b>'s bound to</b> fail without tests.</i></td></tr>
+          <tr><td><b>be on the point of</b> + -ing</td><td>a punto de (more formal)</td><td><i>She <b>was on the point of</b> resigning when they offered her a promotion.</i></td></tr>
+        </tbody>
+      </table>
+
+      <h3>7. The future in the past: was going to / would</h3>
+      <p>A plan or prediction seen from the past — often a plan that did <b>not</b> happen: <i>I <b>was going to</b> call you, but I forgot.</i> · <i>I knew the demo <b>would</b> go well.</i> · <i>We <b>were about to</b> leave when the alarm went off.</i></p>
+      <p>This is also what <i>will</i> becomes in reported speech: <i>"I'll fix it" → He said he <b>would</b> fix it.</i></p>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>The plan is to release the new version next Monday. (DUE)</i> → The new version <b>is due to be</b> released next Monday.</p>
+      <p><i>The launch will start in a few seconds. (ABOUT)</i> → The launch <b>is about to start</b>.</p>
+      <p><i>I'll finish the report before you come back. (HAVE)</i> → I <b>will have finished</b> the report by the time you come back.</p>
+      <p><i>I intended to email you, but I didn't have time. (GOING)</i> → I <b>was going to email</b> you, but I didn't have time.</p>
+      <p><i>It's very likely that the price will go up. (BOUND)</i> → The price <b>is bound to go</b> up.</p>
+    `
+  },
+  {
     id: "writing-overview",
     group: "writing",
     emoji: "✍️",
