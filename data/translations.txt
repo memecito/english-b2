@@ -4,7 +4,7 @@
 #   trabajo:  empleo, condiciones, oficina, negocios, cualidades
 #   examen:   tecnologia, ciencia, naturaleza, salud, viajes, educacion, medios,
 #             dinero, sociedad, personas, ciudad, ocio, comida, historia
-#   lengua:   collocations, falsos-amigos
+#   lengua:   collocations, falsos-amigos, confusables (palabras que se confunden)
 #   verbos:   phrasal-<verbo> (get, take, look, go, come, turn, make, set, give, cut,
 #             bring, call, pick, carry, be, keep, see), phrasal (otros), irregulares
 #             (en = "infinitivo – pasado – participio"; variantes separadas por /)
@@ -55,7 +55,7 @@ annual leave|vacaciones anuales,permiso anual|condiciones
 job satisfaction|satisfacción laboral|condiciones
 career prospects|perspectivas profesionales,oportunidades de ascenso|empleo
 minimum wage|salario mínimo,sueldo mínimo|condiciones
-salary|salario,sueldo|condiciones
+salary|sueldo,salario|confusables|⚠️ salary = sueldo anual o mensual (oficina); wage(s) = jornal, pago por horas o semanal|She earns a good salary.
 wages|jornal,salario semanal|condiciones
 fringe benefits / perks|beneficios adicionales,ventajas laborales|condiciones
 teleworking / telecommuting|teletrabajo|oficina
@@ -136,7 +136,7 @@ hardworking|trabajador,diligente|cualidades
 reliable|fiable,de confianza|cualidades
 punctual|puntual|cualidades
 conscientious|concienzudo,meticuloso|cualidades
-efficient|eficiente,eficaz|cualidades
+efficient|eficiente,eficaz|confusables|⚠️ efficient = sin desperdiciar tiempo o recursos; effective = que funciona, que consigue el resultado|The new algorithm is more efficient: it uses less memory.
 skilled worker|trabajador cualificado|empleo
 unskilled worker|trabajador no cualificado|empleo
 blue-collar worker|obrero,trabajador manual|empleo
@@ -842,7 +842,7 @@ healthy diet|dieta sana,alimentación saludable|salud
 get fit / get into shape|ponerse en forma|salud
 keep fit|mantenerse en forma|salud
 injury|lesión,herida|salud
-injure|lesionar,herir|salud
+injure|herir,lesionar,lesionarse|confusables|⚠️ injure = herir a personas (en accidentes); damage = cosas; hurt = doler o herir (también sentimientos)|Two people were injured in the accident.
 recover from|recuperarse de|salud
 symptom|síntoma|salud
 treatment|tratamiento|salud
@@ -869,8 +869,8 @@ stamina|resistencia,aguante|salud
 warm up|calentar,hacer calentamiento|salud
 sprain|esguince,torcerse|salud
 # Viajes y transporte
-journey|viaje,trayecto|viajes
-trip|viaje,excursión|viajes
+journey|viaje (trayecto),trayecto,viaje|confusables|⚠️ journey = el trayecto de A a B (the journey to work); trip = viaje corto con vuelta; travel = viajar en general (incontable)|The journey to the office takes an hour.
+trip|viaje (corto, de ida y vuelta),excursión,viaje|confusables|⚠️ trip = viaje corto (a business trip); journey = trayecto; travel = la actividad (verbo o incontable)|I'm going on a business trip to Houston.
 sightseeing|turismo,visitar monumentos|viajes
 book in advance|reservar con antelación|viajes
 accommodation|alojamiento|viajes
@@ -952,8 +952,8 @@ censorship|censura|medios
 afford|permitirse,poder pagar|dinero
 save up|ahorrar|dinero
 waste money|malgastar dinero,tirar el dinero|dinero
-borrow|pedir prestado|dinero
-lend|prestar|dinero
+borrow|pedir prestado,tomar prestado|confusables|⚠️ borrow = recibir (borrow FROM someone); lend = dar (lend TO someone)|Can I borrow your charger?
+lend|prestar,dejar|confusables|⚠️ lend = dar (lend something TO someone); borrow = recibir|Could you lend me your charger?
 loan|préstamo|dinero
 debt|deuda|dinero
 be in debt|estar endeudado|dinero
@@ -984,8 +984,8 @@ theft|robo,hurto|sociedad
 burglary|robo en una vivienda,allanamiento de morada|sociedad
 burglar|ladrón de casas,ladrón|sociedad
 shoplifting|hurto en tiendas|sociedad
-steal / stole / stolen|robar|sociedad
-rob|atracar,asaltar|sociedad
+steal / stole / stolen|robar (algo),robar,hurtar|confusables|⚠️ steal + cosa: steal a laptop. rob + persona o lugar|Someone stole my laptop on the train.
+rob|robar (a alguien),atracar,robar,asaltar|confusables|⚠️ rob + persona o lugar: rob a bank, rob someone. steal + cosa|They robbed a bank in the city centre.
 arrest|detener,arrestar,detención|sociedad
 victim|víctima|sociedad
 witness|testigo,presenciar|sociedad
@@ -1634,3 +1634,86 @@ a sense of humour|sentido del humor|collocations||She has a great sense of humou
 a round of applause|un aplauso|collocations||Let's give the team a round of applause!
 a wide range of|una amplia gama de,una gran variedad de|collocations||We offer a wide range of services.
 a high standard|un alto nivel,alta calidad|collocations||The code meets a high standard.
+
+# Palabras que se confunden (Part 1), añadidas por Claude (2026-10-29): ingles|es (es[0] desambigua)|confusables|contraste|ejemplo
+rise|subir (sin objeto),subir,aumentar,elevarse|confusables|⚠️ rise NO lleva objeto: prices rise. raise SÍ: raise prices. Irregular: rise – rose – risen|Prices rose by 5% last year.
+raise|subir (algo),subir,aumentar,levantar,plantear|confusables|⚠️ raise lleva objeto: raise prices, raise your hand, raise a question. Regular: raised|They raised the price of the licence.
+lie|tumbarse,estar tumbado|confusables|⚠️ lie (sin objeto): lie – lay – lain. lie = mentir: lie – lied – lied|I lay on the sofa all afternoon.
+lay|poner,colocar,dejar|confusables|⚠️ lay lleva objeto: lay – laid – laid (lay the table, lay eggs)|She laid the documents on the desk.
+remind|recordar (a alguien),recordar,hacer recordar|confusables|⚠️ remind someone (to do / of / about): hacer que otro recuerde. remember: recordar uno mismo|Remind me to send the invoice.
+remember|recordar,acordarse de|confusables|⚠️ remember = acordarse uno mismo. remind = hacer que otro se acuerde|I can't remember her name.
+affect|afectar|confusables|⚠️ affect = verbo; effect = sustantivo (have an effect on)|The outage affected thousands of users.
+effect|efecto|confusables|⚠️ effect = sustantivo (the effect of / an effect on); affect = verbo|The new policy had a positive effect on morale.
+economic|económico (de la economía)|confusables|⚠️ economic = de la economía (economic growth); economical = que ahorra, barato de usar|The economic crisis hit the tech sector.
+economical|económico (que ahorra),ahorrador,eficiente|confusables|⚠️ economical = que gasta poco (an economical car); economic = de la economía|This laptop is very economical to run.
+fun|divertido (que se disfruta),diversión|confusables|⚠️ fun = que te lo pasas bien (a fun day); funny = que hace reír|The team-building day was really fun.
+funny|gracioso,que hace reír,raro|confusables|⚠️ funny = que hace reír (a funny joke) o raro (a funny smell); fun = que se disfruta|He told a funny story about his first deployment.
+job|trabajo (un puesto),empleo,puesto,tarea|confusables|⚠️ job es contable: a job, two jobs. work es incontable: ✗ a work|She's got a new job at a space agency.
+work|trabajo (la actividad),trabajar|confusables|⚠️ work es incontable: I have a lot of work (✗ a work, ✗ works). a job = un puesto|I have a lot of work this week.
+travel|viajar,los viajes|confusables|⚠️ travel es verbo o sustantivo incontable: Travel broadens the mind (✗ a travel; usa a trip / a journey)|I love travel, but I hate airports.
+say|decir (algo)|confusables|⚠️ say + lo que se dice: say something (to someone). tell + persona: tell someone something|She said that the build was ready.
+tell|decir (a alguien),contar|confusables|⚠️ tell + persona: tell me, tell the team. También tell the truth, tell a lie, tell a story|She told me that the build was ready.
+speak|hablar (un idioma, formalmente)|confusables|⚠️ speak = más formal o un idioma (speak English, speak at a conference); talk = conversar|She speaks three languages.
+talk|hablar,charlar,conversar|confusables|⚠️ talk = conversación (talk to / with someone about something); speak = idioma o formal|Can we talk about the budget?
+watch|mirar (con atención),ver (algo que se mueve),vigilar|confusables|⚠️ see = percibir con los ojos; look at = dirigir la vista; watch = observar algo que se mueve (TV, a match)|We watched the launch live.
+look at|mirar|confusables|⚠️ look at = dirigir la vista a algo; see = percibir; watch = observar algo en movimiento|Look at this graph.
+hear|oír|confusables|⚠️ hear = percibir un sonido (sin querer); listen to = escuchar con atención|Can you hear me? The connection is bad.
+listen to|escuchar|confusables|⚠️ listen TO something (con to); hear = oír|I listen to podcasts on my way to work.
+win|ganar (un premio, una competición)|confusables|⚠️ win a match / a prize; earn money (trabajando); beat a rival|Our team won the hackathon.
+earn|ganar (dinero trabajando),cobrar,ganarse|confusables|⚠️ earn money / a salary / respect; win = competición o premio|She earns more than her manager.
+bring|traer|confusables|⚠️ bring = hacia donde está el que habla; take = llevar a otro sitio; fetch = ir a buscar y traer|Bring your laptop to the meeting.
+fetch|ir a buscar,traer|confusables|⚠️ fetch = ir a por algo y volver con ello (go and get)|Can you fetch me a coffee?
+miss|perder (un tren, una oportunidad),echar de menos,fallar|confusables|⚠️ miss the bus / a chance / a deadline; lose = perder algo que tenías (keys, a match, money)|I missed the train by two minutes.
+lose|perder (algo que tienes, un partido)|confusables|⚠️ lose keys / a match / weight; miss = no llegar a tiempo, no aprovechar|I lost my badge somewhere in the building.
+expect|esperar (que pase),contar con|confusables|⚠️ expect = creer que algo pasará; hope = desear; wait (for) = esperar en el tiempo|We expect the release to be ready on Friday.
+hope|esperar (desear),ojalá|confusables|⚠️ hope = desear algo bueno (I hope you're well); expect = prever; wait = aguardar|I hope the demo goes well.
+wait for|esperar (a alguien o algo),aguardar|confusables|⚠️ wait FOR someone; expect = creer que pasará; hope = desear|We're waiting for the client to reply.
+prevent|evitar (que pase),impedir,prevenir|confusables|⚠️ prevent something / someone from -ing = impedir; avoid = no hacer o esquivar (avoid -ing)|The firewall prevents attacks.
+avoid|evitar (no hacer),esquivar|confusables|⚠️ avoid + -ing: avoid making mistakes; prevent = impedir que ocurra|Try to avoid using global variables.
+advice|consejo,consejos|confusables|⚠️ advice = sustantivo incontable (some advice, a piece of advice); advise = verbo|Can you give me some advice?
+advise|aconsejar,asesorar|confusables|⚠️ advise = verbo /z/ (advise someone to do something); advice = sustantivo /s/|I'd advise you to back up your files.
+practice|práctica,la práctica|confusables|⚠️ inglés británico: practice = sustantivo, practise = verbo. En EE. UU. ambos practice|Good practice is to review every pull request.
+practise|practicar,entrenar|confusables|⚠️ inglés británico: practise = verbo, practice = sustantivo. practise + -ing|I practise speaking English every day.
+historic|histórico (importante en la historia),memorable|confusables|⚠️ historic = importante, que hará historia (a historic launch); historical = relacionado con la historia (historical documents)|The Moon landing was a historic moment.
+historical|histórico (de la historia),historiográfico|confusables|⚠️ historical = sobre el pasado (a historical novel); historic = importante|She writes historical novels.
+alone|solo (sin compañía)|confusables|⚠️ alone = sin nadie (puede ser positivo); lonely = que se siente solo (negativo)|I like working alone in the morning.
+lonely|solo (que se siente solo),solitario|confusables|⚠️ lonely = sentimiento de soledad; alone = sin compañía|Working from home can feel lonely.
+especially|especialmente,sobre todo|confusables|⚠️ especially = sobre todo (I love sci-fi, especially old films); specially = a propósito, para algo concreto|I like space films, especially old ones.
+specially|especialmente (a propósito),expresamente|confusables|⚠️ specially = con un fin concreto (specially designed for); especially = sobre todo|This chair was specially designed for gamers.
+last|último (el anterior),pasado|confusables|⚠️ last = el anterior o el final (last week, the last page); latest = el más reciente (the latest version)|I saw her last week.
+latest|último (más reciente),más reciente|confusables|⚠️ latest = lo más nuevo (the latest version, the latest news); last = el final o el anterior|Have you installed the latest version?
+lately|últimamente|confusables|⚠️ lately = recently (con present perfect); late = tarde (adjetivo o adverbio)|I've been very busy lately.
+hardly|apenas,casi no|confusables|⚠️ hardly = casi nada (I hardly slept); hard = duro, con esfuerzo (I worked hard)|I hardly slept before the release.
+nearly|casi|confusables|⚠️ nearly = almost; near = cerca (near the office)|I nearly missed the train.
+principle|principio (norma, idea),principio|confusables|⚠️ principle = norma o idea (security principles); principal = principal o director (sustantivo/adjetivo)|Least privilege is a basic security principle.
+principal|principal,director (de colegio)|confusables|⚠️ principal = el más importante, o director de colegio; principle = norma o idea|The principal reason is cost.
+compliment|cumplido,piropo,elogiar|confusables|⚠️ compliment = elogio (pay someone a compliment); complement = complemento, complementar|She paid me a compliment on my English.
+complement|complemento,complementar|confusables|⚠️ complement = completar o combinar bien; compliment = elogio|The two tools complement each other.
+quiet|tranquilo,silencioso,callado|confusables|⚠️ quiet /ˈkwaɪət/ = silencioso; quite /kwaɪt/ = bastante|The office is very quiet on Fridays.
+quite|bastante,completamente|confusables|⚠️ quite = bastante (quite good) o totalmente (quite right); quiet = silencioso|The exam was quite difficult.
+loose|suelto,flojo,holgado|confusables|⚠️ loose /luːs/ = suelto (adjetivo); lose /luːz/ = perder (verbo)|There's a loose cable behind the server.
+among|entre (varios),entre|confusables|⚠️ between = entre dos (o elementos concretos); among = entre un grupo|The money was shared among the whole team.
+between|entre (dos),entre|confusables|⚠️ between = entre dos o elementos individuales; among = dentro de un grupo|Choose between Python and Go.
+besides|además,aparte de|confusables|⚠️ besides = además (de); beside = al lado de|Besides Python, she knows Go and Rust.
+beside|al lado de,junto a|confusables|⚠️ beside = al lado de (next to); besides = además|Put the printer beside the window.
+let|dejar (permitir),permitir|confusables|⚠️ let someone DO (sin to): let me go; allow someone TO do; leave = dejar en un sitio o irse|My manager let me work from home.
+allow|permitir,dejar|confusables|⚠️ allow someone TO do; let someone do (sin to)|The policy allows us to work from home twice a week.
+fit|quedar bien (de talla),caber,encajar|confusables|⚠️ fit = talla o tamaño; suit = favorecer, ir bien (colores, estilo, planes); match = combinar|These shoes don't fit me — they're too small.
+suit|sentar bien,favorecer,convenir|confusables|⚠️ suit = favorecer o convenir (Does Monday suit you?); fit = talla; match = combinar|Does Friday at ten suit you?
+match|combinar con,coincidir con,partido|confusables|⚠️ match = combinar o coincidir (the passwords don't match); fit = talla; suit = favorecer|The passwords don't match.
+damage|dañar,daño,daños|confusables|⚠️ damage = cosas (damage a car); injure / hurt = personas; damage es incontable como sustantivo|The storm damaged the antenna.
+harm|perjudicar,hacer daño,daño|confusables|⚠️ harm = perjudicar en general (harm the environment); no harm done = no pasa nada|Too much screen time can harm your eyes.
+opportunity|oportunidad,ocasión|confusables|⚠️ opportunity = ocasión favorable (a job opportunity); possibility = algo que puede pasar|This is a great opportunity to learn.
+possibility|posibilidad|confusables|⚠️ possibility = algo que puede ocurrir; para "la posibilidad de hacer algo" usa the chance / opportunity to do|There's a possibility of rain tomorrow.
+wage|salario (por horas o semanal),jornal,sueldo|confusables|⚠️ wage(s) = pago por horas o semanas (the minimum wage); salary = sueldo fijo anual|The minimum wage went up this year.
+client|cliente (de un servicio profesional),cliente|confusables|⚠️ client = de un servicio (abogado, consultora); customer = de una tienda o producto|We have a meeting with a new client.
+customer|cliente (de una tienda o producto),cliente,comprador|confusables|⚠️ customer = compra productos (customer service); client = contrata servicios profesionales|Customer satisfaction is our priority.
+carry|llevar (en las manos),cargar,transportar|confusables|⚠️ carry = transportar (carry a bag); wear = llevar puesto (wear glasses)|I always carry my laptop in a backpack.
+wear|llevar puesto,vestir,ponerse|confusables|⚠️ wear = ropa, gafas, reloj (wear a suit); carry = transportar. Irregular: wear – wore – worn|You don't have to wear a suit in our office.
+check|comprobar,revisar,verificar|confusables|⚠️ check = comprobar; control = dominar o mandar (✗ control the tickets → check the tickets)|Can you check the logs?
+control|controlar (dominar),dominar,control|confusables|⚠️ control = tener poder sobre algo (control the budget); para "comprobar" usa check|The pilot lost control of the plane.
+effective|eficaz,efectivo|confusables|⚠️ effective = que consigue el resultado; efficient = sin desperdicio. Para "en efectivo" usa in cash|Two-factor authentication is very effective against phishing.
+amount|cantidad (incontable)|confusables|⚠️ amount of + incontable (amount of money / time); number of + plural contable (number of users)|A huge amount of data is stored in the cloud.
+number|número,cantidad (contable)|confusables|⚠️ number of + plural (a number of users); amount of + incontable|The number of users has doubled.
+shadow|sombra (de algo o alguien)|confusables|⚠️ shadow = la silueta oscura que proyecta algo; shade = zona sin sol (sit in the shade)|The satellite casts a shadow on the panel.
+shade|sombra (sin sol),tono|confusables|⚠️ shade = zona protegida del sol (in the shade); también tono de color|Let's sit in the shade.
