@@ -671,5 +671,47 @@ const GRAMMAR = {
       { id: "fu31", text: "I was ___ to call you, but I forgot. Sorry!", answers: ["going"] },
       { id: "fu32", text: "\"I'll fix it tomorrow.\" → He said he ___ fix it the next day.", answers: ["would"] }
     ]
+  },
+  "linkers": {
+    title: "Linkers: contrast, purpose, reason, result & addition",
+    emoji: "🌉",
+    topicId: "linkers",
+    items: [
+      // contraste
+      { id: "lk1", text: "___ the tests passed, the release failed in production. (aunque)", answers: ["although", "though", "even though"] },
+      { id: "lk2", text: "___ the delay, we met the deadline. (a pesar de)", answers: ["despite"] },
+      { id: "lk3", text: "In spite ___ working late, she didn't finish the report.", answers: ["of"] },
+      { id: "lk4", text: "Despite ___ tired, she kept working. (be)", answers: ["being", "feeling"] },
+      { id: "lk5", text: "Despite the ___ that it was late, we kept working.", answers: ["fact"] },
+      { id: "lk6", text: "The plan was good. ___, nobody followed it. (sin embargo)", answers: ["however", "nevertheless", "nonetheless"] },
+      { id: "lk7", text: "Ana prefers Python, ___ Luis uses Go. (mientras que)", answers: ["whereas", "while", "whilst"] },
+      { id: "lk8", text: "The talk was long. It was interesting, ___. (al final de la frase = sin embargo)", answers: ["though"] },
+      { id: "lk9", text: "I'll go to the conference even ___ it rains. (aunque llueva, hipótesis)", answers: ["if"] },
+      { id: "lk10", text: "She went to work even ___ she had a temperature. (aunque tenía, hecho real)", answers: ["though"] },
+      { id: "lk11", text: "The tool is powerful. On the ___ hand, it is hard to learn.", answers: ["other"] },
+      // finalidad
+      { id: "lk12", text: "I came early ___ set up the room. (para)", answers: ["to"] },
+      { id: "lk13", text: "I left early so as not ___ miss the train.", answers: ["to"] },
+      { id: "lk14", text: "I'll write it down in order ___ to forget it.", answers: ["not"] },
+      { id: "lk15", text: "I'll share my screen so ___ everyone can see the code.", answers: ["that"] },
+      { id: "lk16", text: "This tool is ___ monitoring servers. (sirve para)", answers: ["for"] },
+      { id: "lk17", text: "Save a backup in ___ the disk fails.", answers: ["case"] },
+      { id: "lk18", text: "We went out ___ lunch with the new team. (a comer)", answers: ["for"] },
+      // causa
+      { id: "lk19", text: "___ the server was down, we postponed the demo. (como)", answers: ["as", "since", "because"] },
+      { id: "lk20", text: "The launch was cancelled due ___ bad weather.", answers: ["to"] },
+      { id: "lk21", text: "The flight was delayed because ___ the storm.", answers: ["of"] },
+      { id: "lk22", text: "The meeting was postponed ___ to the manager's illness. (debido a, formal)", answers: ["owing", "due"] },
+      // resultado
+      { id: "lk23", text: "The tests failed, ___ we rolled back the deployment. (así que)", answers: ["so"] },
+      { id: "lk24", text: "Sales fell by 20%. ___ a result, the project was cancelled.", answers: ["as"] },
+      { id: "lk25", text: "The interface is confusing. That's ___ users complain. (por eso)", answers: ["why"] },
+      { id: "lk26", text: "The budget was cut. ___, the project was delayed. (por lo tanto, formal)", answers: ["therefore", "consequently", "thus", "hence"] },
+      // adición
+      { id: "lk27", text: "The tool is free. ___, it is open source. (además, formal)", answers: ["moreover", "furthermore", "besides", "additionally"] },
+      { id: "lk28", text: "As well as ___ code, she manages the team. (write)", answers: ["writing"] },
+      { id: "lk29", text: "In addition ___ the salary, they offer private health insurance.", answers: ["to"] },
+      { id: "lk30", text: "What's ___, the new version is twice as fast. (además, informal)", answers: ["more"] }
+    ]
   }
 };

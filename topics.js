@@ -978,6 +978,70 @@ const TOPICS = [
     `
   },
   {
+    id: "linkers",
+    emoji: "🌉",
+    title: "Linkers: contrast, purpose, reason, result & addition",
+    html: `
+      <p class="hint">Part 2 (open cloze) tests the small words: <i>although, despite, whereas, so, as, in case</i>. Part 4 loves turning one into another (<i>although → despite</i>). In the Writing, the <b>Organisation</b> scale is largely about linkers used correctly — not about using many. See also So / such (<i>so, so that</i>) and Conditionals (<i>unless, in case</i>).</p>
+
+      <h3>1. The key: what comes after the linker?</h3>
+      <p>Most errors are not about meaning but about <b>grammar</b>: some linkers take a <b>clause</b> (subject + verb), others a <b>noun or -ing</b>, others start a <b>new sentence</b>.</p>
+      <table>
+        <thead><tr><th>Meaning</th><th>+ clause (subject + verb)</th><th>+ noun / -ing</th><th>New sentence, with a comma</th></tr></thead>
+        <tbody>
+          <tr><td><b>Contrast</b> (aunque, a pesar de, sin embargo)</td><td><i>although, though, even though, while, whereas</i></td><td><i>despite, in spite of</i></td><td><i>However, Nevertheless, Even so, On the other hand</i></td></tr>
+          <tr><td><b>Reason</b> (porque, debido a)</td><td><i>because, as, since</i></td><td><i>because of, due to, owing to</i></td><td>—</td></tr>
+          <tr><td><b>Result</b> (así que, por lo tanto)</td><td><i>so</i></td><td>—</td><td><i>Therefore, As a result, Consequently, That's why</i></td></tr>
+          <tr><td><b>Purpose</b> (para, para que)</td><td><i>so that</i> (+ can / could / will / would)</td><td><i>to, in order to, so as to</i> + infinitive</td><td>—</td></tr>
+          <tr><td><b>Addition</b> (además)</td><td>—</td><td><i>as well as, in addition to, besides</i> (+ -ing)</td><td><i>Moreover, Furthermore, In addition, What's more</i></td></tr>
+        </tbody>
+      </table>
+
+      <h3>2. Contrast</h3>
+      <p><b>although / even though</b> + clause: <i><b>Although</b> the tests passed, the release failed.</i> · <i>even though</i> is stronger (a pesar de que, aun sabiendo que).</p>
+      <p><b>despite / in spite of</b> + noun or -ing: <i><b>Despite</b> the delay, we met the deadline.</i> · <i><b>In spite of</b> working late, she didn't finish.</i></p>
+      <p>To use a clause after despite: <b>despite the fact that</b> + clause: <i>Despite <b>the fact that</b> it was late, we kept working.</i></p>
+      <p><b>However</b> starts a new sentence and needs a comma: <i>The plan was good. <b>However,</b> nobody followed it.</i> It can also go in the middle: <i>Nobody, <b>however,</b> followed it.</i></p>
+      <p><b>whereas / while</b> compare two different facts (mientras que, en cambio): <i>Ana prefers Python, <b>whereas</b> Luis uses Go.</i></p>
+      <p><b>though</b> at the end of a sentence = however (informal): <i>The talk was long. It was interesting, <b>though</b>.</i></p>
+      <p><b>even if</b> (aunque + hipótesis) ≠ <b>even though</b> (aunque + hecho real): <i>I'll go <b>even if</b> it rains</i> (puede que llueva) · <i>I went <b>even though</b> it was raining</i> (llovía de verdad).</p>
+
+      <h3>3. Purpose</h3>
+      <p><b>to / in order to / so as to</b> + infinitive, when the subject is the same: <i>I came early <b>to</b> set up the room.</i> · Negative: <b>in order not to / so as not to</b>: <i>I left early <b>so as not to</b> miss the train.</i></p>
+      <p><b>so that</b> + clause, usually with <b>can / could / will / would</b>, especially when the subject changes: <i>I'll share my screen <b>so that</b> everyone <b>can</b> see the code.</i></p>
+      <p><b>for</b> + noun (the purpose of an action) or + -ing (the purpose of a thing): <i>We went out <b>for</b> lunch.</i> · <i>This tool is <b>for</b> monitoring servers.</i> (✗ <i>I came for to set up</i> / ✗ <i>for set up</i>)</p>
+      <p><b>in case</b> = as a precaution (por si acaso), not a condition: <i>Save a backup <b>in case</b> the disk fails.</i></p>
+
+      <h3>4. Reason and result</h3>
+      <p><b>because / as / since</b> + clause: <i><b>As</b> the server was down, we postponed the demo.</i> (as / since often go at the start; because gives new, important information).</p>
+      <p><b>because of / due to / owing to</b> + noun: <i>The launch was cancelled <b>due to</b> bad weather.</i> (✗ <i>because the bad weather</i>).</p>
+      <p><b>so</b> + clause, after a comma: <i>The tests failed, <b>so</b> we rolled back.</i> · Formal, new sentence: <i><b>Therefore,</b> / <b>As a result,</b> / <b>Consequently,</b> the project was delayed.</i></p>
+      <p><b>That's why</b> = por eso: <i>The interface is confusing. <b>That's why</b> users complain.</i></p>
+
+      <h3>5. Addition</h3>
+      <p><b>Moreover / Furthermore / In addition / What's more</b> + comma, new sentence: <i>The tool is free. <b>Moreover,</b> it is open source.</i></p>
+      <p><b>as well as / in addition to / besides</b> + noun or <b>-ing</b>: <i><b>As well as</b> writing code, she manages the team.</i> (✗ <i>as well as write</i>)</p>
+
+      <h3>6. Spanish speaker traps ⚠️</h3>
+      <ul>
+        <li>✗ <i><b>Despite of</b> the rain</i> → <i><b>Despite</b> the rain</i> / <i><b>In spite of</b> the rain</i>. Never <i>despite of</i>.</li>
+        <li><i>A pesar de que…</i> → ✗ <i>Despite it was late</i> → <i><b>Although</b> it was late</i> / <i>Despite <b>the fact that</b> it was late</i> / <i>Despite <b>being</b> late</i>.</li>
+        <li><i>Sin embargo</i> in the middle of a sentence with commas only: ✗ <i>It was cheap, however it broke.</i> → <i>It was cheap. <b>However,</b> it broke.</i> / <i>It was cheap, <b>but</b> it broke.</i></li>
+        <li><i>Para + infinitivo</i> → <b>to</b> + infinitive, not ✗ <i>for to</i> / ✗ <i>for + infinitive</i>.</li>
+        <li><i>Aunque</i> + subjunctive has two translations: <i>even if</i> (hypothesis) or <i>although / even though</i> (fact).</li>
+        <li><i>Además</i> at the start → <i>Moreover / In addition / Besides</i>, not ✗ <i>Also,</i> at the beginning of a formal sentence (it is fine in informal emails).</li>
+        <li>Don't double the linker: ✗ <i><b>Although</b> it was expensive, <b>but</b> we bought it.</i> → one or the other.</li>
+      </ul>
+
+      <h3>Useful in Part 4 transformations</h3>
+      <p><i>Although it rained, the launch went ahead. (DESPITE)</i> → <b>Despite the rain</b>, the launch went ahead. (<i>Despite the fact that it rained</i> is correct English but 6 words: too long for Part 4, max. 5.)</p>
+      <p><i>She was tired, but she kept working. (SPITE)</i> → <b>In spite of being</b> tired, she kept working.</p>
+      <p><i>I'll write it down so I don't forget it. (ORDER)</i> → I'll write it down <b>in order not to</b> forget it.</p>
+      <p><i>The flight was delayed because of the storm. (DUE)</i> → The flight was delayed <b>due to the</b> storm.</p>
+      <p><i>Take your charger because the meeting may run late. (CASE)</i> → Take your charger <b>in case the meeting runs</b> late.</p>
+    `
+  },
+  {
     id: "writing-overview",
     group: "writing",
     emoji: "✍️",
