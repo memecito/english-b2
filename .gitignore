@@ -25,3 +25,8 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# --- Correcciones de inglés del usuario -----------------------------------
+# Las escribe Claude desde cualquier sesión (regla en ~/.claude/CLAUDE.md).
+# Pueden contener fragmentos de mensajes de trabajo: se quedan en disco.
+corrections/

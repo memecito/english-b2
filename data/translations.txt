@@ -126,7 +126,7 @@ starting salary|sueldo inicial,salario inicial|empleo
 negotiate a salary|negociar un sueldo,negociar un salario|empleo
 performance review|evaluación del desempeño,revisión de rendimiento|empleo
 appraisal|evaluación,valoración|empleo
-team player|buen compañero,persona que colabora bien|cualidades
+team player|persona que trabaja bien en equipo,persona con espíritu de equipo,persona que colabora bien|cualidades
 teamwork|trabajo en equipo|oficina
 leadership skills|dotes de liderazgo,habilidades de liderazgo|cualidades
 problem-solving skills|capacidad de resolver problemas,resolución de problemas|cualidades

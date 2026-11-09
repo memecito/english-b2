@@ -126,6 +126,15 @@ details.card summary{font-weight:800;cursor:pointer}
 .wordlist .note i{display:block;color:var(--ink)}
 .feedback .note{display:block;font-weight:400;color:var(--ink);margin-top:6px;font-size:.95rem}
 .feedback .note i{display:block;color:var(--muted)}
+.report-badge{background:var(--bad-soft);color:var(--bad);border-radius:999px;padding:1px 7px;font-size:.8rem}
+dialog{background:var(--card);color:var(--ink);border:0;border-radius:16px;padding:18px;width:min(460px,calc(100vw - 32px));box-shadow:var(--shadow)}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+dialog h2{margin:0 0 8px}
+dialog label{display:block;font-weight:700;margin:10px 0 4px}
+dialog select,dialog textarea{width:100%;box-sizing:border-box;padding:10px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:inherit}
+#reportShown{font-weight:700;margin:0;overflow-wrap:anywhere}
+#reportTyped{color:var(--muted);margin:4px 0 0}
+#reportErr{color:var(--bad);font-weight:700;margin:8px 0 0}
 .model{background:var(--brand-soft);border-radius:14px;padding:4px 16px;margin:8px 0 12px;line-height:1.6}
 .danger{background:none;border:0;color:var(--bad);text-decoration:underline;font-weight:700}
 .topic{display:block;width:100%;text-align:left;border:2px solid var(--line);background:var(--card);
@@ -151,7 +160,7 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
       <button class="tab" role="tab" id="tab-study" aria-selected="false">📖 Estudiar</button>
       <button class="tab" role="tab" id="tab-exercises" aria-selected="true">🎮 Ejercicios</button>
       <button class="tab" role="tab" id="tab-writing" aria-selected="false">✍️ Writing</button>
-      <button class="tab" role="tab" id="tab-hist" aria-selected="false">Historial</button>
+      <button class="tab" role="tab" id="tab-hist" aria-selected="false">Historial <span id="reportBadge" class="report-badge hidden"></span></button>
     </div>
   </div>
 
@@ -246,6 +255,7 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
       </div>
       <div class="feedback hidden" id="feedback" role="status" aria-live="polite"></div>
       <div class="actions"><button class="secondary hidden" id="reviewTheoryBtn" type="button">📖 Repasar teoría de este tema</button></div>
+      <div class="actions"><button class="link hidden" id="reportBtn" type="button">🚩 Reportar un error en esta pregunta</button></div>
       <div class="actions"><button class="primary hidden" id="nextBtn" type="button" style="max-width:320px">Siguiente ➜</button></div>
     </div>
     <p class="hint center" id="progress"></p>
@@ -271,6 +281,17 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
 
   <!-- HISTORIAL -->
   <section id="history" class="hidden">
+    <div class="card hidden" id="reportsCard">
+      <h2>🚩 Errores reportados</h2>
+      <p class="hint">Copia o descarga la lista y pásasela a Claude para corregirlos. Cuando estén corregidos, bórralos.</p>
+      <ul class="wordlist" id="reportsList"></ul>
+      <p class="center">
+        <button class="link" id="reportsCopy" type="button">📋 Copiar</button>
+        <button class="link" id="reportsDownload" type="button">⬇️ Descargar</button>
+        <button class="link" id="reportsClear" type="button">🗑️ Borrar todos</button>
+      </p>
+      <p class="hint center" id="reportsStatus" role="status"></p>
+    </div>
     <div class="card">
       <h2>Puntos de los últimos 14 días</h2>
       <div class="chart" id="chart"></div>
@@ -348,6 +369,7 @@ canvas#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:non
         <button class="link" id="studyBack">← Volver a los temas</button>
         <h2 id="topicTitle"></h2>
         <div id="topicBody"></div>
+        <p class="center"><button class="link" id="topicReport" type="button">🚩 Reportar un error en esta teoría</button></p>
       </div>
     </div>
 
@@ -681,7 +703,7 @@ function renderHearts() {
 function setMascot(e) { const m = $("mascot"); m.textContent = e; m.classList.add("pop"); setTimeout(() => m.classList.remove("pop"), 250); }
 
 function nextQuestion() {
-  $("reviewTheoryBtn").classList.add("hidden");
+  $("reviewTheoryBtn").classList.add("hidden"); $("reportBtn").classList.add("hidden");
   if (G.kind === "grammar") return nextGrammarQuestion();
   // busca la siguiente palabra evitando repetir el mismo enunciado en español
   let q = null, dir;
@@ -784,6 +806,7 @@ function answer(action) { // action: "check" | "skip"
   $("actions").classList.add("hidden");
   const canReview = G.kind === "grammar" && G.wrongStreak >= 2 && TOPICS.some(t => t.id === GRAMMAR[itemTopic()].topicId);
   $("reviewTheoryBtn").classList.toggle("hidden", !canReview);
+  $("reportBtn").classList.remove("hidden"); // solo tras responder: antes destaparía la solución
   const nb = $("nextBtn"); nb.classList.remove("hidden");
   nb.textContent = G.lives <= 0 ? "Ver resultado 🏁" : "Siguiente ➜"; nb.focus();
 }
@@ -811,7 +834,7 @@ $("hintBtn").onclick = () => {
 $("nextBtn").onclick = () => { if (G.lives <= 0) finish(false); else nextQuestion(); };
 // Enter en la pantalla de feedback pasa a la siguiente pregunta
 document.addEventListener("keydown", e => {
-  if (e.key === "Enter" && G.active && G.answered && !$("game").classList.contains("hidden") && document.activeElement !== $("nextBtn")) {
+  if (e.key === "Enter" && !$("reportDlg").open && G.active && G.answered && !$("game").classList.contains("hidden") && document.activeElement !== $("nextBtn")) {
     e.preventDefault(); $("nextBtn").click();
   }
 });
@@ -867,6 +890,7 @@ $("reviewTheoryBtn").onclick = reviewTheory;
 
 /* ====================== Historial ====================== */
 function renderHistory() {
+  renderReports();
   // gráfico de 14 días
   const chart = $("chart"); chart.textContent = "";
   const days = []; const d = new Date(); d.setDate(d.getDate() - 13);
@@ -954,6 +978,7 @@ function openTopic(t) {
   $("studyDetail").classList.remove("hidden");
   $("topicTitle").textContent = `${t.emoji || "📘"} ${t.title}`;
   $("topicBody").innerHTML = t.html || "";
+  $("topicReport").onclick = () => openReport(reportCtxTopic(t));
   window.scrollTo(0, 0);
 }
 $("studyBack").onclick = renderStudy;
@@ -1048,7 +1073,10 @@ function renderVocabWords(key, start) {
     const btn = document.createElement("button"); btn.type = "button"; btn.textContent = "🔊";
     btn.setAttribute("aria-label", `Escuchar ${w.en[0]}`);
     btn.onclick = () => say(w.en[0]);
-    li.append(a, sp, btn);
+    const flag = document.createElement("button"); flag.type = "button"; flag.textContent = "🚩";
+    flag.setAttribute("aria-label", `Reportar un error en ${w.en[0]}`);
+    flag.onclick = () => openReport(reportCtxWord(w));
+    li.append(a, sp, btn, flag);
     const note = wordNote(w);
     if (note) { li.classList.add("has-note"); li.append(note); }
     list.append(li);
@@ -1065,7 +1093,24 @@ $("vocabWordsBack").onclick = () => renderVocabBlocks(vocabCurGroup);
 /* ====================== Arranque ====================== */
 buildLetters(); buildCategories(); buildGrammarTopics(); refreshHome();
 </script>
+<dialog id="reportDlg" aria-labelledby="reportTitle">
+  <form id="reportForm">
+    <h2 id="reportTitle">🚩 Reportar un error</h2>
+    <p id="reportShown"></p>
+    <p id="reportTyped"></p>
+    <label for="reportType">Tipo de error</label>
+    <select id="reportType"></select>
+    <label for="reportNote">Comentario</label>
+    <textarea id="reportNote" rows="3" maxlength="1000"></textarea>
+    <p id="reportErr" class="hidden" role="alert"></p>
+    <div class="actions">
+      <button class="secondary" id="reportCancel" type="button">Cancelar</button>
+      <button class="primary" type="submit">Guardar</button>
+    </div>
+  </form>
+</dialog>
 <script src="ai.js"></script>
 <script src="writing.js"></script>
+<script src="reports.js"></script>
 </body>
 </html>

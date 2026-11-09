@@ -11,6 +11,7 @@ ONLY=comparison node $B $U --script tools/qa/grammar.mjs
 node $B $U --script tools/qa/review.mjs           # modo Repaso de gramática
 node $B $U --script tools/qa/vocab.mjs            # Estudiar > Vocabulario por categoría/letra
 node $B $U --script tools/qa/verbs.mjs            # irregulares y phrasal verbs: grupos, descripción y ejemplo
+node $B $U --script tools/qa/reports.mjs          # reporte de errores: botones, badge, lista y exportación
 node $B $U --script tools/qa/writing.mjs          # corrector de Writing con Groq simulado
 ```
 
